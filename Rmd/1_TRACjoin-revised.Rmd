@@ -1,0 +1,467 @@
+---
+title: "WFD PhCh boundaries TRAC (join MS revisions)"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+editor_options: null
+output:
+  html_notebook: default
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+chunk_output_type: console
+---
+  
+Description  
+Heliana Teixeira
+(Revised data ver3 final round - April 2021) 
+File name for script: TRACjoin-revised.Rmd
+
+Combining original and revised data into single file.  
+Corrects CTRW PhCh Round 1 (Ver7e dat2_CTW.csv) (ver1) after MS checking during 2020 (ver7e_rev) (ver2) and final requests for change in April 2021 (ver7e_revised_April2021) (ver3 final).  
+- **input files:** dat2_CTW.csv; CTW_ver7e_revised_April2021.csv (follows UnitsV3marine.csv)  
+- **output revised file:** dat.TRACver3temporary.csv  
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(comment = NA)
+```
+
+```{r, warning=FALSE}
+library(here)
+library(dplyr)
+library(magrittr)
+library(tinytex)
+library(stringr)
+library(convertr)
+library(forcats)
+
+V <- "ver3 final"     #EDIT version  number
+```
+ 
+Combine original and revised data into single file
+```{r Get data}
+FName1 <- here("Data","dat2_CTW.csv") #original
+dat_CTW <- read.csv(file = FName1, header = TRUE,stringsAsFactors = F)
+dat_CTW <- select(dat_CTW, -c("uniqueID","TypeCode",
+                              "physChemCategoryRW","physChemCategoryLW",
+                              "Value","ValueUp","Factor")) #drop variables not needed
+
+FName2 <- here("Data","CTW_ver7e_revised_April2021.csv") #revised
+dat_CTWrev <- read.csv(file = FName2, header = TRUE,sep= ";", dec= ",", stringsAsFactors = F)
+dat_CTWrev <- select(dat_CTWrev, -one_of(c("uniqueID","Record"))) #drop variables not needed
+#add numbering to new entries by MS
+dat_CTWrev$All.obs <- replace(dat_CTWrev$All.obs,
+                              dat_CTWrev$All.obs =="new",
+                              seq(from = 11228, by = 1,length.out = 608)) #number of new entries
+dat_CTWrev$All.obs <- as.integer(dat_CTWrev$All.obs)
+
+#merge by "All.obs" keeping all var & cases in both
+dat <- full_join(dat_CTW,dat_CTWrev, by="All.obs")
+```
+
+Update revised/new values for selected variables
+```{r Update revised TRAC values}
+dat <- mutate(dat, physChemCategoryCW.x=if_else(is.na(physChemCategoryCW.y),
+                                        as.character(physChemCategoryCW.x),
+                                        as.character(physChemCategoryCW.y))) #update CW revised assignments
+
+dat <- mutate(dat, physChemCategoryTW.x=if_else(is.na(physChemCategoryTW.y),
+                                        as.character(physChemCategoryTW.x),
+                                        as.character(physChemCategoryTW.y))) #update TW revised assignments
+
+#harmonise names within var physChemCategoryTW & physChemCategoryCW
+dat$physChemCategoryCW.x<- toupper(dat$physChemCategoryCW.x)
+dat$physChemCategoryTW.x<- toupper(dat$physChemCategoryTW.x)
+
+dat <- mutate(dat, Type.x=if_else(is.na(Type.y),
+                          as.character(Type.x),
+                          as.character(Type.y))) #update correct Type
+
+dat <- mutate(dat, RBD.x=if_else(is.na(RBD.y),
+                          as.character(RBD.x),
+                          as.character(RBD.y))) #update correct RBD
+#check Country match
+check.MS <- mutate(dat, matchcountry = case_when(is.na(Country.y) ~ "NA",
+                          Country.x==Country.y ~ "match",
+                          Country.x!=Country.y ~ "mismatch"))
+levels(as.factor(check.MS$matchcountry))
+
+dat <- mutate(dat, Country.x=if_else(is.na(Country.y),
+                          as.character(Country.x),
+                          as.character(Country.y))) #update Country
+
+dat <- mutate(dat, physChemText.x=if_else(is.na(physChemText.y),
+                          as.character(physChemText.x),
+                          as.character(physChemText.y))) #update correct physChemText
+
+#harmonise names within var physChemText:
+dat <- mutate(dat, physChemText.x = case_when(
+  physChemText.x == "nitrate as N" ~ "Nitrate as N",
+  physChemText.x == "NTU" ~ "Turbidity",
+  physChemText.x == "Biological Oxygen Demand" ~ "BOD5",
+  TRUE   ~ as.character(physChemText.x)
+))
+
+dat <- mutate(dat, ValueStd.x=if_else(is.na(CorValueStd),
+                          ValueStd.x,
+                          CorValueStd)) #update revised ValueStd
+
+dat <- mutate(dat, ValueUpStd.x=if_else(is.na(CorValueUpStd),
+                          ValueUpStd.x,
+                          CorValueUpStd)) #update revised ValueUpStd
+
+dat <- mutate(dat, UnitUsed.x=if_else(is.na(UnitUsed.y),
+                          UnitUsed.x,
+                          UnitUsed.y)) #update revised UnitUsed
+
+#harmonise names within var UnitUsed:
+dat <- mutate(dat, UnitUsed.x = case_when(
+  UnitUsed.x == "ugP/L" ~ "µgP/L",
+  TRUE   ~ as.character(UnitUsed.x)
+))
+
+dat <- mutate(dat, ICcodeTW=if_else(is.na(ICcode),
+                          ICcodeTW,
+                          ICcode)) #update revised ICcodeTW
+
+dat <- mutate(dat, ICcodeTW = replace(ICcodeTW, which(physChemCategoryTW.x=="NO"), NA))
+dat <- mutate(dat, ICcodeTW=na_if(ICcodeTW,""))
+
+dat <- mutate(dat, ICcodeCW=if_else(is.na(ICcode),
+                          ICcodeCW,
+                          ICcode)) #update revised ICcodeCW
+dat <- mutate(dat, ICcodeCW = replace(ICcodeCW, which(physChemCategoryCW.x=="NO"), NA))
+dat <- mutate(dat, ICcodeCW=na_if(ICcodeCW,""))
+
+#Portugal update GM boundary == "No" they are all reference values (Secchi and nutrients)
+dat <- mutate(dat, physChemGMBoundary = replace(physChemGMBoundary, which(Country.x=="PT"), "No"))
+#France Temperature update GM boundary == "No"
+dat <- mutate(dat, physChemGMBoundary = replace(physChemGMBoundary, which(Country.x=="FR" & physChemText.x=="Temperature"), "No"))
+
+dat <- mutate(dat, Ver.x=if_else(is.na(Ver.y),
+                          Ver.x,
+                          Ver.y)) #update Version of revised entries
+
+#drop var
+dat <- select(dat,-one_of(c("ICcode","physChemCategoryCW.y","physChemCategoryTW.y",
+                            "Country.y","Type.y","RBD.y","physChemText.y",
+                            "SumMetric","ValueStd.y","ValueUpStd.y","CorValueStd",
+                            "CorValueUpStd","UnitUsed.y","Ver.y")))
+```
+
+Drop FW observations, keeping only TRAC data (cases).
+```{r Drop FW cases}
+dat <- mutate(dat, Cat = if_else(physChemCategoryCW.x=="NO"
+                                 & physChemCategoryTW.x =="NO", "FW", "TRAC")) #create new Water Category var
+
+summary(dat$Cat <-as.factor(dat$Cat)) #check categories
+dat <- filter(dat, Cat == "TRAC") #drop FW cases (rivers and lakes observations)
+
+summary(as.factor(dat$Delete)) #check TRAC entries marked as "Delete" = TRUE by MS 
+dat <- filter(dat, Delete != "TRUE" | is.na(Delete)) #drop TRAC entries (cases) marked as "Delete" = TRUE by MS
+```
+
+Selection of MS TRAC comparable PhCh elements
+```{r Comparable physChemQE}
+dat %<>% mutate_if(is.character, list(~na_if(.,""))) #fill missing values with NA's
+summary(as.factor(dat$physChemText.x)) #check for NA's (not considered) 
+
+dat$physChemQE <- str_replace(dat$physChemQE,
+                              "QE3-1-2-2",
+                              "QE3-1-2-2 Other determinand for thermal conditions") #complete QE name
+
+dat$physChemQE <- str_replace(dat$physChemQE,
+                              "\\. Valores corte del Real Decreto 817/2015 de 11 de septiembre",
+                              "") #remove text from QE name
+
+dat %>%
+  filter(is.na(dat$physChemText.x)) %>%
+  count(Country.x, physChemQE,Ver.x) #check physChemQE of cases not considered
+
+dat <- filter (dat, !is.na(dat$physChemText.x)) #drop 29 old cases & not comparable QE
+
+summary(as.factor(dat$physChemText.x))
+levels(as.factor(dat$physChemText.x)) #QE available for comparison
+dat %>% count(physChemText.x,Ver.x) # n per QE in each version
+
+dat %>% count(dat$physChemText.x,Country.x,Ver.x) #check for old version entries/Country
+
+dat <- filter(dat, Ver.x != "Ver7e") #keep only revised entries
+dat %>% count(dat$physChemText.x,Country.x,Ver.x) #check for revised entries/Country
+
+#identify QE with n>4 countries (MS_nr) for comparison:
+dat %>%
+  group_by(physChemText.x)%>%
+  summarise(MS_nr=n_distinct(Country.x),
+            Select_QE=if_else(MS_nr<4,"drop","keep"))
+```
+
+```{r new dat changes into TRAC file}
+#drop var not needed
+drops <- c("physChemValue","StandardValue","UnitOfMeasure","physChemStandar",
+           "surfaceWaterBodyIntercalibrationTypeCode","surfaceWaterBodyIntercalibrationType",
+           "Delete")
+dat<-dat[ , !(names(dat) %in% drops)]
+
+colnames(dat) <- gsub("[.]x","",colnames(dat)) #clean ".x" from var names
+
+#modify var names
+names(dat)[names(dat) == 'CorSumMetric'] <- 'SumMetric' 
+names(dat)[names(dat) == 'physChemCategoryTW'] <- 'physChemCatTW'
+names(dat)[names(dat) == 'physChemCategoryCW'] <- 'physChemCatCW'
+names(dat)[names(dat) == 'Type'] <- 'NatType'
+```
+
+```{r Salinity range}
+#Replace any decimals as commas "," to points "." in variable SalinityRange
+str_which(str_detect(dat$SalinityRange, ","), "TRUE") #checking entrie(s) number(s)
+dat <- dat %>% mutate_at(.vars = "SalinityRange", 
+            .funs = gsub,
+            pattern = ",",
+            replacement = "\\.")
+str_which(str_detect(dat$SalinityRange, ","), "TRUE") #recheck
+
+#Split SalinityRange,e.g."4-10" or "15-8" put 1st in Salinity1, 2nd in Salinity2
+dat <- mutate(dat,Salinity1=as.numeric(dat$SalinityRange))# new num var with NAs
+dat <- mutate(dat,Salinity2=NA)#create var for 2nd range
+dat$Salinity2<- as.numeric(dat$Salinity2)
+
+#identify strings containing "-" and split string to upper and lower values
+for(i in 1:length(dat$SalinityRange)){
+ if(grepl("-",dat$SalinityRange[i])){dat$Salinity1[i] <- as.numeric(substr(dat$SalinityRange[i],1,(which(strsplit(dat$SalinityRange[i], "")[[1]]=="-"))-1))
+ dat$Salinity2[i] <- as.numeric(substr(dat$SalinityRange[i],(which(strsplit(dat$SalinityRange[i], "")[[1]]=="-"))+1,nchar(dat$SalinityRange[i])))}
+}
+
+#identify strings containing: "< ",">= ","> " and allocate to Salinity1 and/or Salinity2
+for(i in 1:length(dat$SalinityRange)){
+ if(grepl("<",dat$SalinityRange[i])){dat$Salinity1[i] <- as.numeric(substr(dat$SalinityRange[i],(which(strsplit(dat$SalinityRange[i], "")[[1]]=="<"))+1,nchar(dat$SalinityRange[i])))}
+}
+ #subtract -0.5 to < 
+for(i in 1:length(dat$SalinityRange)){
+ if(grepl("<",dat$SalinityRange[i])){dat$Salinity1[i] <- as.numeric(dat$Salinity1[i])-0.5}
+}
+
+for(i in 1:length(dat$SalinityRange)){
+ if(grepl(">",dat$SalinityRange[i])){dat$Salinity1[i] <- as.numeric(substr(dat$SalinityRange[i],(which(strsplit(dat$SalinityRange[i], "")[[1]]==">"))+1,nchar(dat$SalinityRange[i])))}
+}
+#add +0.5 to >
+for(i in 1:length(dat$SalinityRange)){
+ if(grepl(">",dat$SalinityRange[i])){dat$Salinity1[i] <- as.numeric(dat$Salinity1[i])+0.5}
+}
+for(i in 1:length(dat$SalinityRange)){
+ if(grepl("=",dat$SalinityRange[i])){dat$Salinity1[i] <- as.numeric(substr(dat$SalinityRange[i],(which(strsplit(dat$SalinityRange[i], "")[[1]]=="="))+1,nchar(dat$SalinityRange[i])))}
+}
+```
+
+
+```{r Uk salinity range corrections}
+#correct UK entries (DO) according to formulas adjusting for salinity range (assumed 5-30 psu max range):  
+#if SalinityRange=="5-[0.029*(salinity)]" - DO ValueUpStd=4.86 for Salinity2==5 & ValueStd=4.13 for Salinity1==30
+#if SalinityRange=="5-(0.028*salinity)" - DO ValueUpStd=4.86 for Salinity2==5 & ValueStd=4.16 for Salinity1==30
+
+dat$Salinity1<-as.character(dat$Salinity1) #update Salinity1
+dat <- mutate(dat, Salinity1=if_else(SalinityRange =="5-[0.029*(salinity)]","30",
+                                     if_else(SalinityRange=="5 - (0.028*salinity)", "30",
+                                            Salinity1))) 
+
+#complete info for salinity1 where NatType "SAL=35CT"
+dat <- mutate(dat, Salinity1=if_else(NatType =="SAL=35CT","35",
+                                     Salinity1))
+dat$Salinity1<-as.numeric(dat$Salinity1)
+
+dat$Salinity2<-as.character(dat$Salinity2) #update Salinity2
+dat <- mutate(dat, Salinity2=if_else(SalinityRange =="5-[0.029*(salinity)]","5",
+                                     if_else(SalinityRange=="5 - (0.028*salinity)", "5",
+                                             Salinity2))) #update revised ValueStd
+dat$Salinity2<-as.numeric(dat$Salinity2)
+
+#update corresponding DO ValueStd
+dat$ValueStd<-as.character(dat$ValueStd)
+dat <- mutate(dat, ValueStd = case_when(
+  SalinityRange=="5-[0.029*(salinity)]" ~  "4.13",
+  SalinityRange=="5 - (0.028*salinity)" ~ "4.16",
+  TRUE ~ ValueStd))
+dat$ValueStd<-as.numeric(dat$ValueStd)
+
+#update also DO ValueUpStd
+dat$ValueUpStd<-as.character(dat$ValueUpStd)
+dat <- mutate(dat, ValueUpStd = case_when(
+  SalinityRange=="5-[0.029*(salinity)]" ~ "4.86",
+  SalinityRange=="5 - (0.028*salinity)" ~ "4.86",
+  TRUE ~ ValueUpStd))
+dat$ValueUpStd<-as.numeric(dat$ValueUpStd)
+
+```
+
+```{r update Reason range, RangeRep}
+#UK
+dat <- mutate(dat, ReasonRange= if_else(Country=="UK" & !is.na(ValueUpStd),
+                                        "salinity range",ReasonRange))
+
+dat$RangeRep<-as.character(dat$RangeRep)
+dat <- mutate(dat, RangeRep= if_else(Country=="UK" & ReasonRange=="salinity range",
+                                     "TRUE",RangeRep))
+dat <- mutate(dat, RangeRep= if_else(Country=="UK" & is.na(RangeRep),
+                                     "FALSE",RangeRep))
+dat$RangeRep<-as.logical(dat$RangeRep)
+
+#harmonise ReasonRange levels
+dat <- mutate(dat, ReasonRange = case_when(
+  ReasonRange == "High low: Dissolved oxygen lower and upper limit" ~ "High low",
+  ReasonRange == "High low: Moderate (low)-Good (high) range limits?" ~ "High low",
+  ReasonRange == "High low?" ~ "High low",
+  TRUE ~ as.character(ReasonRange))) #High low
+
+dat <- mutate(dat, ReasonRange = case_when(
+  ReasonRange == "?" ~ "subType",
+  ReasonRange == "Other?" ~ "subType",
+  ReasonRange == "salinity range?" ~ "salinity range",
+  grepl("transparency between 0.8-6m.", ReasonRange, ignore.case = FALSE) ~ "subType",
+  grepl("transparency between 4-35m.", ReasonRange, 
+        ignore.case = FALSE) ~ "subType",
+  TRUE ~ as.character(ReasonRange))) #subType
+
+
+#check steps DELETE Later
+ReasRan<-dat%>%count(physChemText,ReasonRange,Country)
+ReasRan
+
+RanRep<-dat%>%count(physChemText,ReasonRange,RangeRep,Country)
+RanRep
+```
+
+
+```{r complete missing info Cat Typ}
+#correct SE NatType 24 & 25 are TW not CW
+dat <- mutate(dat, physChemCatCW=if_else(NatType %in% c("24","25"),"NO",physChemCatCW))
+dat <- mutate(dat, physChemCatTW=if_else(NatType %in% c("24","25"),"YES",physChemCatTW))
+
+dat <- mutate(dat, Cat=if_else(
+  physChemCatCW=="YES","CW","TW")) #update Category levels CW & TW
+
+dat<- dat%>%mutate(NatType=replace(NatType, NatType=="All","ALL")) #harmonise NatType All/ALL entries
+
+#new var for TW & CW joint IC code
+dat<- dat%>%mutate(ICcode.TRAC=ifelse(!is.na(as.character(dat$ICcodeTW)),
+                                      as.character(dat$ICcodeTW),
+                                      as.character(dat$ICcodeCW)))%>%
+  mutate(ICcode.TRAC=replace(ICcode.TRAC, is.na(ICcode.TRAC),"inapplicable"))
+
+#id NatType NAs and fill (GReece)
+id_country<- R.utils::captureOutput(unique(as.character(dat$Country[which(is.na(dat$NatType))])))
+id_country<-"Greek nat type"
+dat$NatType<-as.character(dat$NatType)
+dat<- dat%>%mutate(NatType=replace(NatType, is.na(NatType),id_country))
+```
+
+
+```{r complete missing info Region Sea}
+#update Marine region info
+dat <- mutate(dat, MarineRegion=if_else(
+  Country%in%c("EE","LT","LV","PL"),"Baltic Sea",MarineRegion))
+
+dat <- mutate(dat, MarineRegion=if_else(
+  Country=="IE","Celtic Seas",MarineRegion))
+
+dat <- mutate(dat, MarineRegion=if_else(
+  Country=="PT","Bay of Biscay and Iberian coast",MarineRegion))
+
+dat <- mutate(dat, MarineRegion=if_else(
+  Country=="GR","Aegean-Levantine Sea",MarineRegion))
+
+dat <- mutate(dat, MarineRegion=if_else(
+  Country=="HR","Adriatic Sea",MarineRegion))
+
+dat <- mutate(dat, MarineRegion=if_else(
+  Country %in% c("BG","RO"),"Black Sea",MarineRegion))
+
+dat <- mutate(dat, MarineRegion=if_else(
+  Country=="IT","Mediterranean Sea",MarineRegion))
+
+    #for DE new entries (April 2021) all are Baltic Sea
+dat <- mutate(dat, MarineRegion=if_else(
+  Country=="DE" & is.na(MarineRegion),"Baltic Sea",MarineRegion))
+
+#ES  
+dat <- mutate(dat, MarineRegion=if_else(RBD %in% c("AC-T01","AC-T02","AC-T05","AC-T06","AC-T10","AC-T11","AC-T21","AC-T22","AC-T23","AC-T24","AMP-T05","AMP-T06","AT-T14","AT-T15","AT-T16"),"Western Mediterranean Sea", MarineRegion))
+
+dat <- mutate(dat, MarineRegion=if_else(RBD %in% c("AC-T13","AC-T19","AC-T20","AMP-T01","AMP-T02","AMP-T03","AMP-T04","AT-T12","AT-T13"),
+                                        "Bay of Biscay and Iberian coast",MarineRegion))
+
+#UK
+dat <- mutate(dat, MarineRegion=if_else(
+  RBD %in% c("UK01","UK03","UK04","UK05","UK06","UK07","UK08"),
+  "Greater North Sea", MarineRegion))
+
+dat <- mutate(dat, MarineRegion=if_else(
+  RBD %in% c("UK02","UK09","UK10","UK11","UK12","UKGBNIIENW","UKGBNINE","UKGBNIIENB"),
+  "Celtic Seas", MarineRegion))
+
+#"BE","NL","NO"
+dat <- mutate(dat, MarineRegion=if_else(
+  Country %in% c("BE","NL","NO"),"Greater North Sea",MarineRegion))
+
+#DE
+dat <- mutate(dat, MarineRegion=if_else(
+  NatType %in% c("T1","T2","T3","T4"),"Greater North Sea",MarineRegion))
+
+#FR
+dat <- mutate(dat, MarineRegion=if_else(NatType %in% c("FRA","FRF","FRG","FRH"),"Greater North Sea",
+                                        if_else(NatType %in% c("FRD","FRE"),"Western Mediterranean Sea",
+                                                MarineRegion)))
+#SE
+dat <- mutate(dat, MarineRegion=if_else(NatType %in% c("10","11","12n","12s","13","15","24"),"Baltic Sea",
+                                        if_else(NatType=="25","Greater North Sea",
+                                                MarineRegion)))
+
+dat <- mutate(dat, MarineRegion=if_else(ICcode.TRAC%in%c("CW-NEA8a","CW-NEA8b","CW-NEA9","CW-NEA10"),
+                                        "Greater North Sea", MarineRegion))
+
+dat <- mutate(dat, MarineRegion = case_when(
+  grepl("CW-BC", ICcode.TRAC, ignore.case = FALSE) ~ "Baltic Sea",
+    TRUE ~ as.character(MarineRegion)))
+```
+
+```{r chr problematic}
+
+dat <- mutate(dat, Note3_stdUnits = case_when(
+  All.obs==11359 ~ "We standardised your Value using a factor of 0.6 to convert from units of   FNU (conversion from FNU (Formazine Nephelometric Unit) to NTU: if FNU <= 20 conversion factor is 1 if FNU >20 is 0.6 NTU",
+    TRUE ~ Note3_stdUnits))
+
+```
+
+
+
+```{r GIG info}
+dat <-mutate(dat,GIG=if_else(MarineRegion%in%c("Adriatic Sea","Aegean-Levantine Sea","Mediterranean Sea","Western Mediterranean Sea"),"MED",
+                             if_else(MarineRegion=="Baltic Sea","BAL",
+                                        if_else(MarineRegion%in%c("Bay of Biscay and Iberian coast","Greater North Sea","Celtic Seas"),"NEA","BLA"))))
+
+#complete GIG info for DE new entries (April 2021) all are: GIG == "BAL"
+dat <- mutate(dat, GIG=if_else(Country=="DE" & is.na(GIG),"BAL",GIG))
+```
+
+
+```{r}
+# converts all vars
+dat <- type.convert(dat)
+dat <- mutate_at(dat,c("Note1_PhysChemText","Note2_Season",
+                       "Note3_stdUnits","Comment","cfMS"),
+                 as.character) #return some vars to chr
+dat$Salinity2<-as.numeric(dat$Salinity2) #var to num
+
+#reorder var in df
+col_order=c("All.obs","GIG","MarineRegion","Cat","physChemCatCW","physChemCatTW","ICcode.TRAC",
+           "ICcodeTW","ICtypeTW","ICcodeCW","ICtypeCW","Country","RBD","NatType",
+           "physChemQECode","physChemQE","physChemText", "Note1_PhysChemText",
+           "physChemGMBoundary","SumMetric","Note2_Season","ValueStd","ValueUpStd",
+           "UnitUsed","Note3_stdUnits","RangeRep","ReasonRange","SalinityRange","Salinity1","Salinity2","DepthZone","Comment","cfMS","Ver")
+dat <- dat[, col_order]
+```
+
+
+```{r save data}  
+#save new revised TRAC dat file
+dat.TRACver3 <- dat
+dat.TRACver3$Ver.r <- V # add version flag
+write.csv(dat.TRACver3, here("Data","dat.TRACver3temporary.csv"))
+```

@@ -1,0 +1,451 @@
+---
+editor_options:
+  chunk_output_type: console
+output:
+  word_document:
+    fig_caption: yes
+    reference_docx: draft-styles.docx
+  html_document: default
+---
+
+
+```{r setup, include=FALSE}
+
+rm(list = ls())
+
+library(dplyr )
+library(ggplot2)
+library(tidyr)
+library(knitr)
+library(readxl)
+library(stringr)# needed for mutate of EEA data set
+library(car) # for anova
+library(sjstats) # for effect sizes
+library(here)
+
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dpi=300)
+knitr::opts_chunk$set(cache=FALSE, fig.path="R_Figures/", cache.path="Cache/")
+options(knitr.kable.NA = "")
+options(digit=3)
+
+source(here("R","MyFunctV2.R")) # Functions used for plotting
+```
+
+```{r select standard, include=FALSE}
+#EDIT this section
+
+# enter text for standard and label for plotting
+dec <- 2 # number of decimals to show
+physChemText.u <- "Nitrate as N"
+ylb <- "Good/moderate Nitrate N (mg/L) boundary"
+CV <- 5  # critical value to highlight
+
+# select dets from original data
+Parameter_Code.u <- "NO3_N"
+
+#labels for legends
+LCap1 <- "Figure 3.28"
+LCap2 <- "Figure 3.29"
+LCap3 <- "Figure 3.30"
+LCapT1 <- "Table 3.19"
+LCapT2 <- "Table 3.20"
+LCapA1 <- "Figure A11"
+LCapTA1 <- "Table A41"
+LCapTA2 <- "Table A42"
+LCapTA3 <- "Table A43"
+LCapTA4 <- "Table A44"
+
+#Fig legends for report
+Cap1 <- paste(LCap1,"Comparison of river",physChemText.u,"standards by country. Green symbols represent values reported in 2014, others colours those reported in 2019 (single value black, minimum blue, maximum red symbols.)")
+Cap2 <- paste(LCap2,"River",physChemText.u,"standards  by broad type (single value black, minimum blue, maximum red). Horizontal lines mark 25th (green) and 75th (red) quantiles, (excluding standards based on quantiles).")
+Cap3 <- paste(LCap3,"River",physChemText.u,"standards (dotted lines)  overlain on box plots showing the range of ",physChemText.u," concentration for sites classified by phytobenthos and macro-invertebrates. (90th quantile=red, 75th quantile=orange, median=blue),excluding standards based on quantiles, grouped by aggregated river type." )
+
+#Table legends
+CapT1 <- paste(LCapT1,"Analysis of variance for factorial model relating country and broad type to member state boundary values for",physChemText.u, "(Including main and partial effect sizes,Omega squared.)")
+CapT2 <- paste(LCapT2,"Overview of common types showing the number of MS/national types/distinct standards for river", physChemText.u)
+
+#Legends for appendix
+CapA1 <- paste(LCapA1,physChemText.u, "standards by country and broad type (single value black, minimum blue, maximum red). Horizontal lines mark 25th (green) and 75th (red) quantiles.")
+CapTA1 <- paste(LCapTA1,physChemText.u,"metrics used by country")
+CapTA2 <- paste(LCapTA2,physChemText.u,"number of records where standard was reported as a value or a range")
+CapTA3 <- paste(LCapTA3,"Number of different ",physChemText.u," standards by country and broad type")
+CapTA4 <- paste(LCapTA4,"Overview of common types and number of MS/national types/distinct  ",physChemText.u," standards by country and broad type")
+
+```
+
+
+```{r Get data}
+#Get the data
+Cat <- "Riv" # water category, used in file  name for saving objects for subsequent use
+Category.u <- "R" # water category to select from old (2014) data R or L
+
+FName.dat <-here("Data/V11","dat_RW.csv")
+
+dat.RW <- read.csv(file = FName.dat, header = TRUE)
+
+#Get 2014 data
+FName <- here("Data/2014","CompiledFreshwater_DistributedMay2015.xls")
+
+dat.14 <- read_excel(FName, sheet = "Boundary",col_names = TRUE)
+#Sort out the data to make it comparable
+colnames(dat.14)[10] <- "National_type_code" # remove spaces in name
+colnames(dat.14)[8] <- "Measurement_Type"
+dat.14 <- dat.14 %>% 
+  mutate(Country = ifelse(Country == "BE (Fl)","BE",Country)) %>% 
+  mutate(Country = ifelse(Country == "BE (W)","BE",Country)) %>%
+  mutate(Country = ifelse(Country == "CZ_3rd","CZ",Country)) %>% 
+  mutate(Country = ifelse(Country =="SL","SI",Country)) %>% 
+  mutate(Type = toupper(National_type_code)) %>% 
+  mutate(Measurement_Type = ifelse(Measurement_Type == "mean" & Period == "Annual","AA-EQS",Measurement_Type)) %>%
+    mutate(Measurement_Type = ifelse(Measurement_Type == "mean" & Period != "Annual","GS Mean",Measurement_Type)) %>% 
+  mutate(Measurement_Type = ifelse(Measurement_Type == "median","Median",Measurement_Type)) %>% 
+  mutate(Measurement_Type = ifelse(is.na(Measurement_Type),"not specified",Measurement_Type)) %>%
+  mutate(Measurement_Type = factor(Measurement_Type)) %>% 
+  select(Country,Type,Category,National_type_code,GM_Value,Units,Parameter,Parameter_Code,Measurement_Type,Period,Broad_Type2) %>% 
+  droplevels()
+
+```
+
+
+```{r process1, include=FALSE}
+#Select standard
+dat.u <- dat.RW %>% 
+  filter(physChemText==physChemText.u,!is.na(ValueStd)) %>% 
+  select(uniqueID,Country,physChemQECode,physChemText,UnitOfMeasure,physChemStandard2,Type,Value,ValueUp,ValueStd,ValueUpStd,UnitUsed,mappingId,CodeBT,CodeBTS,CodeAgg,RangeRep,ReasonRange) %>% 
+  droplevels()
+dim(dat.u)
+#Issue with ranges
+filter(dat.u,!is.na(ValueStd),ValueUpStd<ValueStd)
+
+#Select standard from 2014 data
+#Create the subset of data by selecting water category and Parameter code
+dat.14.u <- dat.14 %>% filter(Category == Category.u)%>% 
+    filter(Parameter_Code == Parameter_Code.u) %>% 
+  select(Country,Type,National_type_code,Broad_Type2,GM_Value,Measurement_Type,Parameter) %>% 
+  droplevels()
+
+```
+
+
+```{r CheckDataPlot, include=FALSE}
+# Check data, modify units if plot suggests issues
+BPChk(dat.u) 
+```
+
+```{r Edit data if needed, include=FALSE,eval=TRUE}
+dat.u.m <- dat.u %>% 
+  mutate(UnitUsed = "mgN/L")
+  
+#BPChk(dat.u.m) 
+
+dat.u <- dat.u.m  # ONLY RUN this line when data appear to be correct based on plot above
+summary(dat.u)
+```
+
+```{r combinedata, include=FALSE}
+
+#Combine the 2014 and 2019 data sets
+dat.Comb <- full_join(dat.u,dat.14.u) 
+
+```
+
+
+```{r fig1, include = FALSE}
+#Create plot of standards v country including original 2014 data
+symb1 <- c(7,8,19,18,6,3,0)
+plot1 <- ggplot(data=dat.Comb, aes( x = Country, y = GM_Value, shape = Measurement_Type))+
+  geom_point(colour = "green",position = position_nudge(x=-0.2 ,y = 0))+
+  geom_point(data = subset(dat.Comb,!is.na(ValueUpStd)), mapping = 
+      aes(x = Country, y = ValueStd, shape = physChemStandard2),color="blue",position = position_nudge(x=0.05 ,y = 0))+ 
+  geom_point(data = dat.Comb, mapping = aes(x=Country, y=ValueUpStd,shape=physChemStandard2),color="red",position = position_nudge(x= 0.05 ,y = 0))+
+  
+  geom_point(data=subset(dat.Comb,is.na(ValueUpStd)),aes(x = Country, y = ValueStd, shape = physChemStandard2),position = position_nudge(x=+0.20 ,y = 0))+
+  labs(y = ylb)+
+  scale_shape_manual(values=symb1,name  ="")+
+  theme_bw()+
+  theme(legend.position = "bottom")+
+  theme(legend.title = element_blank())
+```
+
+
+```{r summarise data, include=FALSE}
+source(here("R","Prep_RWv5.R"))  # runs chunk of code to prepare the data
+
+#Set up the plot symbols to match those in data set, use 19 for AA-EQS, 8 for 95th PC, 3 for median
+count(dat.u.d,physChemStandard2)
+#Edit the next line
+symb <- c(7,8,19,3)
+#dim(count(dat.u.d,physChemStandard2))   #use this line to check the number of symbols required
+if(length(symb)!=dim(count(dat.u.d,physChemStandard2))[1])stop("Edit Symb, it is wrong length")
+
+#Save the objects needed for tables and figures for subsequent use, edit the next line to reflect directory used to store data file generated
+
+OutFile <- here("Data",paste0(Cat,physChemText.u,".RData"))
+
+save(dat.u.d,Metrics,Temp,Temp1,Temp2,OverV4,RangeCntry,ValCntry,TypeAllCntry,NinGroup,CntryInGroup,GrpGT2,symb,ylb,dec,physChemText.u,dat.u.d, dat.u,file=OutFile)
+
+#Identify countries reporting  in 2014 who did not report values in 2019
+levels(factor(dat.14.u$Country))
+levels(dat.u$Country)
+Sum14 <- filter(dat.14.u,!is.na(GM_Value)) %>% select(Country,GM_Value) %>% group_by(Country) %>% summarise(Mn = mean(GM_Value))
+Sum09 <- filter(dat.u.d,!is.na(ValueStd)) %>% select(Country,ValueStd) %>% group_by(Country) %>% summarise(Mn = mean(ValueStd))
+Sum <- full_join(Sum09,Sum14, by="Country")
+CntryMiss <-filter(Sum,is.na(Mn.x)) %>% select(Country)
+
+#Values higher than selected value and not higher percentile
+CntryHV <- filter(dat.u.d,ValueStd > CV)%>% select(Country,ValueStd) %>% count(Country)
+
+CntryPCent <- filter(dat.u.d,physChemStandard2=="90th percentile")%>% select(Country,ValueStd) %>% count(Country)
+
+```
+
+```{r, include = FALSE}
+# Chunk to calculate summary statistics
+# Only use  "distinct" boundary values (dat.u.d) to avoid weighting values where countries apply identical type specific values in multiple RBDs.
+
+SumDat <- dat.u.d %>% 
+  filter(physChemStandard2=="AA-EQS"|
+           physChemStandard2 == "Median"|
+           physChemStandard2 == "seasonal average"|
+           physChemStandard2 == "summer")
+#Create long format to simplify calculating quantiles
+SumDat.l <- pivot_longer(dat.u.d,cols = starts_with("Val"),names_to = "col",values_to = "Value" )
+
+SumDat.l <- left_join(SumDat.l,CntryInGroup) # join the number of countries in the group for subsequent filter
+
+
+q25All <- quantile(SumDat.l$Value,0.25,na.rm = TRUE)
+q50All <- quantile(SumDat.l$Value,0.5,na.rm = TRUE)
+q75All <- quantile(SumDat.l$Value,0.75,na.rm = TRUE)
+q90All <- quantile(SumDat.l$Value,0.90,na.rm = TRUE)
+
+SumDat.l <- SumDat.l %>% filter(!is.na(Value),CodeBT !="All" & CodeBT !="RW-00")
+
+#Calculate the type specific quantiles
+q25 <- aggregate(SumDat.l$Value,0.25, by=list(SumDat.l$CodeBT), FUN=quantile, p=.25,na.rm = TRUE)
+q75 <- aggregate(SumDat.l$Value, by=list(SumDat.l$CodeBT), FUN=quantile, p=.75,na.rm = TRUE)
+Q <- data.frame(q25,q75[2])
+Q <- Q %>% rename(CodeBT = Group.1, q25 = x,q75 = x.1)
+#join quantiles to dataframe containing number of countries in each group
+GrpGT2.Q <- full_join(NinGroup,Q) 
+GrpGT2.Q <- GrpGT2.Q %>% mutate(q25u = ifelse(n>2,q25,NA))%>% mutate(q75u = ifelse(n>2,q75,NA))
+
+#Calculate the aggtype specific quantiles
+q25 <- aggregate(SumDat.l$Value, by=list(SumDat.l$CodeAgg), FUN=quantile, p=.25,na.rm = TRUE)
+q75 <- aggregate(SumDat.l$Value, by=list(SumDat.l$CodeAgg), FUN=quantile, p=.75,na.rm = TRUE)
+q50 <- aggregate(SumDat.l$Value, by=list(SumDat.l$CodeAgg), FUN=quantile, p=.5,na.rm = TRUE)
+q90 <- aggregate(SumDat.l$Value, by=list(SumDat.l$CodeAgg), FUN=quantile, p=.9,na.rm = TRUE)
+Q <- data.frame(q25,q75[2],q50[2],q90[2])
+Q <- Q %>% rename(CodeAgg = Group.1, q25 = x,q75 = x.1,q50 = x.2,q90 = x.3)
+#join agg quantiles to dataframe containing number of countries in each group
+AggGrpGT2.Q <- full_join(NinAggGroup,Q) 
+AggGrpGT2.Q <- AggGrpGT2.Q %>% mutate(q25u = ifelse(n>2,q25,NA))%>% mutate(q75u = ifelse(n>2,q75,NA))%>% mutate(q90u = ifelse(n>2,q90,NA))%>% mutate(q50u = ifelse(n>2,q50,NA))
+
+
+```
+
+```{r, include=FALSE, warning=FALSE}
+#Chunk to test differences between types and country
+# test homogeneity of variance, select appropriate model
+boxplot(Value ~ CodeBT, data=SumDat.l,subset = n>2 )
+boxplot(Value ~ Country, data=SumDat.l,subset = n>2 )
+leveneTest(Value ~ Country*CodeBT, data=SumDat.l,subset = n>2 )
+leveneTest(log(Value) ~ Country*CodeBT, data=SumDat.l,subset = n>2 )
+
+mod <- aov(Value ~ Country + CodeBT, data=SumDat.l,subset = n>2) # create factorial model
+# look at residuals
+r = residuals(mod, type="response")
+Shap.test <- shapiro.test(r) # test for normality of residuals
+
+my_anova <- Anova(mod, type="III") # with car package use type III sum squares as unbalanced design
+Om_sq <- omega_sq(my_anova,partial = FALSE) # determine the effect size (proportion of variance explained by each factor)
+pOm_sq <- omega_sq(my_anova,partial = TRUE) # determine the partial effect size (proportion of variance explained by each factor after excluding the variance explained by other predictors)  omega_sq corrects for small sample size
+
+Table <- my_anova %>% mutate(term = c("Intercept","Country","CodeBT","Residuals"))
+Table <- left_join(Table,Om_sq)
+Table <- left_join(Table,pOm_sq)  
+
+```
+
+
+
+```{r, warning=FALSE}
+#Get the EEA data set and prepare the plots
+det <- "NO3N" #EDIT
+
+#Get EEA data set
+dat.bio.wq <- readRDS(here("Data/EEA","dat.bio.wq.rds"))
+# transformations
+dat.bio.wq <-dat.bio.wq %>%
+  mutate(TwoClass=ifelse(resultEcologicalStatusClassValue<=2,"GH","MW")) %>% 
+  mutate(NO3N=ifelse(is.na(NO3),TON,NO3*0.2258)) %>% 
+  mutate(PO4 = PO4 * 1000, TP = TP * 1000) %>% 
+  mutate(logTP = log10(TP),logTN=log10(TN),logNH4=log10(NH4),logBOD5=log10(BOD5),logPO4=log10(PO4),logNO3N=log10(NO3N),logCa=log10(Ca),logDO=log10(DO))%>% 
+  mutate(CodeAgg = str_replace(m_btype12,"T","A-0")) %>% 
+  mutate(CodeAgg = str_replace(CodeAgg,"RA-010","RA-10")) %>% 
+  mutate(CodeAgg = str_replace(CodeAgg,"RA-011","RA-11")) %>%
+  mutate(CodeAgg = str_replace(CodeAgg,"RA-012","RA-12")) %>%
+  mutate(CodeAgg =factor(CodeAgg)) %>% 
+  droplevels()
+
+#Split data in PB and MI sets
+dat.pb <- dat.bio.wq %>% 
+  filter(EQR_determinand=="PhytobenthosEQR_E"|EQR_determinand=="PhytobenthosEQR_G" ) 
+dat.mi <- dat.bio.wq %>% 
+  filter(EQR_determinand=="InvertebrateEQR_E"|EQR_determinand=="InvertebrateEQR_G" ) 
+
+#Function used for additional plot
+MyBoxPlot <- function(df,xlb){
+ggplot(df,aes_string(y=det,x="TwoClass"))+
+    geom_boxplot(notch = TRUE)+
+  theme_bw()+
+  labs(y = ylb,x=xlb)+
+  scale_x_discrete(labels=c("Good or better","Mod or worse"))+
+  scale_y_log10() +
+  annotation_logticks(sides = "l")
+}
+
+#Basic boxplot
+P1 <- MyBoxPlot(dat.pb,"phytobenthos class")
+P2 <- MyBoxPlot(dat.mi,"macro-invert class")
+
+```
+
+
+## 3.6.1.1 Nitrate-N (rivers) 
+
+
+There were `r dim(dat.u)[1]` records (2009 dataset) from `r dim(count(dat.u,Country))[1]` countries which can be compared with the values reported in a 2014 survey {Phillips, 2015 #711}  (`r LCap1`). 
+The majority of countries use the annual mean ("AA-EQS") as a summary metric. `r dim(Temp2)[1]` countries (`r levels(ValCntry) `) use a single values for each national type and `r dim(Temp1)[1]` countries (`r levels(RangeCntry) `) present standards as a range.  
+
+The data could be linked to `r dim(NinGroup)[1]-2` broad types (`r LCap2 ` & `r LCapT1`). `r dim(CntryInGroup[CntryInGroup$n>2 & CntryInGroup$CodeBT !="All",])[1]` of these (`r GrpGT2$CodeBT `) had type specific values from more than 2 countries allowing the range of standards in these types to be compared. `r length(levels(TypeAllCntry))` countries (`r levels(TypeAllCntry)`) apply the same standard to all national types found in one or more of their river basin districts.  
+
+The standards ranged from `r round(min(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE),dec)` `r dat.u$UnitUsed[1] ` (`r dat.u[which(c(dat.u$ValueStd,dat.u$ValueUpStd) == min(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE)),"Country"][1]`) to `r round(max(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE),dec)` `r dat.u$UnitUsed[1] ` (`r dat.u[which(c(dat.u$ValueStd,dat.u$ValueUpStd) == max(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE)),"Country"][1]`). 
+with an interquartile range of `r round(q25All,dec)` to `r round(q75All,dec)` (`r LCap2`). 
+
+A two way analysis of variance was used to test the significance of country and type differences between standards (`r LCapT1`). The relative importance of the country and type effects can be judged from the Omega squared values which represent the proportion of variance explained by each of country (`r round(Om_sq[1,2]*100,1)`%) and type (`r round(Om_sq[2,2]*100,1)`% )  
+
+`r ifelse( Shap.test[[2]]<0.001,paste("WARNING: Shapiro-wilk test of residuals p is ",Shap.test[[2]]) ,"" )`  
+
+To place the reported standards into context their interquartile ranges are marked as horizontal lines on box plots showing the distribution of `r physChemText.u` based on classifications for phytobenthos (`r LCap3`) using data taken from the EEA.
+
+
+More information in Annex A6.1 (p???)  
+
+
+
+```{r, fig.width = 7, fig.height =5, fig.cap=Cap1, warning = FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country"
+plot1+ 
+  geom_hline(yintercept = c(q50All,q75All,q90All),linetype="dashed", color=c("blue","orange","red"))
+```
+
+
+
+```{r, fig.width = 7, fig.height =5, fig.cap=Cap2, warning = FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Type" overlay of quantiles
+DP2()+
+ geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q25u,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q25u),inherit.aes = FALSE,colour = "green",size = 1.5)+
+ geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q75u,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q75u),inherit.aes = FALSE,colour = "red",size = 1.5)
+```
+
+`r CapT1`   
+```{r}
+#Anova table
+kable(Table[c(5,6,7,1:4)],col.names = c("","Omega sq,","p Omega sq","Sum sq","Df","F val","Pr"),digits = c(2,2,2,1,2,3,3),format = "pandoc")
+```
+
+
+```{r, warning = FALSE, message=FALSE, fig.width = 7, fig.height =9.5, message=FALSE, fig.cap=Cap3}
+#Box plot of EEA data set overlain by 90th 75th 50th quantiles
+ggplot(dat.pb,aes_string(y=det,x="TwoClass"))+
+  geom_boxplot(notch = TRUE)+
+  facet_wrap(~CodeAgg)+
+  theme_bw()+
+  labs(y = ylb,x="phytobenthos class")+
+  scale_x_discrete(labels=str_wrap(c("Good or better","Mod or worse"),7))+
+  scale_y_log10() +
+  annotation_logticks(sides = "l")+
+    geom_hline(data=subset(AggGrpGT2.Q, CodeAgg !="All" & CodeAgg !="RA-00"),mapping = aes(yintercept = q75u ),colour = "orange",linetype = "dashed")+
+    geom_hline(subset(AggGrpGT2.Q, CodeAgg !="All"& CodeAgg !="RA-00"),mapping = aes(yintercept = q90u ),colour = "red",linetype = "dashed")+
+    geom_hline(subset(AggGrpGT2.Q, CodeAgg !="All"& CodeAgg !="RA-00"),mapping = aes(yintercept = q50u ),colour = "blue",linetype = "dashed")
+```
+
+
+`r CapT2`  
+```{r}
+#Table showing Country Type Number standards
+OverV4%>% kable(format="pandoc") 
+```
+
+
+## A6.1 Appendix Nitrate-N (rivers)
+
+
+
+```{r, fig.width = 7, fig.height =10, fig.cap=CapA1}
+bk <- c(0.1,0.3,1,3,10)
+ymin <-0.1
+ymax <- 10
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country" & "CodeBT" (broad types)
+#DPType.lg(bk,ymin,ymax)
+
+# DPType doesn't work on this dataset as it can only cope with 14 broad types
+
+# start by plotting the value upper in red  
+  ggplot(dat.u.d, aes(x=Country, y=ValueUpStd,shape=physChemStandard2))+
+    geom_point(color="red",position = position_nudge(x= -0.1 ,y = 0))+
+    scale_shape_manual(values=symb,name  ="") +
+    scale_y_continuous(trans='log10',breaks = bk,limits=c(ymin,ymax)) +
+# add lower point of range as blue symbol  
+    geom_point(data = subset(dat.u.d,!is.na(ValueUpStd)), mapping = 
+                 aes(x = Country, y = ValueStd, shape = physChemStandard2),color="blue",position = position_nudge(x=0.1 ,y = 0))+
+    ylab(ylb)+xlab("")+
+    facet_wrap(~ CodeBT,ncol=3,nrow=8) +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 90,hjust=0.5,vjust=0.5))+  
+    theme(legend.position = "bottom",
+          legend.text = element_text(color = "black")) +
+# Add the values (exclude those which were a range), this needs to  be done last to avoid the legend points being colored
+    geom_point(data = subset(dat.u.d,is.na(ValueUpStd)), mapping = 
+                 aes(x = Country, y = ValueStd, shape = physChemStandard2),colour="black")+
+    geom_hline(data=GrpGT2.Q,mapping = aes(yintercept = q25u ),colour = "green",linetype = "dashed")+
+    geom_hline(data=GrpGT2.Q,mapping = aes(yintercept = q75u ),colour = "red",linetype = "dashed")
+
+```
+
+
+#####  
+
+
+```{r }
+Metrics%>% kable(format="pandoc",cap=CapTA1) 
+```
+
+
+#####  
+
+
+```{r }
+Temp %>% kable(format="pandoc",cap=CapTA2)  
+```
+
+
+#####    
+```{r }
+addmargins(table(dat.u.d$CodeBT,dat.u.d$Country)) %>% kable(format="pandoc",cap=CapTA3) 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

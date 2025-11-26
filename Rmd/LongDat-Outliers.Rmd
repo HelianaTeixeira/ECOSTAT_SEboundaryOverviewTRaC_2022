@@ -1,0 +1,101 @@
+---
+title: "LongData_outliers plots"
+author: "HT"
+date: "12/02/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r long data format QE vals, include=FALSE}
+#id salinities in need of duplication in Vals columns
+dat.u%>%
+  filter(ReasonRange == "salinity range", !is.na(Salinity2), is.na(ValueUpStd))%>%
+  count(Country, ValueUpStd)
+
+#assign sal values to 4 SE entries
+dat.u<-dat.u%>%
+  mutate(ValueUpStd=case_when(
+    ReasonRange == "salinity range" & !is.na(Salinity2) & is.na(ValueUpStd)
+    ~ as.character (ValueStd), 
+    TRUE ~ as.character(ValueUpStd)))
+
+#check
+dat.u%>%
+  filter(ReasonRange == "salinity range", !is.na(Salinity2), Country=="SE")%>%
+  count(Country, ValueUpStd)
+
+dat.u$ValueUpStd<- as.numeric(dat.u$ValueUpStd)
+
+#range values to single col and indicate L-U range
+LongDat.u <- pivot_longer(dat.u,cols = starts_with("Val"),names_to = "col",values_to = "Value" )
+LongDat.u <- LongDat.u %>% filter(!is.na(Value)) %>% #210-79NA's = 131
+  mutate(Range = ifelse(col=="ValueUpStd" & ReasonRange != "salinity range","U","L"))%>%
+  mutate(RangeRep = ifelse(ReasonRange == "salinity range","FALSE", RangeRep))%>%
+  mutate(RangeRep = ifelse(is.na(RangeRep),"FALSE", RangeRep))%>%
+  mutate(Range = ifelse(RangeRep=="FALSE","L","U"))%>%
+  mutate(Range = ifelse(col=="ValueStd" & Country =="RO","L",Range)) #RO needs update
+  
+dim(dat.u)
+dim(LongDat.u)
+
+#if salinity range also present, add Salinity to correspondent Value
+LongDat.u$Salinity2<-(as.numeric(LongDat.u$Salinity2))
+LongDat.u$col<-as.factor(LongDat.u$col)
+LongDat.u <- LongDat.u %>%
+  mutate(Salinity = case_when(
+    col=="ValueStd" ~ Salinity1,
+    col=="ValueUpStd" ~ Salinity2))
+
+dim(LongDat.u)
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r outliers effect comparison, echo=FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country" & "GIG"
+outl.in <- ggplot(subset(LongDat.u,RangeRep==TRUE), aes(x=Country, y=Value,color=Range,shape=SumMetric))+
+  geom_point(position = position_nudge(x= +0.1 ,y = 0))+
+  scale_shape_manual(values = symb, name ="")+
+  scale_color_manual(values = c("blue","red"))+
+  ylab("Tot Inorg N (mg/L)")+xlab("")+
+  theme_bw() +
+  theme(legend.position = "bottom",
+        legend.text = element_text(color = "black"))+
+  geom_point(data = subset(LongDat.u,RangeRep!=TRUE), mapping = 
+               aes(x = Country, y = Value, shape = SumMetric),color="black",position = position_nudge(x= -0.1 ,y = 0))+
+  facet_wrap(~ GIG,ncol=4,nrow=1, scale="free_x")+
+    theme(axis.text.x = element_text(angle = 90,hjust=0.5,vjust=0.5))
+  # geom_hline(yintercept = qA50U ,colour = "red",linetype = "dashed")+
+  # geom_hline(yintercept = qA50L ,colour = "blue",linetype = "dashed")
+
+
+outl.in
+outl.out <- outl.in + ylim(NA, 1) #adjust as need
+gridExtra::grid.arrange(outl.in, outl.out)
+  
+```
+
+```{r salinity gradient, echo=FALSE} 
+#scatterplot all vals
+salP1<- ggplot(LongDat.u, aes(x=Salinity,y=Value))+geom_point()+theme_bw()+ylab("Tot Inorg N (mg/L)")
+#drop outliers >2.5mg/l
+salP2<-LongDat.u%>% filter(Value<2)%>%ggplot(aes(x=Salinity,y=Value))+geom_point()+theme_bw()+ylab("Tot Inorg N (mg/L)")
+gridExtra::grid.arrange(salP1, salP2)
+
+```
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

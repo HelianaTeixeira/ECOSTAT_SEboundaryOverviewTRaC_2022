@@ -1,0 +1,1281 @@
+uniqueID;Source;Category;Country;physChemText;Measurement Type;Period;Method ;National type code;GM_Meth;c.a.;factor;ValueStd.old;ValueUpStd.old;unit_used;GIG
+1;ECOSTAT questionnaries;TW;BE;TP;mean;Growth season (April -September);Inductively coupled plasma atomic emission spectroscopy;O1o;Exp Judg;TPµgl-1;1;140;;µgP/L;NEA
+2;ECOSTAT questionnaries;TW;BE;TN;mean;Growth season (April -September);High temperature catalytic oxydation followed by chemoluminescent detection of NO2;O1o;Exp Judg;TNmgl-1;1;2.5;;mgN/L;NEA
+3;ECOSTAT questionnaries;TW;BE;Nitrate as N;90th Percentile;Annual;absorption spectrophotometry;O1o;Exp Judg;Nitrate as Nmgl-1;1;5.65;;mgN/L;NEA
+4;ECOSTAT questionnaries;TW;BE;Total Inorganic N;mean;Winter;sum of nitrate, nitrite and ammonium (each measured with absorption spectrophotometry);O1b;Exp Judg;Total Inorganic Nmgl-1;1;0.49;;mgN/L;NEA
+5;ECOSTAT questionnaries;TW;BE;Total Inorganic N;mean;Winter;sum of nitrate, nitrite and ammonium (each measured with absorption spectrophotometry);O2zout;Exp Judg;Total Inorganic Nmgl-1;1;0.49;;mgN/L;NEA
+6;WFD reporting;TW;BE;Dissolved oxygen;10th percentile;;;O1o_5;;Dissolved oxygenmgl-1;1;5;;mg/L;NEA
+7;WFD reporting;TW;BE;Dissolved oxygen;10th percentile;;;O2zout;;Dissolved oxygenmgl-1;1;6;;mg/L;NEA
+8;WFD reporting;TW;BE;Total Inorganic N;mean;Winter;;O2zout;;Total Inorganic Nmgl-1;1;0.49;;mgN/L;NEA
+9;WFD reporting;TW;BE;TP;mean;summer;;O2zout;;TPµgl-1;1;140;;µgP/L;NEA
+10;WFD reporting;TW;BE;TN;mean;summer;;O2zout;;TNmgl-1;1;2.5;;mgN/L;NEA
+11;WFD reporting;CW;BE;Total Inorganic N;mean;Annual;;Type2;;Total Inorganic Nµmol-1;0.0140067;0.2101005;;mgN/L;NEA
+12;WFD reporting;CW;BE;Dissolved oxygen;Minimum;Annual;;Type2;;Dissolved oxygenmgl-1;1;6;;mg/L;NEA
+13;ECOSTAT questionnaries;TW;BG;TP;mean;Annual;Acid digestion and molybdate reaction, EN ISO 6878-1;L7 Black sea freshwater coastal lakes ;Exp Judg;TPµgl-1;1;75;;µgP/L;BLA
+14;ECOSTAT questionnaries;TW;BG;TP;mean;Annual;Acid digestion and molybdate reaction, EN ISO 6878-1;L8 Black sea oligohaline lakes;Exp Judg;TPµgl-1;1;75;;µgP/L;BLA
+15;ECOSTAT questionnaries;TW;BG;TN;mean;Annual;Sample filtration through 0.45 µm, IR spectroscopy , EN 12260;L7 Black sea freshwater coastal lakes ;Exp Judg;TNmgl-1;1;2.5;;mgN/L;BLA
+16;ECOSTAT questionnaries;TW;BG;TN;mean;Annual;Sample filtration through 0.45 µm, IR spectroscopy , EN 12260;L8 Black sea oligohaline lakes;Exp Judg;TNmgl-1;1;2.5;;mgN/L;BLA
+17;ECOSTAT questionnaries;TW;BG;Nitrate as N;mean;Annual;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, ion chromatography, ISO 10304-1,2;L7 Black sea freshwater coastal lakes ;Exp Judg;Nitrate as Nmgl-1;1;2;;mgN/L;BLA
+18;ECOSTAT questionnaries;TW;BG;Nitrate as N;mean;Annual;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, ion chromatography, ISO 10304-1,2;L8 Black sea oligohaline lakes;Exp Judg;Nitrate as Nmgl-1;1;2;;mgN/L;BLA
+19;WFD reporting;TW;BG;Dissolved oxygen;mean;Annual;;L10;;Dissolved oxygenmgl-1;1;6;;mg/L;BLA
+20;WFD reporting;TW;BG;Dissolved oxygen;mean;Annual;;L7 Black sea freshwater coastal lakes ;;Dissolved oxygenmgl-1;1;6;;mg/L;BLA
+21;WFD reporting;TW;BG;Dissolved oxygen;mean;Annual;;L8 Black sea oligohaline lakes;;Dissolved oxygenmgl-1;1;6;;mg/L;BLA
+22;WFD reporting;TW;BG;Dissolved oxygen;mean;Annual;;L9;;Dissolved oxygenmgl-1;1;6;;mg/L;BLA
+23;WFD reporting;TW;BG;Secchi disk depth;mean;Annual;;L10;;Secchi disk depthm;1;2;;m;BLA
+24;WFD reporting;TW;BG;Secchi disk depth;mean;Annual;;L7 Black sea freshwater coastal lakes ;;Secchi disk depthm;1;2;;m;BLA
+25;WFD reporting;TW;BG;Secchi disk depth;mean;Annual;;L8 Black sea oligohaline lakes;;Secchi disk depthm;1;2;;m;BLA
+26;WFD reporting;TW;BG;Secchi disk depth;mean;Annual;;L9;;Secchi disk depthm;1;2;;m;BLA
+27;WFD reporting;TW;BG;Nitrate as N;mean;Annual;;L10;;Nitrate as Nmgl-1;1;2;;mgN/L;BLA
+28;WFD reporting;TW;BG;Nitrate as N;mean;Annual;;L7 Black sea freshwater coastal lakes ;;Nitrate as Nmgl-1;1;2;;mgN/L;BLA
+29;WFD reporting;TW;BG;Nitrate as N;mean;Annual;;L8 Black sea oligohaline lakes;;Nitrate as Nmgl-1;1;2;;mgN/L;BLA
+30;WFD reporting;TW;BG;Nitrate as N;mean;Annual;;L9;;Nitrate as Nmgl-1;1;2;;mgN/L;BLA
+31;WFD reporting;TW;BG;TN;mean;Annual;;L10;;TNmgl-1;1;2.5;;mgN/L;BLA
+32;WFD reporting;TW;BG;TN;mean;Annual;;L7 Black sea freshwater coastal lakes ;;TNmgl-1;1;2.5;;mgN/L;BLA
+33;WFD reporting;TW;BG;TN;mean;Annual;;L8 Black sea oligohaline lakes;;TNmgl-1;1;2.5;;mgN/L;BLA
+34;WFD reporting;TW;BG;TN;mean;Annual;;L9;;TNmgl-1;1;2.5;;mgN/L;BLA
+35;WFD reporting;TW;BG;TP;mean;Annual;;L10;;TPµgl-1;1;75;;µgP/L;BLA
+36;WFD reporting;TW;BG;TP;mean;Annual;;L7 Black sea freshwater coastal lakes ;;TPµgl-1;1;75;;µgP/L;BLA
+37;WFD reporting;TW;BG;TP;mean;Annual;;L8 Black sea oligohaline lakes;;TPµgl-1;1;75;;µgP/L;BLA
+38;WFD reporting;TW;BG;TP;;;;L9;;TPµgl-1;1;75;;µgP/L;BLA
+39;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;December-March;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602210
+(shallow, exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+40;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;December-March;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602220
+(shallow, exposed, silt)";Exp Judg;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+41;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;December-March;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602230
+(shallow, exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+42;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;December-March;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602310 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+43;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;December-March;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602321
+(deep, moderately exposed, silt)";Exp Judg;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+44;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;December-March;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602330 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+45;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;March-June;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602210
+(shallow, exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+46;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;March-June;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602220
+(shallow, exposed, silt)";Exp Judg;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+47;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;March-June;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602230
+(shallow, exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+48;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;March-June;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602310 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+49;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;March-June;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602321
+(deep, moderately exposed, silt)";Exp Judg;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+50;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;March-June;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602330 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+51;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;June-September;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602210
+(shallow, exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+52;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;June-September;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602220
+(shallow, exposed, silt)";Exp Judg;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+53;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;June-September;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602230
+(shallow, exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+54;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;June-September;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602310 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+55;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;June-September;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602321
+(deep, moderately exposed, silt)";Exp Judg;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+56;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;June-September;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602330 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+57;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;September-December;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602210
+(shallow, exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+58;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;September-December;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602220
+(shallow, exposed, silt)";Exp Judg;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+59;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;September-December;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602230
+(shallow, exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+60;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;September-December;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602310 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+61;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;September-December;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602321
+(deep, moderately exposed, silt)";Exp Judg;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+62;ECOSTAT questionnaries;CW;BG;Nitrate as N;maximum;September-December;Sample filtration through 0.45 µm, spectrophotometry,  colour compund with sulphosalicylic acid, ISO 7890-3, modified for sea water;"CW602330 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+63;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW1N;;Secchi disk depthm;1;2.6;;m;BLA
+64;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW2N;;Secchi disk depthm;1;2.6;;m;BLA
+65;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW3;;Secchi disk depthm;1;2.6;;m;BLA
+66;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW4N;;Secchi disk depthm;1;2.6;;m;BLA
+67;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW5;;Secchi disk depthm;1;2.6;;m;BLA
+68;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW6N;;Secchi disk depthm;1;2.6;;m;BLA
+69;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW7;;Secchi disk depthm;1;2.6;;m;BLA
+70;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW8;;Secchi disk depthm;1;2.6;;m;BLA
+71;WFD reporting;CW;BG;Secchi disk depth;mean;Annual;;CW9;;Secchi disk depthm;1;2.6;;m;BLA
+72;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW1N;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+73;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW1N;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+74;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW1N;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+75;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW1N;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+76;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW2N;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+77;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW2N;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+78;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW2N;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+79;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW2N;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+80;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW3;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+81;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW3;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+82;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW3;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+83;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW3;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+84;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW4N;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+85;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW4N;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+86;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW4N;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+87;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW4N;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+88;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW5;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+89;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW5;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+90;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW5;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+91;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW5;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+92;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW6N;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+93;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW6N;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+94;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW6N;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+95;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW6N;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+96;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW7;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+97;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW7;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+98;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW7;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+99;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW7;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+100;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW8;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+101;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW8;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+102;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW8;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+103;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW8;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+104;WFD reporting;CW;BG;Nitrate as N;mean;winter;;CW9;;Nitrate as Nmgl-1;1;0.135;;mgN/L;BLA
+105;WFD reporting;CW;BG;Nitrate as N;mean;spring;;CW9;;Nitrate as Nmgl-1;1;0.075;;mgN/L;BLA
+106;WFD reporting;CW;BG;Nitrate as N;mean;summer;;CW9;;Nitrate as Nmgl-1;1;0.04;;mgN/L;BLA
+107;WFD reporting;CW;BG;Nitrate as N;mean;autumn;;CW9;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BLA
+108;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW1N;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+109;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW1N;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+110;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW1N;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+111;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW1N;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+112;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW2N;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+113;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW2N;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+114;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW2N;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+115;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW2N;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+116;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW3;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+117;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW3;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+118;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW3;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+119;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW3;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+120;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW4N;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+121;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW4N;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+122;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW4N;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+123;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW4N;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+124;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW5;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+125;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW5;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+126;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW5;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+127;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW5;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+128;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW6N;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+129;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW6N;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+130;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW6N;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+131;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW6N;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+132;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW7;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+133;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW7;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+134;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW7;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+135;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW7;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+136;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW8;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+137;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW8;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+138;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW8;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+139;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW8;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+140;WFD reporting;CW;BG;Dissolved oxygen;mean;winter;;CW9;;Dissolved oxygenmgl-1;1;12.6;;mg/L;BLA
+141;WFD reporting;CW;BG;Dissolved oxygen;mean;spring;;CW9;;Dissolved oxygenmgl-1;1;10.8;;mg/L;BLA
+142;WFD reporting;CW;BG;Dissolved oxygen;mean;summer;;CW9;;Dissolved oxygenmgl-1;1;8.9;;mg/L;BLA
+143;WFD reporting;CW;BG;Dissolved oxygen;mean;autumn;;CW9;;Dissolved oxygenmgl-1;1;10.3;;mg/L;BLA
+144;ECOSTAT questionnaries;CW;CY;Nitrate as N;mean;Annual;USEPA Method 353.2, Segmented Flow Analysis, OI Analytical Flow Solution® IV ;All;Exp Judg;Nitrate as Nmgl-1;1;0.0091;;mgN/L;MED
+145;WFD reporting;CW;CY;Nitrate as N;mean;Annual;;All;;Nitrate as Nmgl-1;1;0.22;1.3;mgN/L;MED
+146;WFD reporting;CW;CY;Dissolved oxygen;mean;Annual;;All;;Dissolved oxygenmgl-1;1;4;9;mg/L;MED
+147;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B1;Modelling and expert judgement;TNmgl-1;1;0.53;;mgN/L;BAL
+148;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B2a;Modelling and expert judgement;TNmgl-1;1;0.25;;mgN/L;BAL
+149;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B2b;Modelling and expert judgement;TNmgl-1;1;0.32;;mgN/L;BAL
+150;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B3a;Modelling and expert judgement;TNmgl-1;1;0.25;;mgN/L;BAL
+151;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B4;Modelling and expert judgement;TNmgl-1;1;0.27;;mgN/L;BAL
+152;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B2a;Modelling and expert judgement;TNmgl-1;1;0.52;;mgN/L;BAL
+153;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B2b;Modelling and expert judgement;TNmgl-1;1;0.28;;mgN/L;BAL
+154;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B3a;Modelling and expert judgement;TNmgl-1;1;0.2;;mgN/L;BAL
+155;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as nitrate modified after DIN EN ISO 11905-1 ;B4;Modelling and expert judgement;TNmgl-1;1;0.21;;mgN/L;BAL
+156;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B1;Modelling and expert judgement;TPµgl-1;1;44;;µgP/L;BAL
+157;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B2a;Modelling and expert judgement;TPµgl-1;1;18;;µgP/L;BAL
+158;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B2b;Modelling and expert judgement;TPµgl-1;1;23;;µgP/L;BAL
+159;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B3a;Modelling and expert judgement;TPµgl-1;1;19;;µgP/L;BAL
+160;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B4;Modelling and expert judgement;TPµgl-1;1;20;;µgP/L;BAL
+161;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B2a;Modelling and expert judgement;TPµgl-1;1;34;;µgP/L;BAL
+162;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B2b;Modelling and expert judgement;TPµgl-1;1;16;;µgP/L;BAL
+163;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B3a;Modelling and expert judgement;TPµgl-1;1;14;;µgP/L;BAL
+164;ECOSTAT questionnaries;CW;DE;TP;median;Annual;Oxidative pressure extraction with Kaliumperoxodisulphate and determination as phosphate  modified after DIN EN ISO 6878;B4;Modelling and expert judgement;TPµgl-1;1;16;;µgP/L;BAL
+165;WFD reporting;CW;DE;TP;Median;Annual;;B1;;TPµmol-1;30.973761;43.99946645;;µgP/L;BAL
+166;WFD reporting;CW;DE;TP;Median;Annual;;B2a;;TPµmol-1;30.973761;17.99978173;;µgP/L;BAL
+167;WFD reporting;CW;DE;TP;Median;Annual;;B2b;;TPµmol-1;30.973761;22.9997211;;µgP/L;BAL
+168;WFD reporting;CW;DE;TP;Median;Annual;;B3a;;TPµmol-1;30.973761;18.9997696;;µgP/L;BAL
+169;WFD reporting;CW;DE;TP;Median;Annual;;B3b;;TPµmol-1;30.973761;0;;µgP/L;BAL
+170;WFD reporting;CW;DE;TP;Median;Annual;;B2a;;TPµmol-1;30.973761;33.99958771;;µgP/L;BAL
+171;WFD reporting;CW;DE;TP;Median;Annual;;B2b;;TPµmol-1;30.973761;15.99980598;;µgP/L;BAL
+172;WFD reporting;CW;DE;TP;Median;Annual;;B3b;;TPµmol-1;30.973761;13.59983508;;µgP/L;BAL
+173;WFD reporting;CW;DE;TP;Median;Annual;;B4;;TPµmol-1;30.973761;15.49981205;;µgP/L;BAL
+174;WFD reporting;CW;DE;TN;Median;Annual;;B1;;TNµmol-1;0.0140067;0.529873461;;mgN/L;BAL
+175;WFD reporting;CW;DE;TN;Median;Annual;;B2a;;TNµmol-1;0.0140067;0.249879528;;mgN/L;BAL
+176;WFD reporting;CW;DE;TN;Median;Annual;;B2b;;TNµmol-1;0.0140067;0.319913028;;mgN/L;BAL
+177;WFD reporting;CW;DE;TN;Median;Annual;;B3a;;TNµmol-1;0.0140067;0.249879528;;mgN/L;BAL
+178;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N1;Modelling and expert judgement;TNmgl-1;1;0;;mgN/L;NEA
+179;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N2;Modelling and expert judgement;TNmgl-1;1;0;;mgN/L;NEA
+180;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N3;Modelling and expert judgement;TNmgl-1;1;0;;mgN/L;NEA
+181;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N4;Modelling and expert judgement;TNmgl-1;1;0;;mgN/L;NEA
+182;ECOSTAT questionnaries;CW;DE;TN;median;Annual;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N5;Modelling and expert judgement;TNmgl-1;1;0;;mgN/L;NEA
+183;ECOSTAT questionnaries;CW;DE;Total Inorganic N;mean;November-February;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N1;Modelling and expert judgement;Total Inorganic Nmgl-1;1;0;;mgN/L;NEA
+184;ECOSTAT questionnaries;CW;DE;Total Inorganic N;mean;November-February;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N2;Modelling and expert judgement;Total Inorganic Nmgl-1;1;0;;mgN/L;NEA
+185;ECOSTAT questionnaries;CW;DE;Total Inorganic N;mean;November-February;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N3;Modelling and expert judgement;Total Inorganic Nmgl-1;1;0;;mgN/L;NEA
+186;ECOSTAT questionnaries;CW;DE;Total Inorganic N;mean;November-February;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N4;Modelling and expert judgement;Total Inorganic Nmgl-1;1;0;;mgN/L;NEA
+187;ECOSTAT questionnaries;CW;DE;Total Inorganic N;mean;November-February;Oxidative pressure digestion with potassium peroxodisulphate, followed by determination as nitrate, modified in accordance with DIN EN ISO 11905-1 ;N5;Modelling and expert judgement;Total Inorganic Nmgl-1;1;0;;mgN/L;NEA
+188;ECOSTAT questionnaries;CW;DE;Nitrate as N;mean;November-February;Filtration of water samples, reduction with cadmium and determination as nitrite, modified in accordance with DIN EN 26777 or EN ISO 13395;N1;Modelling and expert judgement;Nitrate as Nmgl-1;1;0;;mgN/L;NEA
+189;ECOSTAT questionnaries;CW;DE;Nitrate as N;mean;November-February;Filtration of water samples, reduction with cadmium and determination as nitrite, modified in accordance with DIN EN 26777 or EN ISO 13395;N2;Modelling and expert judgement;Nitrate as Nmgl-1;1;0;;mgN/L;NEA
+190;ECOSTAT questionnaries;CW;DE;Nitrate as N;mean;November-February;Filtration of water samples, reduction with cadmium and determination as nitrite, modified in accordance with DIN EN 26777 or EN ISO 13395;N3;Modelling and expert judgement;Nitrate as Nmgl-1;1;0;;mgN/L;NEA
+191;ECOSTAT questionnaries;CW;DE;Nitrate as N;mean;November-February;Filtration of water samples, reduction with cadmium and determination as nitrite, modified in accordance with DIN EN 26777 or EN ISO 13395;N4;Modelling and expert judgement;Nitrate as Nmgl-1;1;0;;mgN/L;NEA
+192;ECOSTAT questionnaries;CW;DE;Nitrate as N;mean;November-February;Filtration of water samples, reduction with cadmium and determination as nitrite, modified in accordance with DIN EN 26777 or EN ISO 13395;N5;Modelling and expert judgement;Nitrate as Nmgl-1;1;0;;mgN/L;NEA
+193;ECOSTAT questionnaries;CW;DE;TP;mean;Annual;"Oxidative pressure digestion with potassium peroxodisulphate followed by determination as phosphate; photometric procedure using ammonium molybdate,   modifiedin accordance with DIN EN ISO 6878";N1;Modelling and expert judgement;TPmgl-1;1000;0;;µgP/L;NEA
+194;ECOSTAT questionnaries;CW;DE;TP;mean;Annual;"Oxidative pressure digestion with potassium peroxodisulphate followed by determination as phosphate; photometric procedure using ammonium molybdate,   modifiedin accordance with DIN EN ISO 6878";N2;Modelling and expert judgement;TPmgl-1;1000;0;;µgP/L;NEA
+195;ECOSTAT questionnaries;CW;DE;TP;mean;Annual;"Oxidative pressure digestion with potassium peroxodisulphate followed by determination as phosphate; photometric procedure using ammonium molybdate,   modifiedin accordance with DIN EN ISO 6878";N3;Modelling and expert judgement;TPmgl-1;1000;0;;µgP/L;NEA
+196;ECOSTAT questionnaries;CW;DE;TP;mean;Annual;"Oxidative pressure digestion with potassium peroxodisulphate followed by determination as phosphate; photometric procedure using ammonium molybdate,   modifiedin accordance with DIN EN ISO 6878";N4;Modelling and expert judgement;TPmgl-1;1000;0;;µgP/L;NEA
+197;ECOSTAT questionnaries;CW;DE;TP;mean;Annual;"Oxidative pressure digestion with potassium peroxodisulphate followed by determination as phosphate; photometric procedure using ammonium molybdate,   modifiedin accordance with DIN EN ISO 6878";N5;Modelling and expert judgement;TPmgl-1;1000;0;;µgP/L;NEA
+198;WFD reporting;CW;DE;TN;Median;Annual;;B3b;;TNµmol-1;0.0140067;0.269909109;;mgN/L;BAL
+199;WFD reporting;CW;DE;TN;Median;Annual;;B2a;;TNµmol-1;0.0140067;0.519928704;;mgN/L;BAL
+200;WFD reporting;CW;DE;TN;Median;Annual;;B2b;;TNµmol-1;0.0140067;0.27873333;;mgN/L;BAL
+201;WFD reporting;CW;DE;TN;Median;Annual;;B3b;;TNµmol-1;0.0140067;0.199875609;;mgN/L;BAL
+202;WFD reporting;CW;DE;TN;Median;Annual;;B4;;TNµmol-1;0.0140067;0.217383984;;mgN/L;BAL
+203;WFD reporting;CW;DE;TN;Mean;Annual;;"N1; N2";;TNµmol-1;0.0140067;0.193852728;;mgN/L;NEA
+204;WFD reporting;CW;DE;TN;Mean;Annual;;"N3; N4";;TNµmol-1;0.0140067;0.253101069;;mgN/L;NEA
+205;WFD reporting;CW;DE;TN;Mean;Annual;;N5;;TNµmol-1;0.0140067;0.108411858;;mgN/L;NEA
+206;WFD reporting;CW;DE;Total Inorganic N;Mean;Winter;;"N1; N2";;Total Inorganic Nµmol-1;0.0140067;0.259998528;;mgN/L;NEA
+207;WFD reporting;CW;DE;Total Inorganic N;Mean;Winter;;"N3; N4";;Total Inorganic Nµmol-1;0.0140067;0.43999751;;mgN/L;NEA
+208;WFD reporting;CW;DE;Total Inorganic N;Mean;Winter;;N5;;Total Inorganic Nµmol-1;0.0140067;0.189998925;;mgN/L;NEA
+209;WFD reporting;CW;DE;TP;Mean;Annual;;"N1; N2";;TPµmol-1;30.973761;30.99962409;;µgP/L;NEA
+210;WFD reporting;CW;DE;TP;Mean;Annual;;"N3; N4";;TPµmol-1;30.973761;35.99956346;;µgP/L;NEA
+211;WFD reporting;CW;DE;TP;Mean;Annual;;N5;;TPµmol-1;30.973761;29.99963622;;µgP/L;NEA
+212;ECOSTAT questionnaries;CW;EE;TN;mean;June-September;;I;Expert judgement and OSPAR;TNmgl-1;1;0.3752;;mgN/L;BAL
+213;ECOSTAT questionnaries;CW;EE;TN;mean;June-September;;II;Expert judgement and OSPAR;TNmgl-1;1;0.4088;;mgN/L;BAL
+214;ECOSTAT questionnaries;CW;EE;TN;mean;June-September;;III;Expert judgement and OSPAR;TNmgl-1;1;0.3192;;mgN/L;BAL
+215;ECOSTAT questionnaries;CW;EE;TN;mean;June-September;;IV;Expert judgement and OSPAR;TNmgl-1;1;0.2562;;mgN/L;BAL
+216;ECOSTAT questionnaries;CW;EE;TN;mean;June-September;;V;Expert judgement and OSPAR;TNmgl-1;1;0.294;;mgN/L;BAL
+217;ECOSTAT questionnaries;CW;EE;TN;mean;June-September;;VI;Expert judgement and OSPAR;TNmgl-1;1;0.3318;;mgN/L;BAL
+218;ECOSTAT questionnaries;CW;EE;TP;mean;June-September;;I;Expert judgement and OSPAR;TPµgl-1;1;26.04;;µgP/L;BAL
+219;ECOSTAT questionnaries;CW;EE;TP;mean;June-September;;II;Expert judgement and OSPAR;TPµgl-1;1;20.77;;µgP/L;BAL
+220;ECOSTAT questionnaries;CW;EE;TP;mean;June-September;;III;Expert judgement and OSPAR;TPµgl-1;1;22.32;;µgP/L;BAL
+221;ECOSTAT questionnaries;CW;EE;TP;mean;June-September;;IV;Expert judgement and OSPAR;TPµgl-1;1;13.02;;µgP/L;BAL
+222;ECOSTAT questionnaries;CW;EE;TP;mean;June-September;;V;Expert judgement and OSPAR;TPµgl-1;1;9.3;;µgP/L;BAL
+223;ECOSTAT questionnaries;CW;EE;TP;mean;June-September;;VI;Expert judgement and OSPAR;TPµgl-1;1;15.5;;µgP/L;BAL
+224;WFD reporting;CW;EE;Secchi disk depth;mean;June-September;;I;;Secchi disk depthm;1;4.2;;m;BAL
+225;WFD reporting;CW;EE;Secchi disk depth;mean;June-September;;II;;Secchi disk depthm;1;3.7;;m;BAL
+226;WFD reporting;CW;EE;Secchi disk depth;mean;June-September;;III;;Secchi disk depthm;1;5.3;;m;BAL
+227;WFD reporting;CW;EE;Secchi disk depth;mean;June-September;;IV;;Secchi disk depthm;1;7.4;;m;BAL
+228;WFD reporting;CW;EE;Secchi disk depth;mean;June-September;;V;;Secchi disk depthm;1;5.7;;m;BAL
+229;WFD reporting;CW;EE;Secchi disk depth;mean;June-September;;VI;;Secchi disk depthm;1;4.9;;m;BAL
+230;WFD reporting;CW;EE;TP;mean;June-September;;I;;TPmgl-1;1000;21;;µgP/L;BAL
+231;WFD reporting;CW;EE;TP;mean;June-September;;II;;TPmgl-1;1000;17;;µgP/L;BAL
+232;WFD reporting;CW;EE;TP;mean;June-September;;III;;TPmgl-1;1000;17;;µgP/L;BAL
+233;WFD reporting;CW;EE;TP;mean;June-September;;IV;;TPmgl-1;1000;12;;µgP/L;BAL
+234;WFD reporting;CW;EE;TP;mean;June-September;;V;;TPmgl-1;1000;7;;µgP/L;BAL
+235;WFD reporting;CW;EE;TP;mean;June-September;;VI;;TPmgl-1;1000;12;;µgP/L;BAL
+236;WFD reporting;CW;EE;TN;mean;June-September;;I;;TNmgl-1;1;0.3;;mgN/L;BAL
+237;WFD reporting;CW;EE;TN;mean;June-September;;II;;TNmgl-1;1;0.33;;mgN/L;BAL
+238;WFD reporting;CW;EE;TN;mean;June-September;;III;;TNmgl-1;1;0.25;;mgN/L;BAL
+239;WFD reporting;CW;EE;TN;mean;June-September;;IV;;TNmgl-1;1;0.24;;mgN/L;BAL
+240;WFD reporting;CW;EE;TN;mean;June-September;;V;;TNmgl-1;1;0.24;;mgN/L;BAL
+241;WFD reporting;CW;EE;TN;mean;June-September;;VI;;TNmgl-1;1;0.27;;mgN/L;BAL
+242;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Ss;OSPAR and regressions;TNmgl-1;1;0.35;;mgN/L;BAL
+243;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Su;OSPAR and regressions;TNmgl-1;1;0.325;;mgN/L;BAL
+244;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Ls;OSPAR and regressions;TNmgl-1;1;0.325;;mgN/L;BAL
+245;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Lv;OSPAR and regressions;TNmgl-1;1;0.31;;mgN/L;BAL
+246;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Lu;OSPAR and regressions;TNmgl-1;1;0.29;;mgN/L;BAL
+247;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Ses;OSPAR and regressions;TNmgl-1;1;0.315;;mgN/L;BAL
+248;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Seu;OSPAR and regressions;TNmgl-1;1;0.275;;mgN/L;BAL
+249;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Ms;OSPAR and regressions;TNmgl-1;1;0.325;;mgN/L;BAL
+250;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Mu;OSPAR and regressions;TNmgl-1;1;0.28;;mgN/L;BAL
+251;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Ps;OSPAR and regressions;TNmgl-1;1;0.34;;mgN/L;BAL
+252;ECOSTAT questionnaries;CW;FI;TN;mean ;July-September;SFS 3029,  SFS-EN ISO 13395, SFS 3032, ISO 11905-1;Pu;OSPAR and regressions;TNmgl-1;1;0.315;;mgN/L;BAL
+253;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Ss;OSPAR and regressions;TPµgl-1;1;24;;µgP/L;BAL
+254;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Su;OSPAR and regressions;TPµgl-1;1;20;;µgP/L;BAL
+255;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Ls;OSPAR and regressions;TPµgl-1;1;23;;µgP/L;BAL
+256;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Lv;OSPAR and regressions;TPµgl-1;1;20;;µgP/L;BAL
+257;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Lu;OSPAR and regressions;TPµgl-1;1;18;;µgP/L;BAL
+258;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Ses;OSPAR and regressions;TPµgl-1;1;20;;µgP/L;BAL
+259;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Seu;OSPAR and regressions;TPµgl-1;1;14;;µgP/L;BAL
+260;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Ms;OSPAR and regressions;TPµgl-1;1;17;;µgP/L;BAL
+261;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Mu;OSPAR and regressions;TPµgl-1;1;13;;µgP/L;BAL
+262;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Ps;OSPAR and regressions;TPµgl-1;1;14;;µgP/L;BAL
+263;ECOSTAT questionnaries;CW;FI;TP;mean;July-September;Koroleff 1983, Grasshof et al. 1999, SFS 3026, SFS-EN ISO 6878 ;Pu;OSPAR and regressions;TPµgl-1;1;11;;µgP/L;BAL
+264;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Aai;;Secchi disk depthm;1;3.7;;m;BAL
+265;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Aam;;Secchi disk depthm;1;5.3;;m;BAL
+266;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Aay;;Secchi disk depthm;1;6.3;;m;BAL
+267;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Ls;;Secchi disk depthm;1;3.6;;m;BAL
+268;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Lu;;Secchi disk depthm;1;5.8;;m;BAL
+269;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Lvs;;Secchi disk depthm;1;4.6;;m;BAL
+270;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Ms;;Secchi disk depthm;1;2.3;;m;BAL
+271;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Mu;;Secchi disk depthm;1;3.7;;m;BAL
+272;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Ps;;Secchi disk depthm;1;2.4;;m;BAL
+273;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Pu;;Secchi disk depthm;1;3.3;;m;BAL
+274;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Ses;;Secchi disk depthm;1;3.3;;m;BAL
+275;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Seu;;Secchi disk depthm;1;4.1;;m;BAL
+276;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Ss;;Secchi disk depthm;1;3.5;;m;BAL
+277;WFD reporting;CW;FI;Secchi disk depth;mean;July-August;;Su;;Secchi disk depthm;1;4.4;;m;BAL
+278;WFD reporting;CW;FI;TN;mean;July-August;;Aai;;TNmgl-1;1;0.333;;mgN/L;BAL
+279;WFD reporting;CW;FI;TN;mean;July-August;;Aam;;TNmgl-1;1;0.319;;mgN/L;BAL
+280;WFD reporting;CW;FI;TN;mean;July-August;;Aay;;TNmgl-1;1;0.312;;mgN/L;BAL
+281;WFD reporting;CW;FI;TN;mean;July-August;;Ls;;TNmgl-1;1;0.325;;mgN/L;BAL
+282;WFD reporting;CW;FI;TN;mean;July-August;;Lu;;TNmgl-1;1;0.29;;mgN/L;BAL
+283;WFD reporting;CW;FI;TN;mean;July-August;;Lvs;;TNmgl-1;1;0.31;;mgN/L;BAL
+284;WFD reporting;CW;FI;TN;mean;July-August;;Ms;;TNmgl-1;1;0.325;;mgN/L;BAL
+285;WFD reporting;CW;FI;TN;mean;July-August;;Mu;;TNmgl-1;1;0.28;;mgN/L;BAL
+286;WFD reporting;CW;FI;TN;mean;July-August;;Ps;;TNmgl-1;1;0.34;;mgN/L;BAL
+287;WFD reporting;CW;FI;TN;mean;July-August;;Pu;;TNmgl-1;1;0.315;;mgN/L;BAL
+288;WFD reporting;CW;FI;TN;mean;July-August;;Ses;;TNmgl-1;1;0.315;;mgN/L;BAL
+289;WFD reporting;CW;FI;TN;mean;July-August;;Seu;;TNmgl-1;1;0.275;;mgN/L;BAL
+290;WFD reporting;CW;FI;TN;mean;July-August;;Ss;;TNmgl-1;1;0.35;;mgN/L;BAL
+291;WFD reporting;CW;FI;TN;mean;July-August;;Su;;TNmgl-1;1;0.325;;mgN/L;BAL
+292;WFD reporting;CW;FI;TP;mean;July-August;;Aai;;TPµgl-1;1;22;;µgP/L;BAL
+293;WFD reporting;CW;FI;TP;mean;July-August;;Aam;;TPµgl-1;1;18;;µgP/L;BAL
+294;WFD reporting;CW;FI;TP;mean;July-August;;Aay;;TPµgl-1;1;15;;µgP/L;BAL
+295;WFD reporting;CW;FI;TP;mean;July-August;;Ls;;TPµgl-1;1;23;;µgP/L;BAL
+296;WFD reporting;CW;FI;TP;mean;July-August;;Lu;;TPµgl-1;1;18;;µgP/L;BAL
+297;WFD reporting;CW;FI;TP;mean;July-August;;Lvs;;TPµgl-1;1;20;;µgP/L;BAL
+298;WFD reporting;CW;FI;TP;mean;July-August;;Ms;;TPµgl-1;1;17;;µgP/L;BAL
+299;WFD reporting;CW;FI;TP;mean;July-August;;Mu;;TPµgl-1;1;13;;µgP/L;BAL
+300;WFD reporting;CW;FI;TP;mean;July-August;;Ps;;TPµgl-1;1;14;;µgP/L;BAL
+301;WFD reporting;CW;FI;TP;mean;July-August;;Pu;;TPµgl-1;1;11;;µgP/L;BAL
+302;WFD reporting;CW;FI;TP;mean;July-August;;Ses;;TPµgl-1;1;20;;µgP/L;BAL
+303;WFD reporting;CW;FI;TP;mean;July-August;;Seu;;TPµgl-1;1;14;;µgP/L;BAL
+304;WFD reporting;CW;FI;TP;mean;July-August;;Ss;;TPµgl-1;1;24;;µgP/L;BAL
+305;WFD reporting;CW;FI;TP;mean;July-August;;Su;;TPµgl-1;1;20;;µgP/L;BAL
+306;ECOSTAT questionnaries;CW;FR;Total Inorganic N;mean;November-February;Aminot Kérouel (2007). Dosage automatique des nutriments dans les eaux marines. Ed Ifremer, 188 p.;all;Regression;Total Inorganic Nmgl-1;1;0.4;;mgN/L;NEA
+307;ECOSTAT questionnaries;CW;FR;Total Inorganic N;mean;November-February;Aminot Kérouel (2007). Dosage automatique des nutriments dans les eaux marines. Ed Ifremer, 188 p.;all;Regression;Total Inorganic Nmgl-1;1;0.466;;mgN/L;NEA
+308;WFD reporting;TW;FR;Dissolved oxygen;"10th percentile
+";Annual;;all;;Dissolved oxygenmgl-1;1;3;;mg/L;NEA
+309;WFD reporting;TW;FR;Total Inorganic N;90th percentile;Annual;;T10;;Total Inorganic Nµmol-1;0.0140067;0.0840402;;mgN/L;MED
+310;WFD reporting;TW;FR;TN;90th percentile;Annual;;T10;;TNmgl-1;1;1.05;;mgN/L;MED
+311;WFD reporting;TW;FR;TP;90th percentile;Annual;;T10;;TPµgl-1;1;92.92;;µgP/L;MED
+312;WFD reporting;TW;FR;Total Inorganic N;Concentration standardizing value to the salinity 33;;;All;;Total Inorganic Nµmol-1;0.0140067;0.4622211;;mgN/L;NEA
+313;WFD reporting;CW;FR;Dissolved oxygen;"10th percentile
+";Annual;;All;;Dissolved oxygenmgl-1;1;3;;mg/L;NEA
+314;WFD reporting;CW;FR;Dissolved oxygen;"10th percentile
+";Annual;;All;;Dissolved oxygenmgl-1;1;3;;mg/L;MED
+315;WFD reporting;CW;FR;Dissolved oxygen;"10th percentile
+";Annual;;All;;Dissolved oxygenmgl-1;1;3;;mg/L;MED
+316;WFD reporting;CW;FR;Dissolved oxygen;"10th percentile
+";Annual;;All;;Dissolved oxygenmgl-1;1;3;;mg/L;MED
+317;WFD reporting;CW;FR;Total Inorganic N;Concentration standardizing value to the salinity 33;;;All;;Total Inorganic Nµmol-1;0.0140067;0.4622211;;mgN/L;NEA
+318;ECOSTAT questionnaries;CW;GR;Total Inorganic N;mean;Annual;standard method;CIIIE;Expert judgment;Total Inorganic Nmgl-1;1;0.0311;;mgN/L;MED
+319;ECOSTAT questionnaries;CW;GR;Nitrate as N;mean;Annual;standard method;CIIIE;Expert judgment;Nitrate as Nmgl-1;1;0.02258;;mgN/L;MED
+320;WFD reporting;CW;GR;Nitrate as N;mean;Annual;;CIIIE;;Nitrate as Nµmol-1;0.0140067;0.0140067;;mgN/L;MED
+321;WFD reporting;CW;GR;TN;mean;Annual;;CIIIE;;TNµmol-1;0.0140067;0.1120536;;mgN/L;MED
+322;WFD reporting;CW;GR;TP;;;;CIIIE;;TPµmol-1;30.973761;9.2921283;;µgP/L;MED
+323;ECOSTAT questionnaries;TW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P1_2;Expert judgment;Total Inorganic Nmgl-1;1;0.28;2.1;mgN/L;MED
+324;ECOSTAT questionnaries;TW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P1_3;Expert judgment;Total Inorganic Nmgl-1;1;0.28;2.1;mgN/L;MED
+325;ECOSTAT questionnaries;TW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P2_2;Expert judgment;Total Inorganic Nmgl-1;1;0.28;1.75;mgN/L;MED
+326;ECOSTAT questionnaries;TW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P2_2;Expert judgment;Total Inorganic Nmgl-1;1;0.28;1.75;mgN/L;MED
+327;ECOSTAT questionnaries;TW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P1_2;Expert judgment;TPµgl-1;1;18.6;;µgP/L;MED
+328;ECOSTAT questionnaries;TW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P1_3;Expert judgment;TPµgl-1;1;18.6;;µgP/L;MED
+329;ECOSTAT questionnaries;TW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P2_2;Expert judgment;TPµgl-1;1;27.9;;µgP/L;MED
+330;ECOSTAT questionnaries;TW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P2_2;Expert judgment;TPµgl-1;1;27.9;;µgP/L;MED
+331;WFD reporting;TW;HR;% oxygen saturation;Median;Annual;;HR-P1_2 & HR-P1_3;;% oxygen saturation%;1;150;;PC02;MED
+332;WFD reporting;TW;HR;% oxygen saturation;Median;Annual;;HR-P2_2 & HR-P2_3;;% oxygen saturation%;1;170;;PC02;MED
+333;WFD reporting;TW;HR;% oxygen saturation;Median;Annual;;All;;% oxygen saturation%;1;40;;PC02;MED
+334;WFD reporting;TW;HR;Total Inorganic N;Median;Annual;;HR-P1_2 & HR-P1_3;;Total Inorganic Nµmol-1;0.0140067;2.101005;;mgN/L;MED
+335;WFD reporting;TW;HR;Total Inorganic N;Median;Annual;;HR-P2_2 & HR-P2_3;;Total Inorganic Nµmol-1;0.0140067;1.7508375;;mgN/L;MED
+336;WFD reporting;TW;HR;Total Inorganic N;Median;Annual;;All;;Total Inorganic Nµmol-1;0.0140067;0.280134;;mgN/L;MED
+337;WFD reporting;TW;HR;TP;Median;Annual;;HR-P1_2 & HR-P1_3;;TPµgl-1;1;18.5842566;;µgP/L;MED
+338;WFD reporting;TW;HR;TP;Median;Annual;;HR-P2_2 & HR-P2_3;;TPµgl-1;1;27.8763849;;µgP/L;MED
+339;WFD reporting;TW;HR;Secchi disk depth;Median;Annual;;all;;Secchi disk depthm;1;0;;m;MED
+340;ECOSTAT questionnaries;CW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O3_13;Expert judgment;Total Inorganic Nmgl-1;1;0.21;;mgN/L;MED
+341;ECOSTAT questionnaries;CW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_12;Expert judgment;Total Inorganic Nmgl-1;1;0.14;;mgN/L;MED
+342;ECOSTAT questionnaries;CW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_13;Expert judgment;Total Inorganic Nmgl-1;1;0.14;;mgN/L;MED
+343;ECOSTAT questionnaries;CW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_22;Expert judgment;Total Inorganic Nmgl-1;1;0.14;;mgN/L;MED
+344;ECOSTAT questionnaries;CW;HR;Total Inorganic N;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_23;Expert judgment;Total Inorganic Nmgl-1;1;0.14;;mgN/L;MED
+345;ECOSTAT questionnaries;CW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O3_13;Expert judgment;TPµgl-1;1;18.6;;µgP/L;MED
+346;ECOSTAT questionnaries;CW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_12;Expert judgment;TPµgl-1;1;18.6;;µgP/L;MED
+347;ECOSTAT questionnaries;CW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_13;Expert judgment;TPµgl-1;1;18.6;;µgP/L;MED
+348;ECOSTAT questionnaries;CW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_22;Expert judgment;TPµgl-1;1;18.6;;µgP/L;MED
+349;ECOSTAT questionnaries;CW;HR;TP;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_23;Expert judgment;TPµgl-1;1;18.6;;µgP/L;MED
+350;WFD reporting;CW;HR;TP;Median;Annual;;All;;TPµgl-1;1;18.5842566;;µgP/L;MED
+351;WFD reporting;CW;HR;Total Inorganic N;Median;Annual;;HR-O3_13;;Total Inorganic Nµmol-1;0.0140067;0.2101005;;mgN/L;MED
+352;WFD reporting;CW;HR;Total Inorganic N;Median;Annual;;HR-O4_12 & HR-O4_13 & HR-O4_22 & HR-O4_23;;Total Inorganic Nµmol-1;0.0140067;0.140067;;mgN/L;MED
+353;WFD reporting;CW;HR;Secchi disk depth;Median;Annual;;All;;Secchi disk depthm;1;5;;m;MED
+354;WFD reporting;CW;HR;% oxygen saturation;Median;Annual;;All;;% oxygen saturation%;1;0;;PC02;MED
+355;WFD reporting;TW;IE;% oxygen saturation;95th pecentile;;;All;;% oxygen saturation%;1;130;;PC02;NEA
+356;WFD reporting;TW;IE;% oxygen saturation;5th percentile;;;All;;% oxygen saturation%;1;70;;PC02;NEA
+357;ECOSTAT questionnaries;CW;IE;Total Inorganic N;Median;Winter and summer;Standard Methods;all;Deviation from RC (OSPAR);Total Inorganic Nmgl-1;1;2.6;;mgN/L;NEA
+358;ECOSTAT questionnaries;CW;IE;Total Inorganic N;Median;Winter and summer;Standard Methods;all;Deviation from RC (OSPAR);Total Inorganic Nmgl-1;1;0.25;;mgN/L;NEA
+359;ECOSTAT questionnaries;TW;IT;Total Inorganic N;mean;Seasonal;"Grasshoff et al., 1999; Cicero e Di Girolamo, 2001; APAT/IRSA-CNR 2003; ISPRA, Manuali e linee Guida 56/2010";"TW-M-AT-1; TW-M-AT-3";Regression;Total Inorganic Nmgl-1;1;0.253;;mgN/L;MED
+360;ECOSTAT questionnaries;TW;IT;Total Inorganic N;mean;Seasonal;"Grasshoff et al., 1999; Cicero e Di Girolamo, 2001; APAT/IRSA-CNR 2003; ISPRA, Manuali e linee Guida 56/2010";"TW-M-AT-1; TW-M-AT-2";Regression;Total Inorganic Nmgl-1;1;0.42;;mgN/L;MED
+361;WFD reporting;TW;IT;Total Inorganic N;mean;Seasonal;;"TW-M-AT-1; TW-M-AT-2";;Total Inorganic Nmgl-1;1;0.42;;mgN/L;MED
+362;WFD reporting;TW;IT;Total Inorganic N;mean;Seasonal;;"TW-M-AT-1; TW-M-AT-2";;Total Inorganic Nmgl-1;1;0.253;;mgN/L;MED
+363;ECOSTAT questionnaries;TW;LT;TN;mean;June-september;ISO 11905-1:1997;Northern part of the Curonian Lagoon;Expert judegment;TNmgl-1;1;0.94;1.09;mgN/L;BAL
+364;ECOSTAT questionnaries;TW;LT;TN;mean;June-september;ISO 11905-1:1997;Central part of the Curonian Lagoon;Expert judegment;TNmgl-1;1;0.95;1.1;mgN/L;BAL
+365;ECOSTAT questionnaries;TW;LT;TN;mean;June-september;ISO 11905-1:1997;Plume of the Curonian lagoon in the Baltic sea;Expert judegment;TNmgl-1;1;0.94;1.23;mgN/L;BAL
+366;ECOSTAT questionnaries;TW;LT;TN;mean;June-september;ISO 11905-1:1997;Plume of the Curonian lagoon in the Baltic sea;Expert judegment;TNmgl-1;1;0.43;0.81;mgN/L;BAL
+367;ECOSTAT questionnaries;TW;LT;TN;mean;June-september;ISO 11905-1:1997;Plume of the Curonian lagoon in the Baltic sea;Expert judegment;TNmgl-1;1;0.13;0.4;mgN/L;BAL
+368;ECOSTAT questionnaries;TW;LT;TP;mean;June-september;ISO 15681-1:2003;Northern part of the Curonian Lagoon;Expert judegment;TPµgl-1;1;60;136;µgP/L;BAL
+369;ECOSTAT questionnaries;TW;LT;TP;mean;June-september;ISO 15681-1:2003;Central part of the Curonian Lagoon;Expert judegment;TPµgl-1;1;61;130;µgP/L;BAL
+370;ECOSTAT questionnaries;TW;LT;TP;mean;June-september;ISO 15681-1:2003;Plume of the Curonian lagoon in the Baltic sea;Expert judegment;TPµgl-1;1;60;136;µgP/L;BAL
+371;ECOSTAT questionnaries;TW;LT;TP;mean;June-september;ISO 15681-1:2003;Plume of the Curonian lagoon in the Baltic sea;Expert judegment;TPµgl-1;1;37;84;µgP/L;BAL
+372;ECOSTAT questionnaries;TW;LT;TP;mean;June-september;ISO 15681-1:2003;Plume of the Curonian lagoon in the Baltic sea;Expert judegment;TPµgl-1;1;15;33;µgP/L;BAL
+373;WFD reporting;TW;LT;TN;mean;June-september;;Northern part of the Curonian Lagoon;;TNmgl-1;1;0.94;1.08;mgN/L;BAL
+374;WFD reporting;TW;LT;TN;mean;June-september;;Central part of the Curonian Lagoon;;TNmgl-1;1;0.95;1.07;mgN/L;BAL
+375;WFD reporting;TW;LT;TN;mean;June-september;;Plume of the Curonian lagoon in the Baltic sea;;TNmgl-1;1;0.94;1.08;mgN/L;BAL
+376;WFD reporting;TW;LT;TN;mean;June-september;;Plume of the Curonian lagoon in the Baltic sea;;TNmgl-1;1;0.43;0.67;mgN/L;BAL
+377;WFD reporting;TW;LT;TN;mean;June-september;;Plume of the Curonian lagoon in the Baltic sea;;TNmgl-1;1;0.13;0.25;mgN/L;BAL
+378;WFD reporting;TW;LT;TP;mean;June-september;;Northern part of the Curonian Lagoon;;TPµgl-1;1;0.06;0.08;µgP/L;BAL
+379;WFD reporting;TW;LT;TP;mean;June-september;;Central part of the Curonian Lagoon;;TPµgl-1;1;0.061;0.079;µgP/L;BAL
+380;WFD reporting;TW;LT;TP;mean;June-september;;Plume of the Curonian lagoon in the Baltic sea;;TPµgl-1;1;0.06;0.08;µgP/L;BAL
+381;WFD reporting;TW;LT;TP;mean;June-september;;Plume of the Curonian lagoon in the Baltic sea;;TPµgl-1;1;0.037;0.053;µgP/L;BAL
+382;WFD reporting;TW;LT;TP;mean;June-september;;Plume of the Curonian lagoon in the Baltic sea;;TPµgl-1;1;15;26;µgP/L;BAL
+383;ECOSTAT questionnaries;CW;LT;TN;mean;June-september;ISO 11905-1:1997;Open Baltic sea sandy coast;Expert judegment;TNmgl-1;1;0.13;0.4;mgN/L;BAL
+384;ECOSTAT questionnaries;CW;LT;TN;mean;June-september;ISO 11905-1:1997;Open Baltic sea stony coast (northern coast);Expert judegment;TNmgl-1;1;0.13;0.4;mgN/L;BAL
+385;ECOSTAT questionnaries;CW;LT;TP;mean;June-september;ISO 15681-1:2003;Open Baltic sea sandy coast;Expert judegment;TPµgl-1;1;15;33;µgP/L;BAL
+386;ECOSTAT questionnaries;CW;LT;TP;mean;June-september;ISO 15681-1:2003;Open Baltic sea stony coast (northern coast);Expert judegment;TPµgl-1;1;15;33;µgP/L;BAL
+387;WFD reporting;CW;LT;TP;mean;June-september;ISO 15681-1:2003;Open Baltic sea sandy coast;;TPµgl-1;1;15;26;µgP/L;BAL
+388;WFD reporting;CW;LT;TP;mean;June-september;ISO 15681-1:2003;Open Baltic sea stony coast (northern coast);;TPµgl-1;1;15;26;µgP/L;BAL
+389;WFD reporting;CW;LT;TN;mean;June-september;ISO 11905-1:1997;Open Baltic sea sandy coast;;TNmgl-1;1;0.13;0.25;mgN/L;BAL
+390;WFD reporting;CW;LT;TN;mean;June-september;ISO 11905-1:1997;Open Baltic sea stony coast (northern coast);;TNmgl-1;1;0.13;0.25;mgN/L;BAL
+391;WFD reporting;CW;LT;Secchi disk depth;mean;June-september;;Open Baltic sea sandy coast;;Secchi disk depthm;1;5;5.9;m;BAL
+392;WFD reporting;CW;LT;Secchi disk depth;mean;June-september;;Open Baltic sea stony coast (northern coast);;Secchi disk depthm;1;5;5.9;m;BAL
+393;ECOSTAT questionnaries;TW;ES;Nitrate as N;mean;Annual;Colorimetry;AT-T12;;Nitrate as Nmgl-1;1;2.484867;;mgN/L;NEA
+394;ECOSTAT questionnaries;TW;ES;Nitrate as N;mean;Annual;Colorimetry;AT-T13;;Nitrate as Nmgl-1;1;1.67615574;;mgN/L;NEA
+395;ECOSTAT questionnaries;TW;ES;TN;mean;Annual;;AT-T14;;TNmgl-1;1;7;;mgN/L;MED
+396;ECOSTAT questionnaries;TW;ES;TN;mean;Annual;;AT-T15;;TNmgl-1;1;10;;mgN/L;MED
+397;ECOSTAT questionnaries;TW;ES;TN;mean;Annual;;AT-T16;;TNmgl-1;1;10;;mgN/L;MED
+398;ECOSTAT questionnaries;TW;ES;TP;mean;Annual;;AT-T14;;TPµgl-1;1;2000;;µgP/L;MED
+399;ECOSTAT questionnaries;TW;ES;TP;mean;Annual;;AT-T15;;TPµgl-1;1;1000;;µgP/L;MED
+400;ECOSTAT questionnaries;TW;ES;TP;mean;Annual;;AT-T16;;TPµgl-1;1;2000;;µgP/L;MED
+401;WFD reporting;TW;ES;Nitrate as N;mean;Annual;;AT-T12;;Nitrate as Nmgl-1;1;2.4849;;mgN/L;NEA
+402;WFD reporting;TW;ES;Nitrate as N;mean;Annual;;AT-T13;;Nitrate as Nmgl-1;1;1.676178;;mgN/L;NEA
+403;WFD reporting;TW;ES;TN;mean;Annual;;AT-T14;;TNmgl-1;1;7;;mgN/L;NEA
+404;WFD reporting;TW;ES;TP;mean;Annual;;AT-T14;;TPµgl-1;1;2000;;µgP/L;MED
+405;WFD reporting;TW;ES;TN;mean;Annual;;AT-T15;;TNmgl-1;1;10;;mgN/L;MED
+406;WFD reporting;TW;ES;TP;mean;Annual;;AT-T15;;TPµgl-1;1;1000;;µgP/L;MED
+407;WFD reporting;TW;ES;TN;mean;Annual;;AT-T16;;TNmgl-1;1;10;;mgN/L;MED
+408;WFD reporting;TW;ES;TP;mean;Annual;;AT-T16;;TPµgl-1;1;2000;;µgP/L;MED
+409;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T01;;Nitrate as Nmgl-1;1;0.196;2.171;mgN/L;MED
+410;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T02;;Nitrate as Nmgl-1;1;0.196;0.49;mgN/L;MED
+411;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T05;;Nitrate as Nmgl-1;1;0.051;0.102;mgN/L;MED
+412;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T06;;Nitrate as Nmgl-1;1;0.051;0.102;mgN/L;MED
+413;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T10;;Nitrate as Nmgl-1;1;0.108;;mgN/L;MED
+414;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T11;;Nitrate as Nmgl-1;1;0.09;0.181;mgN/L;MED
+415;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T13;;Nitrate as Nmgl-1;1;0.086;;mgN/L;NEA
+416;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T19;;Nitrate as Nmgl-1;1;0.047;;mgN/L;NEA
+417;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T20;;Nitrate as Nmgl-1;1;0.085;;mgN/L;NEA
+418;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T21;;Nitrate as Nmgl-1;1;0.051;0.102;mgN/L;MED
+419;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T22;;Nitrate as Nmgl-1;1;0.014006779;;mgN/L;MED
+420;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T23;;Nitrate as Nmgl-1;1;0.014006779;;mgN/L;MED
+421;ECOSTAT questionnaries;CW;ES;Nitrate as N;mean;Annual;;AC-T24;;Nitrate as Nmgl-1;1;0.014006779;;mgN/L;MED
+422;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T01;;Nitrate as Nmgl-1;1;0.490203;;mgN/L;MED
+423;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T01;;Nitrate as Nmgl-1;1;0.1960812;;mgN/L;MED
+424;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T02;;Nitrate as Nmgl-1;1;0.490203;;mgN/L;MED
+425;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T02;;Nitrate as Nmgl-1;1;0.1960812;;mgN/L;MED
+426;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T05;;Nitrate as Nmgl-1;1;0.10224234;;mgN/L;MED
+427;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T05;;Nitrate as Nmgl-1;1;0.05112117;;mgN/L;MED
+428;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T06;;Nitrate as Nmgl-1;1;0.10224234;;mgN/L;MED
+429;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T06;;Nitrate as Nmgl-1;1;0.05112117;;mgN/L;MED
+430;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T10;;Nitrate as Nmgl-1;1;0.108404892;;mgN/L;MED
+431;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T11;;Nitrate as Nmgl-1;1;0.18067482;;mgN/L;MED
+432;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T11;;Nitrate as Nmgl-1;1;0.09033741;;mgN/L;MED
+433;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T13;;Nitrate as Nmgl-1;1;0.085855554;;mgN/L;NEA
+434;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T19;;Nitrate as Nmgl-1;1;0.04691943;;mgN/L;NEA
+435;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T20;;Nitrate as Nmgl-1;1;0.08543538;;mgN/L;NEA
+436;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T21;;Nitrate as Nmgl-1;1;0.10224234;;mgN/L;MED
+437;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T21;;Nitrate as Nmgl-1;1;0.05112117;;mgN/L;MED
+438;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T23;;Nitrate as Nmgl-1;1;0.0140058;;mgN/L;MED
+439;WFD reporting;CW;ES;Nitrate as N;mean;Annual;;AC-T24;;Nitrate as Nmgl-1;1;0.0140058;;mgN/L;MED
+440;ECOSTAT questionnaries;TW;LV;Total Inorganic N;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVT;;Total Inorganic Nmgl-1;1;0.196;;mgN/L;BAL
+441;WFD reporting;TW;LV;Nitrate as N;mean;January-March;;LVT;;Nitrate as Nmgl-1;1;0.196;;mgN/L;BAL
+442;WFD reporting;TW;LV;Secchi disk depth;mean;Summer;;LVT;;Secchi disk depthm;1;3;;m;BAL
+443;ECOSTAT questionnaries;CW;LV;Total Inorganic N;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVA ;;Total Inorganic Nmgl-1;1;0.112;;mgN/L;BAL
+444;ECOSTAT questionnaries;CW;LV;Total Inorganic N;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVB ;;Total Inorganic Nmgl-1;1;0.112;;mgN/L;BAL
+445;ECOSTAT questionnaries;CW;LV;Total Inorganic N;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVCDE;;Total Inorganic Nmgl-1;1;0.154;;mgN/L;BAL
+446;ECOSTAT questionnaries;CW;LV;Total Inorganic N;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVF ;;Total Inorganic Nmgl-1;1;0.154;;mgN/L;BAL
+447;WFD reporting;CW;LV;Nitrate as N;mean;January-March;;C1;;Nitrate as Nmgl-1;1;0.112;;mgN/L;BAL
+448;WFD reporting;CW;LV;Nitrate as N;mean;January-March;;C2;;Nitrate as Nmgl-1;1;0.112;;mgN/L;BAL
+449;WFD reporting;CW;LV;Nitrate as N;mean;January-March;;C3;;Nitrate as Nmgl-1;1;0.154;;mgN/L;BAL
+450;WFD reporting;CW;LV;Nitrate as N;mean;January-March;;C4;;Nitrate as Nmgl-1;1;0.154;;mgN/L;BAL
+451;WFD reporting;CW;LV;Orthophosphate;mean;January-March;;C1;;Orthophosphateµgl-1;1;18.58512679;;µgP/L;BAL
+452;WFD reporting;CW;LV;Orthophosphate;mean;January-March;;C2;;Orthophosphateµgl-1;1;18.58512679;;µgP/L;BAL
+453;WFD reporting;CW;LV;Orthophosphate;mean;January-March;;C3;;Orthophosphateµgl-1;1;23.23140849;;µgP/L;BAL
+454;WFD reporting;CW;LV;Orthophosphate;mean;January-March;;C4;;Orthophosphateµgl-1;1;23.23140849;;µgP/L;BAL
+455;WFD reporting;CW;LV;Secchi disk depth;mean;Summer;;C1;;Secchi disk depthm;1;4.5;;m;BAL
+456;WFD reporting;CW;LV;Secchi disk depth;mean;Summer;;C2;;Secchi disk depthm;1;4.5;;m;BAL
+457;WFD reporting;CW;LV;Secchi disk depth;mean;Summer;;C3;;Secchi disk depthm;1;4;;m;BAL
+458;WFD reporting;CW;LV;Secchi disk depth;mean;Summer;;C4;;Secchi disk depthm;1;4;;m;BAL
+459;ECOSTAT questionnaries;CW;NL;Total Inorganic N;mean;winter;;;;Total Inorganic Nmgl-1;1;0.46;;mgN/L;NEA
+460;ECOSTAT questionnaries;CW;NO;TP;mean;Summer;;all;;TPµgl-1;1;11.5;16;µgP/L;NEA
+461;ECOSTAT questionnaries;CW;NO;TP;mean;Summer;;all;;TPµgl-1;1;11.5;16;µgP/L;NEA
+462;ECOSTAT questionnaries;CW;NO;TP;mean;Winter;;all;;TPµgl-1;1;20;25;µgP/L;NEA
+463;ECOSTAT questionnaries;CW;NO;TP;mean;Winter;;all;;TPµgl-1;1;20;25;µgP/L;NEA
+464;ECOSTAT questionnaries;CW;NO;TN;mean;Summer;;all;;TNmgl-1;1;250;330;mgN/L;NEA
+465;ECOSTAT questionnaries;CW;NO;TN;mean;Summer;;all;;TNmgl-1;1;250;330;mgN/L;NEA
+466;ECOSTAT questionnaries;CW;NO;TN;mean;Winter;;all;;TNmgl-1;1;291;380;mgN/L;NEA
+467;ECOSTAT questionnaries;CW;NO;TN;mean;Winter;;all;;TNmgl-1;1;291;380;mgN/L;NEA
+468;ECOSTAT questionnaries;CW;NO;Nitrate as N;mean;Summer;;all;;Nitrate as Nmgl-1;1;12;23;mgN/L;NEA
+469;ECOSTAT questionnaries;CW;NO;Nitrate as N;mean;Summer;;all;;Nitrate as Nmgl-1;1;12;23;mgN/L;NEA
+470;ECOSTAT questionnaries;CW;NO;Nitrate as N;mean;Winter;;all;;Nitrate as Nmgl-1;1;97;125;mgN/L;NEA
+471;ECOSTAT questionnaries;CW;NO;Nitrate as N;mean;Winter;;all;;Nitrate as Nmgl-1;1;97;125;mgN/L;NEA
+472;ECOSTAT questionnaries;CW;NO;TP;mean;Summer;;all;;TPµgl-1;1;0;;µgP/L;NEA
+473;ECOSTAT questionnaries;CW;NO;TP;mean;Winter;;all;;TPµgl-1;1;0;;µgP/L;NEA
+474;ECOSTAT questionnaries;CW;NO;TN;mean;Summer;;all;;TNmgl-1;1;0;;mgN/L;NEA
+475;ECOSTAT questionnaries;CW;NO;TN;mean;Winter;;all;;TNmgl-1;1;0;;mgN/L;NEA
+476;ECOSTAT questionnaries;CW;NO;Nitrate as N;mean;Summer;;all;;Nitrate as Nmgl-1;1;0;;mgN/L;NEA
+477;ECOSTAT questionnaries;CW;NO;Nitrate as N;mean;Winter;;all;;Nitrate as Nmgl-1;1;0;;mgN/L;NEA
+478;ECOSTAT questionnaries;TW;PL;TN;mean;June-september;;TWIV;;TNmgl-1;1;0.4;;mgN/L;BAL
+479;ECOSTAT questionnaries;TW;PL;TN;mean;June-september;;TWII;;TNmgl-1;1;0.4;;mgN/L;BAL
+480;ECOSTAT questionnaries;TW;PL;TN;mean;June-september;;TWV;;TNmgl-1;1;0.4;;mgN/L;BAL
+481;ECOSTAT questionnaries;TW;PL;TN;mean;June-september;;TWV;;TNmgl-1;1;0.53;;mgN/L;BAL
+482;ECOSTAT questionnaries;TW;PL;TN;mean;June-september;;TWV;;TNmgl-1;1;0.27;;mgN/L;BAL
+483;ECOSTAT questionnaries;TW;PL;TN;mean;June-september;;TWI;;TNmgl-1;1;;;mgN/L;BAL
+484;ECOSTAT questionnaries;TW;PL;TN;mean;June-september;;TWI;;TNmgl-1;1;;;mgN/L;BAL
+485;ECOSTAT questionnaries;TW;PL;TN;mean;June-september;;TWII;;TNmgl-1;1;;;mgN/L;BAL
+486;ECOSTAT questionnaries;TW;PL;TN;mean;Annual;;TWIV;;TNmgl-1;1;;;mgN/L;BAL
+487;ECOSTAT questionnaries;TW;PL;TN;mean;Annual;;TWII;;TNmgl-1;1;;;mgN/L;BAL
+488;ECOSTAT questionnaries;TW;PL;TN;mean;Annual;;TWV;;TNmgl-1;1;;;mgN/L;BAL
+489;ECOSTAT questionnaries;TW;PL;TN;mean;Annual;;TWV;;TNmgl-1;1;;;mgN/L;BAL
+490;ECOSTAT questionnaries;TW;PL;TN;mean;Annual;;TWV;;TNmgl-1;1;;;mgN/L;BAL
+491;ECOSTAT questionnaries;TW;PL;TN;mean;Annual;;TWI;;TNmgl-1;1;0.98;;mgN/L;BAL
+492;ECOSTAT questionnaries;TW;PL;TN;mean;Annual;;TWI;;TNmgl-1;1;1.9;;mgN/L;BAL
+493;ECOSTAT questionnaries;TW;PL;TN;mean;Annual;;TWII;;TNmgl-1;1;0.3;;mgN/L;BAL
+494;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;June-september;;TWIV;;Total Inorganic Nmgl-1;1;0.15;;mgN/L;BAL
+495;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;June-september;;TWII;;Total Inorganic Nmgl-1;1;0.15;;mgN/L;BAL
+496;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;June-september;;TWV;;Total Inorganic Nmgl-1;1;0.25;;mgN/L;BAL
+497;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;June-september;;TWV;;Total Inorganic Nmgl-1;1;0.32;;mgN/L;BAL
+498;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;June-september;;TWV;;Total Inorganic Nmgl-1;1;0.18;;mgN/L;BAL
+499;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;June-september;;TWI;;Total Inorganic Nmgl-1;1;;;mgN/L;BAL
+500;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;June-september;;TWI;;Total Inorganic Nmgl-1;1;;;mgN/L;BAL
+501;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;June-september;;TWII;;Total Inorganic Nmgl-1;1;;;mgN/L;BAL
+502;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;Annual;;TWIV;;Total Inorganic Nmgl-1;1;;;mgN/L;BAL
+503;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;Annual;;TWII;;Total Inorganic Nmgl-1;1;;;mgN/L;BAL
+504;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;Annual;;TWV;;Total Inorganic Nmgl-1;1;;;mgN/L;BAL
+505;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;Annual;;TWV;;Total Inorganic Nmgl-1;1;;;mgN/L;BAL
+506;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;Annual;;TWV;;Total Inorganic Nmgl-1;1;;;mgN/L;BAL
+507;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;Annual;;TWI;;Total Inorganic Nmgl-1;1;0.38;;mgN/L;BAL
+508;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;Annual;;TWI;;Total Inorganic Nmgl-1;1;1.05;;mgN/L;BAL
+509;ECOSTAT questionnaries;TW;PL;Total Inorganic N;mean;Annual;;TWII;;Total Inorganic Nmgl-1;1;0.026;;mgN/L;BAL
+510;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;June-september;;TWIV;;Nitrate as Nmgl-1;1;0.12;;mgN/L;BAL
+511;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;June-september;;TWII;;Nitrate as Nmgl-1;1;0.12;;mgN/L;BAL
+512;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;June-september;;TWV;;Nitrate as Nmgl-1;1;0.17;;mgN/L;BAL
+513;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;June-september;;TWV;;Nitrate as Nmgl-1;1;0.27;;mgN/L;BAL
+514;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;June-september;;TWV;;Nitrate as Nmgl-1;1;0.15;;mgN/L;BAL
+515;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;June-september;;TWI;;Nitrate as Nmgl-1;1;;;mgN/L;BAL
+516;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;June-september;;TWI;;Nitrate as Nmgl-1;1;;;mgN/L;BAL
+517;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;June-september;;TWII;;Nitrate as Nmgl-1;1;;;mgN/L;BAL
+518;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;Annual;;TWIV;;Nitrate as Nmgl-1;1;;;mgN/L;BAL
+519;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;Annual;;TWII;;Nitrate as Nmgl-1;1;;;mgN/L;BAL
+520;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;Annual;;TWV;;Nitrate as Nmgl-1;1;;;mgN/L;BAL
+521;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;Annual;;TWV;;Nitrate as Nmgl-1;1;;;mgN/L;BAL
+522;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;Annual;;TWV;;Nitrate as Nmgl-1;1;;;mgN/L;BAL
+523;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;Annual;;TWI;;Nitrate as Nmgl-1;1;0.3;;mgN/L;BAL
+524;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;Annual;;TWI;;Nitrate as Nmgl-1;1;0.9;;mgN/L;BAL
+525;ECOSTAT questionnaries;TW;PL;Nitrate as N;mean;Annual;;TWII;;Nitrate as Nmgl-1;1;0.011;;mgN/L;BAL
+526;ECOSTAT questionnaries;TW;PL;TP;mean;June-september;;TWIV;;TPµgl-1;1;35;;µgP/L;BAL
+527;ECOSTAT questionnaries;TW;PL;TP;mean;June-september;;TWII;;TPµgl-1;1;35;;µgP/L;BAL
+528;ECOSTAT questionnaries;TW;PL;TP;mean;June-september;;TWV;;TPµgl-1;1;45;;µgP/L;BAL
+529;ECOSTAT questionnaries;TW;PL;TP;mean;June-september;;TWV;;TPµgl-1;1;45;;µgP/L;BAL
+530;ECOSTAT questionnaries;TW;PL;TP;mean;June-september;;TWV;;TPµgl-1;1;32;;µgP/L;BAL
+531;ECOSTAT questionnaries;TW;PL;TP;mean;June-september;;TWI;;TPµgl-1;1;;;µgP/L;BAL
+532;ECOSTAT questionnaries;TW;PL;TP;mean;June-september;;TWI;;TPµgl-1;1;;;µgP/L;BAL
+533;ECOSTAT questionnaries;TW;PL;TP;mean;June-september;;TWII;;TPµgl-1;1;;;µgP/L;BAL
+534;ECOSTAT questionnaries;TW;PL;TP;mean;Annual;;TWIV;;TPµgl-1;1;;;µgP/L;BAL
+535;ECOSTAT questionnaries;TW;PL;TP;mean;Annual;;TWII;;TPµgl-1;1;;;µgP/L;BAL
+536;ECOSTAT questionnaries;TW;PL;TP;mean;Annual;;TWV;;TPµgl-1;1;;;µgP/L;BAL
+537;ECOSTAT questionnaries;TW;PL;TP;mean;Annual;;TWV;;TPµgl-1;1;;;µgP/L;BAL
+538;ECOSTAT questionnaries;TW;PL;TP;mean;Annual;;TWV;;TPµgl-1;1;;;µgP/L;BAL
+539;ECOSTAT questionnaries;TW;PL;TP;mean;Annual;;TWI;;TPµgl-1;1;120;;µgP/L;BAL
+540;ECOSTAT questionnaries;TW;PL;TP;mean;Annual;;TWI;;TPµgl-1;1;150;;µgP/L;BAL
+541;ECOSTAT questionnaries;TW;PL;TP;mean;Annual;;TWII;;TPµgl-1;1;30;;µgP/L;BAL
+542;WFD reporting;TW;PL;Secchi disk depth;mean;Annual;;TWI;;Secchi disk depthmgl-1;1;1;;m;BAL
+543;WFD reporting;TW;PL;Dissolved oxygen;Minimum;Summer;;TWI;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+544;WFD reporting;TW;PL;Nitrate as N;mean;Annual;;TWI;;Nitrate as Nmgl-1;1;0.3;;mgN/L;BAL
+545;WFD reporting;TW;PL;TN;mean;Annual;;TWI;;TNmgl-1;1;0.98;;mgN/L;BAL
+546;WFD reporting;TW;PL;TP;mean;Annual;;TWI;;TPµgl-1;1;120;;µgP/L;BAL
+547;WFD reporting;TW;PL;Total Inorganic N;mean;Annual;;TWI;;Total Inorganic Nmgl-1;1;0.38;;mgN/L;BAL
+548;WFD reporting;TW;PL;Secchi disk depth;mean;Annual;;TWI;;Secchi disk depthm;1;1.1;;m;BAL
+549;WFD reporting;TW;PL;Dissolved oxygen;Minimum;Summer;;TWI;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+550;WFD reporting;TW;PL;Nitrate as N;mean;Annual;;TWI;;Nitrate as Nmgl-1;1;0.9;;mgN/L;BAL
+551;WFD reporting;TW;PL;TN;mean;Annual;;TWI;;TNmgl-1;1;1.9;;mgN/L;BAL
+552;WFD reporting;TW;PL;TP;mean;Annual;;TWI;;TPµgl-1;1;150;;µgP/L;BAL
+553;WFD reporting;TW;PL;Total Inorganic N;mean;Annual;;TWI;;Total Inorganic Nmgl-1;1;1.05;;mgN/L;BAL
+554;WFD reporting;TW;PL;Secchi disk depth;mean;Annual;;TWII;;Secchi disk depthm;1;1.5;;m;BAL
+555;WFD reporting;TW;PL;Dissolved oxygen;Minimum;Summer;;TWII;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+556;WFD reporting;TW;PL;Nitrate as N;mean;Annual;;TWII;;Nitrate as Nmgl-1;1;0.011;;mgN/L;BAL
+557;WFD reporting;TW;PL;TN;mean;Annual;;TWII;;TNmgl-1;1;0.3;;mgN/L;BAL
+558;WFD reporting;TW;PL;TP;mean;Annual;;TWII;;TPµgl-1;1;30;;µgP/L;BAL
+559;WFD reporting;TW;PL;Total Inorganic N;mean;Annual;;TWII;;Total Inorganic Nmgl-1;1;0.026;;mgN/L;BAL
+560;WFD reporting;TW;PL;Secchi disk depth;mean;Annual;;TWIV;;Secchi disk depthm;1;3.6;;m;BAL
+561;WFD reporting;TW;PL;Dissolved oxygen;Minimum;Summer;;TWIV;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+562;WFD reporting;TW;PL;Nitrate as N;mean;Annual;;TWIV;;Nitrate as Nmgl-1;1;0.12;;mgN/L;BAL
+563;WFD reporting;TW;PL;TN;mean;Annual;;TWIV;;TNmgl-1;1;0.4;;mgN/L;BAL
+564;WFD reporting;TW;PL;TP;mean;Annual;;TWIV;;TPµgl-1;1;35;;µgP/L;BAL
+565;WFD reporting;TW;PL;Total Inorganic N;mean;Annual;;TWIV;;Total Inorganic Nmgl-1;1;0.15;;mgN/L;BAL
+566;WFD reporting;TW;PL;Secchi disk depth;mean;Annual;;TWV;;Secchi disk depthm;1;2.8;;m;BAL
+567;WFD reporting;TW;PL;Dissolved oxygen;Minimum;Summer;;TWV;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+568;WFD reporting;TW;PL;Nitrate as N;mean;Annual;;TWV;;Nitrate as Nmgl-1;1;0.17;;mgN/L;BAL
+569;WFD reporting;TW;PL;TN;mean;Annual;;TWV;;TNmgl-1;1;0.4;;mgN/L;BAL
+570;WFD reporting;TW;PL;TP;mean;Annual;;TWV;;TPµgl-1;1;45;;µgP/L;BAL
+571;WFD reporting;TW;PL;Total Inorganic N;mean;Annual;;TWV;;Total Inorganic Nmgl-1;1;0.225;;mgN/L;BAL
+572;ECOSTAT questionnaries;CW;PL;TN;mean;June-september;;CWI;;TNmgl-1;1;0.4;;mgN/L;BAL
+573;ECOSTAT questionnaries;CW;PL;TN;mean;June-september;;CWIII;;TNmgl-1;1;0.4;;mgN/L;BAL
+574;ECOSTAT questionnaries;CW;PL;TN;mean;June-september;;CWII;;TNmgl-1;1;0.3;;mgN/L;BAL
+575;ECOSTAT questionnaries;CW;PL;Total Inorganic N;mean;winter;;CWI;;Total Inorganic Nmgl-1;1;0.15;;mgN/L;BAL
+576;ECOSTAT questionnaries;CW;PL;Total Inorganic N;mean;winter;;CWIII;;Total Inorganic Nmgl-1;1;0.23;;mgN/L;BAL
+577;ECOSTAT questionnaries;CW;PL;Total Inorganic N;mean;winter;;CWII;;Total Inorganic Nmgl-1;1;0.1;;mgN/L;BAL
+578;ECOSTAT questionnaries;CW;PL;Nitrate as N;mean;winter;;CWI;;Nitrate as Nmgl-1;1;0.12;;mgN/L;BAL
+579;ECOSTAT questionnaries;CW;PL;Nitrate as N;mean;winter;;CWIII;;Nitrate as Nmgl-1;1;0.15;;mgN/L;BAL
+580;ECOSTAT questionnaries;CW;PL;Nitrate as N;mean;winter;;CWII;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BAL
+581;ECOSTAT questionnaries;CW;PL;TP;mean;June-september;;CWI;;TPµgl-1;1;33;;µgP/L;BAL
+582;ECOSTAT questionnaries;CW;PL;TP;mean;June-september;;CWIII;;TPµgl-1;1;38;;µgP/L;BAL
+583;ECOSTAT questionnaries;CW;PL;TP;mean;June-september;;CWII;;TPµgl-1;1;30;;µgP/L;BAL
+584;WFD reporting;CW;PL;Dissolved oxygen;mean;Annual;;CWI;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+585;WFD reporting;CW;PL;Dissolved oxygen;mean;Annual;;CWII;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+586;WFD reporting;CW;PL;Dissolved oxygen;mean;Annual;;CWIII;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+587;WFD reporting;CW;PL;Dissolved oxygen;mean;Annual;;CWIII;;Dissolved oxygenmgl-1;1;4.2;;mg/L;BAL
+588;WFD reporting;CW;PL;Nitrate as N;mean;winter ;;CWII;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BAL
+589;WFD reporting;CW;PL;Nitrate as N;mean;winter ;;CWI;;Nitrate as Nmgl-1;1;0.12;;mgN/L;BAL
+590;WFD reporting;CW;PL;Nitrate as N;mean;winter ;;CWIII;;Nitrate as Nmgl-1;1;0.08;;mgN/L;BAL
+591;WFD reporting;CW;PL;Nitrate as N;mean;winter ;;CWIII;;Nitrate as Nmgl-1;1;0.15;;mgN/L;BAL
+592;WFD reporting;CW;PL;Secchi disk depth;mean;summer;;CWII;;Secchi disk depthm;1;5.6;;m;BAL
+593;WFD reporting;CW;PL;Secchi disk depth;mean;summer;;CWI;;Secchi disk depthm;1;3.5;;m;BAL
+594;WFD reporting;CW;PL;Secchi disk depth;mean;summer;;CWIII;;Secchi disk depthm;1;5.6;;m;BAL
+595;WFD reporting;CW;PL;Secchi disk depth;mean;summer;;CWIII;;Secchi disk depthm;1;3.8;;m;BAL
+596;WFD reporting;CW;PL;Total Inorganic N;mean;summer;;CWII;;Total Inorganic Nmgl-1;1;0.1;;mgN/L;BAL
+597;WFD reporting;CW;PL;Total Inorganic N;mean;summer;;CWI;;Total Inorganic Nmgl-1;1;0.15;;mgN/L;BAL
+598;WFD reporting;CW;PL;Total Inorganic N;mean;summer;;CWIII;;Total Inorganic Nmgl-1;1;0.1;;mgN/L;BAL
+599;WFD reporting;CW;PL;Total Inorganic N;mean;summer;;CWIII;;Total Inorganic Nmgl-1;1;0.23;;mgN/L;BAL
+600;WFD reporting;CW;PL;TP;mean;summer;;CWII;;TPµgl-1;1;30;;µgP/L;BAL
+601;WFD reporting;CW;PL;TP;mean;summer;;CWI;;TPµgl-1;1;33;;µgP/L;BAL
+602;WFD reporting;CW;PL;TP;mean;summer;;CWIII;;TPµgl-1;1;30;;µgP/L;BAL
+603;WFD reporting;CW;PL;TP;mean;summer;;CWIII;;TPµgl-1;1;38;;µgP/L;BAL
+604;WFD reporting;CW;PT;Secchi disk depth;95th percentile;Annual;;A-T-P/P;;Secchi disk depthm;1;35;;m;NEA
+605;WFD reporting;CW;PT;TP;95th percentile;Annual;;A-T-P/P;;TPµgl-1;1;70;;µgP/L;NEA
+606;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.3;;mgN/L;NEA
+607;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+608;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.5;;mgN/L;NEA
+609;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;1;;mgN/L;NEA
+610;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.3;;mgN/L;NEA
+611;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+612;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.5;;mgN/L;NEA
+613;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;1;;mgN/L;NEA
+614;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.3;;mgN/L;NEA
+615;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+616;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;0.5;;mgN/L;NEA
+617;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A1 ;;Nitrate as Nmgl-1;1;1;;mgN/L;NEA
+618;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.3;;mgN/L;NEA
+619;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+620;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.5;;mgN/L;NEA
+621;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;1;;mgN/L;NEA
+622;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.3;;mgN/L;NEA
+623;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+624;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.5;;mgN/L;NEA
+625;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;1;;mgN/L;NEA
+626;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.3;;mgN/L;NEA
+627;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+628;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.5;;mgN/L;NEA
+629;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;1;;mgN/L;NEA
+630;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.3;;mgN/L;NEA
+631;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+632;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.5;;mgN/L;NEA
+633;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;1;;mgN/L;NEA
+634;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.3;;mgN/L;NEA
+635;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+636;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;0.5;;mgN/L;NEA
+637;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A2;;Nitrate as Nmgl-1;1;1;;mgN/L;NEA
+638;WFD reporting;CW;PT;Nitrate as N;95th percentile;Annual;;A-T-P/P;;Nitrate as Nmgl-1;1;0.451612904;;mgN/L;NEA
+639;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;All;;Nitrate as Nmgl-1;1;0.13;;mgN/L;NEA
+640;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;All;;Nitrate as Nmgl-1;1;0.13;;mgN/L;NEA
+641;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;All;;Nitrate as Nmgl-1;1;0.13;;mgN/L;NEA
+642;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;All;;Nitrate as Nmgl-1;1;0.13;;mgN/L;NEA
+643;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;All;;Nitrate as Nmgl-1;1;0.13;;mgN/L;NEA
+644;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;All;;Nitrate as Nmgl-1;1;0.13;;mgN/L;NEA
+645;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;All;;Nitrate as Nmgl-1;1;0.13;0.7;mgN/L;NEA
+646;WFD reporting;CW;PT;Secchi disk depth;95th percentile;Annual;;A-T-P/P;;Secchi disk depthm;1;35;;m;NEA
+647;WFD reporting;CW;PT;TP;95th percentile;Annual;;A-T-P/P;;TPµgl-1;1;70;;µgP/L;NEA
+648;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A5;;Nitrate as Nmgl-1;1;0.13;;mgN/L;NEA
+649;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A6;;Nitrate as Nmgl-1;1;0.13;;mgN/L;NEA
+650;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A3;;Nitrate as Nmgl-1;1;0.7;;mgN/L;NEA
+651;WFD reporting;CW;PT;Nitrate as N;90th percentile;Annual;;A3;;Nitrate as Nmgl-1;1;0.6;;mgN/L;NEA
+652;ECOSTAT questionnaries;CW;SI;Nitrate as N;Maximum;Annual;;CW M1;;Nitrate as Nmgl-1;1;0.035;;mgN/L;MED
+653;ECOSTAT questionnaries;CW;SI;Nitrate as N;Maximum;Annual;;CWM3;;Nitrate as Nmgl-1;1;0.035;;mgN/L;MED
+654;ECOSTAT questionnaries;CW;SI;TP;mean;Annual;;CW M1;;TPµgl-1;1;13;;µgP/L;MED
+655;ECOSTAT questionnaries;CW;SI;TP;mean;Annual;;CWM3;;TPµgl-1;1;13;;µgP/L;MED
+656;WFD reporting;CW;SI;TP;mean;Annual;;All;;TPµgl-1;1;13;;µgP/L;MED
+657;WFD reporting;CW;SI;Nitrate as N;mean;Annual;;All;;Nitrate as Nmgl-1;1;0.035;;mgN/L;MED
+658;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW1;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+659;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW2;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+660;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW3;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+661;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW4;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+662;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW5;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+663;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW6;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+664;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW7;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+665;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW8;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+666;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW11;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+667;ECOSTAT questionnaries;CW;UK;Total Inorganic N;mean;winter;;CW12;;Total Inorganic Nmgl-1;1;0.252;;mgN/L;NEA
+668;ECOSTAT questionnaries;TW;UK;Total Inorganic N;mean;winter;;TW1 ;;Total Inorganic Nmgl-1;1;0.42;;mgN/L;NEA
+669;ECOSTAT questionnaries;TW;UK;Total Inorganic N;mean;winter;;TW2;;Total Inorganic Nmgl-1;1;0.42;;mgN/L;NEA
+670;ECOSTAT questionnaries;TW;UK;Total Inorganic N;mean;winter;;TW3;;Total Inorganic Nmgl-1;1;0.42;;mgN/L;NEA
+671;ECOSTAT questionnaries;TW;UK;Total Inorganic N;mean;winter;;TW4;;Total Inorganic Nmgl-1;1;0.42;;mgN/L;NEA
+672;ECOSTAT questionnaries;TW;UK;Total Inorganic N;mean;winter;;TW5;;Total Inorganic Nmgl-1;1;0.42;;mgN/L;NEA
+673;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+674;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4.16;4.86;mg/L;NEA
+675;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4.16;4.86;mg/L;NEA
+676;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+677;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+678;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+679;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+680;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+681;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+682;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+683;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+684;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+685;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+686;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+687;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+688;WFD reporting;TW;UK;Total Inorganic N;Regression;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+689;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+690;WFD reporting;TW;UK;Total Inorganic N;Regression;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+691;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+692;WFD reporting;TW;UK;Total Inorganic N;Regression;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+693;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+694;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+695;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+696;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+697;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+698;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+699;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+700;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+701;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+702;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+703;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+704;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+705;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+706;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+707;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+708;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+709;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+710;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+711;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+712;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+713;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+714;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+715;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+716;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+717;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+718;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+719;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+720;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+721;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+722;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+723;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+724;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+725;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+726;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+727;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+728;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+729;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+730;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+731;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+732;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+733;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+734;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+735;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+736;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+737;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+738;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURC;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+739;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+740;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURC;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+741;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+742;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURC;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+743;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+744;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+745;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+746;WFD reporting;TW;UK;Total Inorganic N;mean+I1109:I1126;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+747;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURC;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+748;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+749;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURC;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+750;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+751;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURC;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+752;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+753;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+754;WFD reporting;TW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+755;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+756;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+757;WFD reporting;TW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+758;WFD reporting;TW;UK;Total Inorganic N;mean;winter;;CLET;;Total Inorganic Nµmol-1;0.0140067;0.420201;;mgN/L;NEA
+759;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.2101005;;mgN/L;NEA
+760;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4.16;4.86;mg/L;NEA
+761;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+762;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4.16;4.86;mg/L;NEA
+763;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+764;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.2101005;;mgN/L;NEA
+765;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+766;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+767;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+768;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+769;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+770;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+771;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+772;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.2101005;;mgN/L;NEA
+773;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4.16;4.86;mg/L;NEA
+774;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+775;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.2101005;;mgN/L;NEA
+776;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4.16;4.86;mg/L;NEA
+777;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+778;WFD reporting;CW;UK;Dissolved oxygen;Regression;winter;;All;;Dissolved oxygenmgl-1;1;18;;mg/L;NEA
+779;WFD reporting;CW;UK;Total Inorganic N;5th percentile;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.0560268;;mgN/L;NEA
+780;WFD reporting;CW;UK;Total Inorganic N;Regression;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+781;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;All;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+782;WFD reporting;CW;UK;Total Inorganic N;Regression;winter;;All;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+783;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+784;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+785;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+786;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+787;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+788;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+789;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+790;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+791;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+792;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+793;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+794;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+795;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+796;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+797;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+798;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+799;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+800;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+801;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+802;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+803;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+804;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+805;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+806;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+807;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+808;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+809;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+810;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+811;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+812;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+813;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+814;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+815;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+816;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+817;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+818;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+819;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+820;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+821;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+822;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+823;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+824;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+825;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+826;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+827;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+828;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURC;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+829;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+830;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURC;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+831;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+832;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURC;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+833;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+834;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+835;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+836;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+837;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURC;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+838;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+839;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURC;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+840;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+841;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURC;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+842;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+843;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL=35CT;;Dissolved oxygenmgl-1;1;4;;mg/L;NEA
+844;WFD reporting;CW;UK;Dissolved oxygen;5th percentile;winter;;SAL<35CT;;Dissolved oxygenmgl-1;1;4.13;4.86;mg/L;NEA
+845;WFD reporting;CW;UK;Total Inorganic N;mean;winter;;CLEC;;Total Inorganic Nµmol-1;0.0140067;0.2521206;;mgN/L;NEA
+846;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;ITURT;;Total Inorganic Nµmol-1;0.0140067;0.980469;;mgN/L;NEA
+847;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;TURT;;Total Inorganic Nµmol-1;0.0140067;2.521206;;mgN/L;NEA
+848;WFD reporting;CW;UK;Total Inorganic N;99th percentile;winter;;VTURT;;Total Inorganic Nµmol-1;0.0140067;3.781809;;mgN/L;NEA
+849;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;1n;;Total Inorganic Nµmol-1;0.0140067;0.003221541;0.1260603;mgN/L;NEA
+850;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;1s;;Total Inorganic Nµmol-1;0.0140067;0.002101005;0.09524556;mgN/L;NEA
+851;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;2;;Total Inorganic Nµmol-1;0.0140067;0.002101005;0.1260603;mgN/L;NEA
+852;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;3;;Total Inorganic Nµmol-1;0.0140067;0.1260603;0.420201;mgN/L;NEA
+853;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;4;;Total Inorganic Nµmol-1;0.0140067;0.09524556;0.30954807;mgN/L;NEA
+854;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;5;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.0840402;mgN/L;NEA
+855;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;6;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.0840402;mgN/L;NEA
+856;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;7;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.72554706;mgN/L;BAL
+857;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;8;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.72554706;mgN/L;BAL
+858;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;9;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.72554706;mgN/L;BAL
+859;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;10;;Total Inorganic Nµmol-1;0.0140067;0.05322546;;mgN/L;BAL
+860;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;11;;Total Inorganic Nµmol-1;0.0140067;0.05322546;;mgN/L;BAL
+861;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;12s;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.17788509;mgN/L;BAL
+862;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;12n;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.13866633;mgN/L;BAL
+863;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;13;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.17788509;mgN/L;BAL
+864;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;14;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.17788509;mgN/L;BAL
+865;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;15;;Total Inorganic Nµmol-1;0.0140067;0.05322546;0.13866633;mgN/L;BAL
+866;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;16;;Total Inorganic Nµmol-1;0.0140067;0.06303015;0.10084824;mgN/L;BAL
+867;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;17;;Total Inorganic Nµmol-1;0.0140067;0.06303015;0.10084824;mgN/L;BAL
+868;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;18;;Total Inorganic Nµmol-1;0.0140067;0.0840402;0.10364958;mgN/L;BAL
+869;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;19;;Total Inorganic Nµmol-1;0.0140067;0.0840402;0.10364958;mgN/L;BAL
+870;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;20;;Total Inorganic Nµmol-1;0.0140067;0.08824221;0.15967638;mgN/L;BAL
+871;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;21;;Total Inorganic Nµmol-1;0.0140067;0.08824221;0.15967638;mgN/L;BAL
+872;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;22;;Total Inorganic Nµmol-1;0.0140067;0.10505025;0.17508375;mgN/L;BAL
+873;ECOSTAT questionnaries;CW;SE;Total Inorganic N;mean;winter;Colourimetric;23;;Total Inorganic Nµmol-1;0.0140067;0.10505025;0.17508375;mgN/L;BAL
+874;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;1n;;TPµmol-1;30.973761;17.03556855;29.42507295;µgP/L;NEA
+875;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;1s;;TPµmol-1;30.973761;16.41609333;27.8763849;µgP/L;NEA
+876;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;2;;TPµmol-1;30.973761;17.03556855;29.42507295;µgP/L;NEA
+877;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;3;;TPµmol-1;30.973761;17.03556855;29.42507295;µgP/L;NEA
+878;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;4;;TPµmol-1;30.973761;16.41609333;27.8763849;µgP/L;NEA
+879;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;5;;TPµmol-1;30.973761;20.13294465;27.8763849;µgP/L;NEA
+880;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;6;;TPµmol-1;30.973761;20.13294465;27.8763849;µgP/L;NEA
+881;WFD reporting;TW;RO;% oxygen saturation;mean;Annual;;ROTT03;;Dissolved oxygen%;1;80;60;PC02;BLA
+882;WFD reporting;TW;RO;Total Inorganic N;mean;Annual;;ROTT03;;Total Inorganic Nµmol-1;0.0140067;0.3501675;0.52525125;mgN/L;BLA
+883;WFD reporting;TW;RO;TP;;;;ROTT03;;TPµmol-1;30.973761;30.973761;46.4606415;µgP/L;BLA
+884;WFD reporting;TW;RO;Secchi disk depth;mean;Annual;;ROTT03;;Secchi disk depthm;1;3;2.3;m;BLA
+885;WFD reporting;CW;RO;% oxygen saturation;mean;Annual;;ROCT01;;% oxygen saturation%;1;60;;PC02;BLA
+886;WFD reporting;CW;RO;% oxygen saturation;mean;Annual;;ROCT02;;% oxygen saturation%;1;60;;PC02;BLA
+887;WFD reporting;CW;RO;Total Inorganic N;mean;Annual;;ROCT01;;Total Inorganic Nµmol-1;0.0140067;0.1260603;0.18909045;mgN/L;BLA
+888;WFD reporting;CW;RO;Total Inorganic N;mean;Annual;;ROCT02;;Total Inorganic Nµmol-1;0.0140067;0.1260603;0.18909045;mgN/L;BLA
+889;WFD reporting;CW;RO;TP;;;;ROCT01;;TPµmol-1;30.973761;21.6816327;;µgP/L;BLA
+890;WFD reporting;CW;RO;TP;;;;ROCT02;;TPµmol-1;30.973761;21.6816327;;µgP/L;BLA
+891;WFD reporting;CW;RO;Secchi disk depth;mean;Annual;;ROCT01;;Secchi disk depthm;1;5.6;;m;BLA
+892;WFD reporting;CW;RO;Secchi disk depth;mean;Annual;;ROCT02;;Secchi disk depthm;1;5.6;;m;BLA
+893;ECOSTAT questionnaries;CW;SE;TN;mean;winter;;1n;;TNµmol-1;0.0140067;0.3361608;0.6303015;mgN/L;NEA
+894;ECOSTAT questionnaries;CW;SE;TN;mean;summer;;1n;;TNµmol-1;0.0140067;0.1820871;0.6303015;mgN/L;NEA
+895;ECOSTAT questionnaries;CW;SE;TN;mean;winter;;1s;;TNµmol-1;0.0140067;0.3081474;0.5322546;mgN/L;NEA
+896;ECOSTAT questionnaries;CW;SE;TN;mean;summer;;1s;;TNµmol-1;0.0140067;0.2241072;0.5322546;mgN/L;NEA
+897;ECOSTAT questionnaries;CW;SE;TN;mean;winter;;2;;TNµmol-1;0.0140067;0.3361608;0.6303015;mgN/L;NEA
+898;ECOSTAT questionnaries;CW;SE;TN;mean;summer;;2;;TNµmol-1;0.0140067;0.1820871;0.6303015;mgN/L;NEA
+899;ECOSTAT questionnaries;CW;SE;TN;mean;winter;;3;;TNµmol-1;0.0140067;0.3361608;0.6303015;mgN/L;NEA
+900;ECOSTAT questionnaries;CW;SE;TN;mean;summer;;3;;TNµmol-1;0.0140067;0.1820871;0.6303015;mgN/L;NEA
+901;ECOSTAT questionnaries;CW;SE;TN;mean;winter;;4;;TNµmol-1;0.0140067;0.3081474;0.5322546;mgN/L;NEA
+902;ECOSTAT questionnaries;CW;SE;TN;mean;summer;;4;;TNµmol-1;0.0140067;0.2241072;0.5322546;mgN/L;NEA
+903;ECOSTAT questionnaries;CW;SE;TN;mean;winter;;5;;TNµmol-1;0.0140067;0.3081474;;mgN/L;NEA
+904;ECOSTAT questionnaries;CW;SE;TN;mean;summer;;5;;TNµmol-1;0.0140067;0.2241072;0.280134;mgN/L;NEA
+905;ECOSTAT questionnaries;CW;SE;TN;mean;winter;;6;;TNµmol-1;0.0140067;0.3081474;;mgN/L;NEA
+906;ECOSTAT questionnaries;CW;SE;TN;mean;summer;;6;;TNµmol-1;0.0140067;0.2241072;0.280134;mgN/L;NEA
+907;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;7;;TPµmol-1;30.973761;22.30110792;18.27451899;µgP/L;BAL
+908;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;7;;TPµmol-1;30.973761;12.69924201;16.41609333;µgP/L;BAL
+909;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;8;;TPµmol-1;30.973761;22.30110792;18.27451899;µgP/L;BAL
+910;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;8;;TPµmol-1;30.973761;12.69924201;16.41609333;µgP/L;BAL
+911;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;9;;TPµmol-1;30.973761;22.30110792;18.27451899;µgP/L;BAL
+912;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;9;;TPµmol-1;30.973761;12.69924201;16.41609333;µgP/L;BAL
+913;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;10;;TPµmol-1;30.973761;18.27451899;;µgP/L;BAL
+914;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;10;;TPµmol-1;30.973761;12.69924201;;µgP/L;BAL
+915;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;11;;TPµmol-1;30.973761;18.27451899;;µgP/L;BAL
+916;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;11;;TPµmol-1;30.973761;12.69924201;;µgP/L;BAL
+917;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;12s;;TPµmol-1;30.973761;18.89399421;;µgP/L;BAL
+918;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;12s;;TPµmol-1;30.973761;12.69924201;16.41609333;µgP/L;BAL
+919;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;12n;;TPµmol-1;30.973761;18.89399421;;µgP/L;BAL
+920;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;12n;;TPµmol-1;30.973761;12.69924201;16.41609333;µgP/L;BAL
+921;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;13;;TPµmol-1;30.973761;18.89399421;;µgP/L;BAL
+922;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;13;;TPµmol-1;30.973761;12.69924201;16.41609333;µgP/L;BAL
+923;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;14;;TPµmol-1;30.973761;18.89399421;;µgP/L;BAL
+924;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;14;;TPµmol-1;30.973761;12.69924201;16.41609333;µgP/L;BAL
+925;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;15;;TPµmol-1;30.973761;18.89399421;;µgP/L;BAL
+926;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;15;;TPµmol-1;30.973761;12.69924201;16.41609333;µgP/L;BAL
+927;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;16;;TPµmol-1;30.973761;17.34530616;;µgP/L;BAL
+928;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;16;;TPµmol-1;30.973761;10.84081635;16.72583094;µgP/L;BAL
+929;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;17;;TPµmol-1;30.973761;17.34530616;;µgP/L;BAL
+930;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;17;;TPµmol-1;30.973761;10.84081635;16.72583094;µgP/L;BAL
+931;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;18;;TPµmol-1;30.973761;17.34530616;;µgP/L;BAL
+932;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;18;;TPµmol-1;30.973761;11.15055396;17.34530616;µgP/L;BAL
+933;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;19;;TPµmol-1;30.973761;17.34530616;;µgP/L;BAL
+934;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;19;;TPµmol-1;30.973761;11.15055396;17.34530616;µgP/L;BAL
+935;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;20;;TPµmol-1;30.973761;14.55766767;18.89399421;µgP/L;BAL
+936;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;20;;TPµmol-1;30.973761;8.98239069;17.03556855;µgP/L;BAL
+937;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;21;;TPµmol-1;30.973761;14.55766767;18.89399421;µgP/L;BAL
+938;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;21;;TPµmol-1;30.973761;8.98239069;17.03556855;µgP/L;BAL
+939;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;22;;TPµmol-1;30.973761;9.60186591;17.96478138;µgP/L;BAL
+940;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;22;;TPµmol-1;30.973761;6.81422742;16.10635572;µgP/L;BAL
+941;ECOSTAT questionnaries;CW;SE;TP;mean;winter;Persulphate oxidation;23;;TPµmol-1;30.973761;9.60186591;17.96478138;µgP/L;BAL
+942;ECOSTAT questionnaries;CW;SE;TP;mean;summer;Persulphate oxidation;23;;TPµmol-1;30.973761;6.81422742;16.10635572;µgP/L;BAL
+943;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;7;;TNµmol-1;0.0140067;0.280134;0.9384489;mgN/L;BAL
+944;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;7;;TNµmol-1;0.0140067;0.2661273;1.0084824;mgN/L;BAL
+945;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;8;;TNµmol-1;0.0140067;0.280134;0.9384489;mgN/L;BAL
+946;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;8;;TNµmol-1;0.0140067;0.2661273;1.0084824;mgN/L;BAL
+947;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;9;;TNµmol-1;0.0140067;0.280134;0.9384489;mgN/L;BAL
+948;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;9;;TNµmol-1;0.0140067;0.2661273;1.0084824;mgN/L;BAL
+949;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;10;;TNµmol-1;0.0140067;0.280134;;mgN/L;BAL
+950;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;10;;TNµmol-1;0.0140067;0.2661273;;mgN/L;BAL
+951;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;11;;TNµmol-1;0.0140067;0.280134;;mgN/L;BAL
+952;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;11;;TNµmol-1;0.0140067;0.2661273;;mgN/L;BAL
+953;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;12s;;TNµmol-1;0.0140067;0.280134;0.5462613;mgN/L;BAL
+954;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;12s;;TNµmol-1;0.0140067;0.2661273;0.5882814;mgN/L;BAL
+955;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;12n;;TNµmol-1;0.0140067;0.280134;0.3781809;mgN/L;BAL
+956;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;12n;;TNµmol-1;0.0140067;0.2661273;0.4061943;mgN/L;BAL
+957;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;13;;TNµmol-1;0.0140067;0.280134;0.5462613;mgN/L;BAL
+958;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;13;;TNµmol-1;0.0140067;0.2661273;0.5882814;mgN/L;BAL
+959;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;14;;TNµmol-1;0.0140067;0.280134;0.5462613;mgN/L;BAL
+960;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;14;;TNµmol-1;0.0140067;0.2661273;0.5882814;mgN/L;BAL
+961;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;15;;TNµmol-1;0.0140067;0.280134;0.3781809;mgN/L;BAL
+962;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;15;;TNµmol-1;0.0140067;0.2661273;0.4061943;mgN/L;BAL
+963;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;16;;TNµmol-1;0.0140067;0.3081474;0.3781809;mgN/L;BAL
+964;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;16;;TNµmol-1;0.0140067;0.2941407;0.4061943;mgN/L;BAL
+965;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;17;;TNµmol-1;0.0140067;0.3081474;0.3781809;mgN/L;BAL
+966;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;17;;TNµmol-1;0.0140067;0.2941407;0.4061943;mgN/L;BAL
+967;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;18;;TNµmol-1;0.0140067;0.3081474;0.3361608;mgN/L;BAL
+968;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;18;;TNµmol-1;0.0140067;0.2941407;0.3641742;mgN/L;BAL
+969;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;19;;TNµmol-1;0.0140067;0.3081474;0.3361608;mgN/L;BAL
+970;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;19;;TNµmol-1;0.0140067;0.2941407;0.3641742;mgN/L;BAL
+971;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;20;;TNµmol-1;0.0140067;0.3081474;0.3501675;mgN/L;BAL
+972;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;20;;TNµmol-1;0.0140067;0.2941407;0.3781809;mgN/L;BAL
+973;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;21;;TNµmol-1;0.0140067;0.3081474;0.3501675;mgN/L;BAL
+974;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;21;;TNµmol-1;0.0140067;0.2941407;0.3781809;mgN/L;BAL
+975;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;22;;TNµmol-1;0.0140067;0.3081474;0.3501675;mgN/L;BAL
+976;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;22;;TNµmol-1;0.0140067;0.3081474;0.3781809;mgN/L;BAL
+977;ECOSTAT questionnaries;CW;SE;TN;mean;winter;Persulphate oxidation;23;;TNµmol-1;0.0140067;0.3081474;0.3501675;mgN/L;BAL
+978;ECOSTAT questionnaries;CW;SE;TN;mean;summer;Persulphate oxidation;23;;TNµmol-1;0.0140067;0.3081474;0.3781809;mgN/L;BAL
+979;ECOSTAT questionnaries;TW;BE;Orthophosphate;mean;Annual;absorption spectrophotometry;O1o;Exp Judg;Orthophosphateµgl-1;1;140;;µgP/L;NEA
+980;ECOSTAT questionnaries;TW;BE;Orthophosphate;mean;Annual;absorption spectrophotometry;O1b;Exp Judg;Orthophosphateµgl-1;1;70;;µgP/L;NEA
+981;ECOSTAT questionnaries;TW;BE;Orthophosphate;mean;Annual;absorption spectrophotometry;O2zout;Exp Judg;Orthophosphateµgl-1;1;70;;µgP/L;NEA
+982;WFD reporting;CW;BE;Orthophosphate;mean;Annual;;Type2;;Orthophosphateµmol-1;30.97521132;24.78016906;;µgP/L;NEA
+983;ECOSTAT questionnaries;TW;BG;Orthophosphate;mean;Annual;Sample filtration through 0.45 µm and molybdate reaction, EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;L7 Black sea freshwater coastal lakes ;Exp Judg;Orthophosphateµgl-1;1;60;;µgP/L;BLA
+984;ECOSTAT questionnaries;TW;BG;Orthophosphate;mean;Annual;Sample filtration through 0.45 µm and molybdate reaction, EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;L8 Black sea oligohaline lakes;Exp Judg;Orthophosphateµgl-1;1;60;;µgP/L;BLA
+985;WFD reporting;TW;BG;Orthophosphate;mean;Annual;;L10;;Orthophosphateµgl-1;1;60;;µgP/L;BLA
+986;WFD reporting;TW;BG;Orthophosphate;mean;Annual;;L7 Black sea freshwater coastal lakes ;;Orthophosphateµgl-1;1;60;;µgP/L;BLA
+987;WFD reporting;TW;BG;Orthophosphate;mean;Annual;;L8 Black sea oligohaline lakes;;Orthophosphateµgl-1;1;60;;µgP/L;BLA
+988;WFD reporting;TW;BG;Orthophosphate;mean;Annual;;L9;;Orthophosphateµgl-1;1;60;;µgP/L;BLA
+989;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;December-March;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602210
+(shallow, exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+990;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;December-March;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602220
+(shallow, exposed, silt)";Exp Judg;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+991;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;December-March;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602230
+(shallow, exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+992;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;December-March;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602310 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+993;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;December-March;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602321
+(deep, moderately exposed, silt)";Exp Judg;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+994;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;December-March;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602330 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+995;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;March-June;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602210
+(shallow, exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+996;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;March-June;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602220
+(shallow, exposed, silt)";Exp Judg;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+997;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;March-June;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602230
+(shallow, exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+998;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;March-June;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602310 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+999;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;March-June;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602321
+(deep, moderately exposed, silt)";Exp Judg;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1000;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;March-June;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602330 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1001;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;June-September;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602210
+(shallow, exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1002;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;June-September;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602220
+(shallow, exposed, silt)";Exp Judg;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1003;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;June-September;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602230
+(shallow, exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1004;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;June-September;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602310 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1005;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;June-September;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602321
+(deep, moderately exposed, silt)";Exp Judg;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1006;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;June-September;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602330 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1007;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;September-December;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602210
+(shallow, exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1008;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;September-December;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602220
+(shallow, exposed, silt)";Exp Judg;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1009;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;September-December;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602230
+(shallow, exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1010;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;September-December;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602310 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1011;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;September-December;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602321
+(deep, moderately exposed, silt)";Exp Judg;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1012;ECOSTAT questionnaries;CW;BG;Orthophosphate;maximum;September-December;Sample filtration through 0.45 µm and molybdate reaction (modified for sea water), EN ISO 6878-1 or ion chromatography, EN ISO 10304-1,2;"CW602330 
+(shallow, moderately exposed, mixed substratum)";Exp Judg;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1013;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW1N;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1014;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW1N;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1015;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW1N;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1016;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW1N;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1017;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW2N;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1018;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW2N;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1019;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW2N;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1020;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW2N;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1021;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW3;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1022;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW3;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1023;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW3;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1024;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW3;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1025;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW4N;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1026;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW4N;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1027;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW4N;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1028;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW4N;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1029;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW5;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1030;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW5;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1031;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW5;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1032;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW5;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1033;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW6N;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1034;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW6N;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1035;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW6N;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1036;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW6N;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1037;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW7;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1038;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW7;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1039;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW7;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1040;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW7;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1041;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW8;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1042;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW8;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1043;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW8;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1044;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW8;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1045;WFD reporting;CW;BG;Orthophosphate;mean;winter;;CW9;;Orthophosphateµgl-1;1;20;;µgP/L;BLA
+1046;WFD reporting;CW;BG;Orthophosphate;mean;spring;;CW9;;Orthophosphateµgl-1;1;15;;µgP/L;BLA
+1047;WFD reporting;CW;BG;Orthophosphate;mean;summer;;CW9;;Orthophosphateµgl-1;1;10;;µgP/L;BLA
+1048;WFD reporting;CW;BG;Orthophosphate;mean;autumn;;CW9;;Orthophosphateµgl-1;1;13;;µgP/L;BLA
+1049;ECOSTAT questionnaries;CW;CY;Orthophosphate;mean;Annual;Segmented Flow Analysis, OI Analytical Flow Solution® IV ;All;Exp Judg;Orthophosphateµgl-1;1;4.34;;µgP/L;MED
+1050;WFD reporting;CW;CY;Orthophosphate;mean;Annual;;All;;maybe was in ug/L already;1;30;165;µgP/L;MED
+1051;ECOSTAT questionnaries;CW;DE;Orthophosphate;mean;November-February;Filtration of water samples (DIN EN 1189), continous flow injection analysis with automatic detection modified in accordance with  DIN EN ISO 15681-2;N1;Modelling and expert judgement;Orthophosphateµgl-1;1;0;;µgP/L;NEA
+1052;ECOSTAT questionnaries;CW;DE;Orthophosphate;mean;November-February;Filtration of water samples (DIN EN 1189), continous flow injection analysis with automatic detection modified in accordance with  DIN EN ISO 15681-2;N2;Modelling and expert judgement;Orthophosphateµgl-1;1;0;;µgP/L;NEA
+1053;ECOSTAT questionnaries;CW;DE;Orthophosphate;mean;November-February;Filtration of water samples (DIN EN 1189), continous flow injection analysis with automatic detection modified in accordance with  DIN EN ISO 15681-2;N3;Modelling and expert judgement;Orthophosphateµgl-1;1;0;;µgP/L;NEA
+1054;ECOSTAT questionnaries;CW;DE;Orthophosphate;mean;November-February;Filtration of water samples (DIN EN 1189), continous flow injection analysis with automatic detection modified in accordance with  DIN EN ISO 15681-2;N4;Modelling and expert judgement;Orthophosphateµgl-1;1;0;;µgP/L;NEA
+1055;ECOSTAT questionnaries;CW;DE;Orthophosphate;mean;November-February;Filtration of water samples (DIN EN 1189), continous flow injection analysis with automatic detection modified in accordance with  DIN EN ISO 15681-2;N5;Modelling and expert judgement;Orthophosphateµgl-1;1;0;;µgP/L;NEA
+1056;WFD reporting;TW;FR;Orthophosphate;90th percentile;Annual;;T10;;Orthophosphateµgl-1;1;31;;µgP/L;MED
+1057;WFD reporting;CW;GR;Orthophosphate;mean;Annual;;CIIIE;;Orthophosphateµmol-1;30.97521132;3.097521132;;µgP/L;MED
+1058;ECOSTAT questionnaries;TW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P1_2;Expert judgment;Orthophosphateµgl-1;1;9.3;;µgP/L;MED
+1059;ECOSTAT questionnaries;TW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P1_3;Expert judgment;Orthophosphateµgl-1;1;9.3;;µgP/L;MED
+1060;ECOSTAT questionnaries;TW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P2_2;Expert judgment;Orthophosphateµgl-1;1;15.5;;µgP/L;MED
+1061;ECOSTAT questionnaries;TW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-P2_2;Expert judgment;Orthophosphateµgl-1;1;15.5;;µgP/L;MED
+1062;WFD reporting;TW;HR;Orthophosphate;Median;Annual;;HR-P1_2 & HR-P1_3;;Orthophosphateµgl-1;1;9.2921283;;µgP/L;MED
+1063;WFD reporting;TW;HR;Orthophosphate;Median;Annual;;HR-P2_2 & HR-P2_3;;Orthophosphateµgl-1;1;15.48760566;;µgP/L;MED
+1064;ECOSTAT questionnaries;CW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O3_13;Expert judgment;Orthophosphateµgl-1;1;7.75;;µgP/L;MED
+1065;ECOSTAT questionnaries;CW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_12;Expert judgment;Orthophosphateµgl-1;1;7.75;;µgP/L;MED
+1066;ECOSTAT questionnaries;CW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_13;Expert judgment;Orthophosphateµgl-1;1;7.75;;µgP/L;MED
+1067;ECOSTAT questionnaries;CW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_22;Expert judgment;Orthophosphateµgl-1;1;7.75;;µgP/L;MED
+1068;ECOSTAT questionnaries;CW;HR;Orthophosphate;Median;Annual;Photometric & Spectrophotometric determination according to Grasshoff (1976) and Strickland at al. (1985);HR-O4_23;Expert judgment;Orthophosphateµgl-1;1;7.75;;µgP/L;MED
+1069;WFD reporting;CW;HR;Orthophosphate;Median;Annual;;All;;Orthophosphateµgl-1;1;7.74380283;;µgP/L;MED
+1070;ECOSTAT questionnaries;TW;IE;Orthophosphate;Median;Winter and summer;Standard Methods;TW2;Deviation from RC (OSPAR);Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1071;ECOSTAT questionnaries;TW;IE;Orthophosphate;Median;Winter and summer;Standard Methods;TW2;Deviation from RC (OSPAR);Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1072;ECOSTAT questionnaries;TW;IE;Orthophosphate;Median;Winter and summer;Standard Methods;TW2;Deviation from RC (OSPAR);Orthophosphateµgl-1;1;40;;µgP/L;NEA
+1073;WFD reporting;TW;IE;Orthophosphate;Median;Winter and summer;;All;;Orthophosphateµgl-1;1;40;60;µgP/L;NEA
+1074;ECOSTAT questionnaries;TW;IT;Orthophosphate;mean;Seasonal;"Grasshoff et al., 1999; Cicero e Di Girolamo, 2001; APAT/IRSA-CNR 2003; ISPRA, Manuali e linee Guida 56/2010";"TW-M-AT-1; TW-M-AT-2";Regression;Orthophosphateµgl-1;1;15;;µgP/L;MED
+1075;ECOSTAT questionnaries;TW;IT;Orthophosphate;mean;Seasonal;"Grasshoff et al., 1999; Cicero e Di Girolamo, 2001; APAT/IRSA-CNR 2003; ISPRA, Manuali e linee Guida 56/2010";"TW-M-AT-1; TW-M-AT-2";Regression;Orthophosphateµgl-1;1;0;;µgP/L;MED
+1076;WFD reporting;TW;IT;Orthophosphate;mean;Seasonal;;"TW-M-AT-1; TW-M-AT-2";;Orthophosphateµgl-1;1;15;;µgP/L;MED
+1077;ECOSTAT questionnaries;TW;ES;Orthophosphate;mean;Annual;Colorimetry;AT-T12;;Orthophosphateµgl-1;1;110.88692;;µgP/L;BAL
+1078;ECOSTAT questionnaries;TW;ES;Orthophosphate;mean;Annual;Colorimetry;AT-T13;;Orthophosphateµgl-1;1;270.69454;;µgP/L;BAL
+1079;WFD reporting;TW;ES;Orthophosphate;mean;Annual;;AT-T12;;maybe was in mg/L;1000;36.16488186;;µgP/L;NEA
+1080;WFD reporting;TW;ES;Orthophosphate;mean;Annual;;AT-T13;;maybe was in mg/L;1000;88.28485867;;µgP/L;NEA
+1081;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T01;;Orthophosphateµgl-1;1;11.77;23.54;µgP/L;MED
+1082;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T02;;Orthophosphateµgl-1;1;11.77;23.54;µgP/L;MED
+1083;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T05;;Orthophosphateµgl-1;1;11.77;23.54;µgP/L;MED
+1084;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T06;;Orthophosphateµgl-1;1;11.77;23.54;µgP/L;MED
+1085;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T10;;Orthophosphateµgl-1;1;16.146;;µgP/L;MED
+1086;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T11;;Orthophosphateµgl-1;1;11.77;23.54;µgP/L;MED
+1087;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T13;;Orthophosphateµgl-1;1;20.133;;µgP/L;NEA
+1088;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T19;;Orthophosphateµgl-1;1;5.75;;µgP/L;NEA
+1089;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T20;;Orthophosphateµgl-1;1;20.133;;µgP/L;NEA
+1090;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T21;;Orthophosphateµgl-1;1;11.77;23.54;µgP/L;MED
+1091;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T22;;Orthophosphateµgl-1;1;12.39;;µgP/L;MED
+1092;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T23;;Orthophosphateµgl-1;1;12.39;;µgP/L;MED
+1093;ECOSTAT questionnaries;CW;ES;Orthophosphate;mean;Annual;;AC-T24;;Orthophosphateµgl-1;1;12.39;;µgP/L;MED
+1094;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T01;;Orthophosphateµgl-1;1;23.547308;;µgP/L;MED
+1095;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T01;;Orthophosphateµgl-1;1;11.773654;;µgP/L;MED
+1096;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T02;;Orthophosphateµgl-1;1;23.547308;;µgP/L;MED
+1097;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T02;;Orthophosphateµgl-1;1;11.773654;;µgP/L;MED
+1098;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T05;;Orthophosphateµgl-1;1;23.547308;;µgP/L;MED
+1099;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T05;;Orthophosphateµgl-1;1;11.773654;;µgP/L;MED
+1100;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T06;;Orthophosphateµgl-1;1;23.547308;;µgP/L;MED
+1101;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T06;;Orthophosphateµgl-1;1;11.773654;;µgP/L;MED
+1102;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T10;;Orthophosphateµgl-1;1;16.421149;;µgP/L;MED
+1103;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T11;;Orthophosphateµgl-1;1;23.547308;;µgP/L;MED
+1104;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T11;;Orthophosphateµgl-1;1;11.773654;;µgP/L;MED
+1105;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T13;;Orthophosphateµgl-1;1;20.139145;;µgP/L;NEA
+1106;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T19;;Orthophosphateµgl-1;1;5.576994;;µgP/L;NEA
+1107;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T20;;Orthophosphateµgl-1;1;6.19666;;µgP/L;NEA
+1108;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T21;;Orthophosphateµgl-1;1;23.547308;;µgP/L;MED
+1109;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T21;;Orthophosphateµgl-1;1;11.773654;;µgP/L;MED
+1110;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T22;;Orthophosphatemgl-1;1000;14.0058;;µgP/L;MED
+1111;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T22;;Orthophosphateµgl-1;1;12.39332;;µgP/L;MED
+1112;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T23;;Orthophosphateµgl-1;1;12.39332;;µgP/L;MED
+1113;WFD reporting;CW;ES;Orthophosphate;mean;Annual;;AC-T24;;Orthophosphateµgl-1;1;12.39332;;µgP/L;MED
+1114;ECOSTAT questionnaries;TW;LV;Orthophosphate;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVT;;Orthophosphateµgl-1;1;27.9;;µgP/L;BAL
+1115;WFD reporting;TW;LV;Orthophosphate;mean;January-March;;LVT;;Orthophosphateµgl-1;1;27.9;;µgP/L;BAL
+1116;ECOSTAT questionnaries;CW;LV;Orthophosphate;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVA ;;Orthophosphateµgl-1;1;18.6;;µgP/L;BAL
+1117;ECOSTAT questionnaries;CW;LV;Orthophosphate;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVB ;;Orthophosphateµgl-1;1;18.6;;µgP/L;BAL
+1118;ECOSTAT questionnaries;CW;LV;Orthophosphate;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVCDE;;Orthophosphateµgl-1;1;23.25;;µgP/L;BAL
+1119;ECOSTAT questionnaries;CW;LV;Orthophosphate;mean;January-March;"Grasshoff ""Methods of seawater analysisi""";LVF ;;Orthophosphateµgl-1;1;23.25;;µgP/L;BAL
+1120;ECOSTAT questionnaries;CW;NO;Orthophosphate;mean;Summer;;all;;Orthophosphateµgl-1;1;7;;µgP/L;NEA
+1121;ECOSTAT questionnaries;CW;NO;Orthophosphate;mean;Summer;;all;;Orthophosphateµgl-1;1;7;;µgP/L;NEA
+1122;ECOSTAT questionnaries;CW;NO;Orthophosphate;mean;Winter;;all;;Orthophosphateµgl-1;1;25;;µgP/L;NEA
+1123;ECOSTAT questionnaries;CW;NO;Orthophosphate;mean;Winter;;all;;Orthophosphateµgl-1;1;25;;µgP/L;NEA
+1124;ECOSTAT questionnaries;CW;NO;Orthophosphate;mean;Summer;;all;;Orthophosphateµgl-1;1;0;;µgP/L;NEA
+1125;ECOSTAT questionnaries;CW;NO;Orthophosphate;mean;Winter;;all;;Orthophosphateµgl-1;1;0;;µgP/L;NEA
+1126;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;June-september;;TWIV;;Orthophosphateµgl-1;1;18;;µgP/L;BAL
+1127;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;June-september;;TWII;;Orthophosphateµgl-1;1;18;;µgP/L;BAL
+1128;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;June-september;;TWV;;Orthophosphateµgl-1;1;35;;µgP/L;BAL
+1129;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;June-september;;TWV;;Orthophosphateµgl-1;1;35;;µgP/L;BAL
+1130;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;June-september;;TWV;;Orthophosphateµgl-1;1;35;;µgP/L;BAL
+1131;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;June-september;;TWI;;Orthophosphateµgl-1;1;0;;µgP/L;BAL
+1132;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;June-september;;TWI;;Orthophosphateµgl-1;1;0;;µgP/L;BAL
+1133;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;June-september;;TWII;;Orthophosphateµgl-1;1;0;;µgP/L;BAL
+1134;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;Annual;;TWIV;;Orthophosphateµgl-1;1;0;;µgP/L;BAL
+1135;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;Annual;;TWII;;Orthophosphateµgl-1;1;0;;µgP/L;BAL
+1136;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;Annual;;TWV;;Orthophosphateµgl-1;1;0;;µgP/L;BAL
+1137;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;Annual;;TWV;;Orthophosphateµgl-1;1;0;;µgP/L;BAL
+1138;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;Annual;;TWV;;Orthophosphateµgl-1;1;0;;µgP/L;BAL
+1139;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;Annual;;TWI;;Orthophosphateµgl-1;1;45;;µgP/L;BAL
+1140;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;Annual;;TWI;;Orthophosphateµgl-1;1;90;;µgP/L;BAL
+1141;ECOSTAT questionnaries;TW;PL;Orthophosphate;mean;Annual;;TWII;;Orthophosphateµgl-1;1;3;;µgP/L;BAL
+1142;WFD reporting;TW;PL;Orthophosphate;mean;Annual;;TWI;;Orthophosphateµgl-1;1;45;;µgP/L;BAL
+1143;WFD reporting;TW;PL;Orthophosphate;mean;Annual;;TWI;;Orthophosphateµgl-1;1;90;;µgP/L;BAL
+1144;WFD reporting;TW;PL;Orthophosphate;mean;Annual;;TWII;;Orthophosphateµgl-1;1;3;;µgP/L;BAL
+1145;WFD reporting;TW;PL;Orthophosphate;mean;Annual;;TWIV;;Orthophosphateµgl-1;1;18;;µgP/L;BAL
+1146;WFD reporting;TW;PL;Orthophosphate;mean;Annual;;TWV;;Orthophosphateµgl-1;1;35;;µgP/L;BAL
+1147;ECOSTAT questionnaries;CW;PL;Orthophosphate;mean;winter;;CWI;;Orthophosphateµgl-1;1;24;;µgP/L;BAL
+1148;ECOSTAT questionnaries;CW;PL;Orthophosphate;mean;winter;;CWIII;;Orthophosphateµgl-1;1;24;;µgP/L;BAL
+1149;ECOSTAT questionnaries;CW;PL;Orthophosphate;mean;winter;;CWII;;Orthophosphateµgl-1;1;15;;µgP/L;BAL
+1150;WFD reporting;CW;PL;Orthophosphate;mean;winter ;;CWII;;Orthophosphateµgl-1;1;15;;µgP/L;BAL
+1151;WFD reporting;CW;PL;Orthophosphate;mean;winter ;;CWI;;Orthophosphateµgl-1;1;24;;µgP/L;BAL
+1152;WFD reporting;CW;PL;Orthophosphate;mean;winter ;;CWIII;;Orthophosphateµgl-1;1;15;;µgP/L;BAL
+1153;WFD reporting;CW;PL;Orthophosphate;mean;winter ;;CWIII;;Orthophosphateµgl-1;1;24;;µgP/L;BAL
+1154;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;50;;µgP/L;NEA
+1155;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;100;;µgP/L;NEA
+1156;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1157;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;110;;µgP/L;NEA
+1158;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;50;;µgP/L;NEA
+1159;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;100;;µgP/L;NEA
+1160;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1161;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;110;;µgP/L;NEA
+1162;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;50;;µgP/L;NEA
+1163;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;100;;µgP/L;NEA
+1164;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1165;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A1 ;;Orthophosphateµgl-1;1;110;;µgP/L;NEA
+1166;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;50;;µgP/L;NEA
+1167;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;100;;µgP/L;NEA
+1168;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1169;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;110;;µgP/L;NEA
+1170;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;50;;µgP/L;NEA
+1171;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;100;;µgP/L;NEA
+1172;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1173;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;110;;µgP/L;NEA
+1174;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;50;;µgP/L;NEA
+1175;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;100;;µgP/L;NEA
+1176;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1177;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;110;;µgP/L;NEA
+1178;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;50;;µgP/L;NEA
+1179;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;100;;µgP/L;NEA
+1180;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1181;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;110;;µgP/L;NEA
+1182;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;50;;µgP/L;NEA
+1183;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;100;;µgP/L;NEA
+1184;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1185;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A2;;Orthophosphateµgl-1;1;110;;µgP/L;NEA
+1186;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;All;;Orthophosphateµgl-1;1;20;;µgP/L;NEA
+1187;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;All;;Orthophosphateµgl-1;1;20;;µgP/L;NEA
+1188;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;All;;Orthophosphateµgl-1;1;20;;µgP/L;NEA
+1189;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;All;;Orthophosphateµgl-1;1;20;;µgP/L;NEA
+1190;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;All;;Orthophosphateµgl-1;1;20;;µgP/L;NEA
+1191;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;All;;Orthophosphateµgl-1;1;20;;µgP/L;NEA
+1192;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;All;;Orthophosphateµgl-1;1;20;500;µgP/L;NEA
+1193;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A5;;Orthophosphateµgl-1;1;20;;µgP/L;NEA
+1194;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A6;;Orthophosphateµgl-1;1;20;;µgP/L;NEA
+1195;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A3;;Orthophosphateµgl-1;1;500;;µgP/L;NEA
+1196;WFD reporting;CW;PT;Orthophosphate;90th percentile;Annual;;A3;;Orthophosphateµgl-1;1;60;;µgP/L;NEA
+1197;ECOSTAT questionnaries;CW;SI;Orthophosphate;90th percentile;Annual;;CW M1;;Orthophosphateµgl-1;1;4.6;;µgP/L;MED
+1198;ECOSTAT questionnaries;CW;SI;Orthophosphate;90th percentile;Annual;;CWM3;;Orthophosphateµgl-1;1;4.6;;µgP/L;MED
+1199;WFD reporting;CW;SI;Orthophosphate;mean;Annual;;All;;Orthophosphateµgl-1;1;4.6;;µgP/L;MED
+1200;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;1n;;Orthophosphateµmol-1;30.97521132;9.602315509;23.23140849;µgP/L;NEA
+1201;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;1s;;Orthophosphateµmol-1;30.97521132;9.602315509;23.23140849;µgP/L;NEA
+1202;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;2;;Orthophosphateµmol-1;30.97521132;9.602315509;23.23140849;µgP/L;NEA
+1203;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;3;;Orthophosphateµmol-1;30.97521132;9.602315509;23.23140849;µgP/L;NEA
+1204;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;4;;Orthophosphateµmol-1;30.97521132;9.602315509;23.23140849;µgP/L;NEA
+1205;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;5;;Orthophosphateµmol-1;30.97521132;11.7705803;18.58512679;µgP/L;NEA
+1206;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;6;;Orthophosphateµmol-1;30.97521132;11.7705803;18.58512679;µgP/L;NEA
+1207;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;7;;Orthophosphateµmol-1;30.97521132;9.602315509;11.7705803;µgP/L;BAL
+1208;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;8;;Orthophosphateµmol-1;30.97521132;9.602315509;11.7705803;µgP/L;BAL
+1209;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;9;;Orthophosphateµmol-1;30.97521132;9.602315509;11.7705803;µgP/L;BAL
+1210;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;10;;Orthophosphateµmol-1;30.97521132;11.7705803;;µgP/L;BAL
+1211;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;11;;Orthophosphateµmol-1;30.97521132;11.7705803;;µgP/L;BAL
+1212;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;12s;;Orthophosphateµmol-1;30.97521132;9.602315509;11.7705803;µgP/L;BAL
+1213;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;12n;;Orthophosphateµmol-1;30.97521132;9.602315509;11.7705803;µgP/L;BAL
+1214;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;13;;Orthophosphateµmol-1;30.97521132;9.602315509;11.7705803;µgP/L;BAL
+1215;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;14;;Orthophosphateµmol-1;30.97521132;9.602315509;11.7705803;µgP/L;BAL
+1216;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;15;;Orthophosphateµmol-1;30.97521132;9.602315509;11.7705803;µgP/L;BAL
+1217;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;16;;Orthophosphateµmol-1;30.97521132;5.265785924;9.292563396;µgP/L;BAL
+1218;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;17;;Orthophosphateµmol-1;30.97521132;5.265785924;9.292563396;µgP/L;BAL
+1219;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;18;;Orthophosphateµmol-1;30.97521132;9.292563396;;µgP/L;BAL
+1220;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;19;;Orthophosphateµmol-1;30.97521132;9.292563396;;µgP/L;BAL
+1221;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;20;;Orthophosphateµmol-1;30.97521132;7.124298604;8.982811283;µgP/L;BAL
+1222;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;21;;Orthophosphateµmol-1;30.97521132;7.124298604;8.982811283;µgP/L;BAL
+1223;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;22;;Orthophosphateµmol-1;30.97521132;4.646281698;8.67305917;µgP/L;BAL
+1224;ECOSTAT questionnaries;CW;SE;Orthophosphate;mean;winter;Colourimetric;23;;Orthophosphateµmol-1;30.97521132;4.646281698;8.67305917;µgP/L;BAL
+1225;WFD reporting;TW;RO;Orthophosphate;mean;Annual;;ROTT03;;Orthophosphateµmol-1;30.97521132;9.292563396;13.93884509;µgP/L;BLA
+1226;WFD reporting;CW;RO;Orthophosphate;mean;Annual;;ROCT01;;Orthophosphateµmol-1;30.97521132;;;µgP/L;BLA
+1227;WFD reporting;CW;RO;Orthophosphate;mean;Annual;;ROCT02;;Orthophosphateµmol-1;30.97521132;;;µgP/L;BLA

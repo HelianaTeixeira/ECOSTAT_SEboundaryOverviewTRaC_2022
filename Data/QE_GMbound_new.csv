@@ -1,0 +1,1003 @@
+All.obs;GIG;Cat;ICcode.TRAC;Country;NatType;physChemText;SumMetric;ValueStd;ValueUpStd;UnitUsed;RangeRep;ReasonRange;DepthZone;Ver.r;MetricType
+11740;BAL;CW;CW-BC1;SE;23;TP;winter;9.60186591;16.41609333;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11685;BAL;CW;CW-BC1;SE;18;TN;summer;0.29834271;0.30254472;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11739;BAL;CW;CW-BC1;SE;22;TP;winter;9.60186591;16.41609333;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11708;BAL;CW;CW-BC1;SE;16;Total Inorganic N;winter;0.0420201;0.17508375;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11709;BAL;CW;CW-BC1;SE;17;Total Inorganic N;winter;0.0420201;0.17508375;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11662;BAL;CW;CW-BC1;SE;20;TN;winter;0.30394539;0.31795209;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11663;BAL;CW;CW-BC1;SE;21;TN;winter;0.30394539;0.31795209;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11765;BAL;CW;CW-BC1;SE;23;TP;summer;6.81422742;16.72583094;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11686;BAL;CW;CW-BC1;SE;19;TN;summer;0.29834271;0.30254472;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11710;BAL;CW;CW-BC1;SE;18;Total Inorganic N;winter;0.0420201;0.1260603;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11764;BAL;CW;CW-BC1;SE;22;TP;summer;6.81422742;16.72583094;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11689;BAL;CW;CW-BC1;SE;22;TN;summer;0.31375008;0.31655142;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11664;BAL;CW;CW-BC1;SE;22;TN;winter;0.29694204;0.32635611;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11687;BAL;CW;CW-BC1;SE;20;TN;summer;0.27313065;0.28853802;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11688;BAL;CW;CW-BC1;SE;21;TN;summer;0.27313065;0.28853802;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11733;BAL;CW;CW-BC1;SE;16;TP;winter;17.34530616;19.51346943;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11734;BAL;CW;CW-BC1;SE;17;TP;winter;17.34530616;19.51346943;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11735;BAL;CW;CW-BC1;SE;18;TP;winter;11.77002918;17.34530616;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11736;BAL;CW;CW-BC1;SE;19;TP;winter;11.77002918;17.34530616;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11737;BAL;CW;CW-BC1;SE;20;TP;winter;14.86740528;16.10635572;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11738;BAL;CW;CW-BC1;SE;21;TP;winter;14.86740528;16.10635572;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11658;BAL;CW;CW-BC1;SE;16;TN;winter;0.29694204;0.48323115;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11659;BAL;CW;CW-BC1;SE;17;TN;winter;0.29694204;0.48323115;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11660;BAL;CW;CW-BC1;SE;18;TN;winter;0.29974338;0.30254472;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11661;BAL;CW;CW-BC1;SE;19;TN;winter;0.29974338;0.30254472;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11690;BAL;CW;CW-BC1;SE;23;TN;summer;0.31375008;0.31655142;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11665;BAL;CW;CW-BC1;SE;23;TN;winter;0.29694204;0.32635611;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11785;BAL;CW;CW-BC1;SE;18;Orthophosphate;winter;3.717025356;9.29256339;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11786;BAL;CW;CW-BC1;SE;19;Orthophosphate;winter;3.717025356;9.29256339;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11787;BAL;CW;CW-BC1;SE;20;Orthophosphate;winter;4.956033808;6.814546486;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11788;BAL;CW;CW-BC1;SE;21;Orthophosphate;winter;4.956033808;6.814546486;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11789;BAL;CW;CW-BC1;SE;22;Orthophosphate;winter;4.646281695;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+11790;BAL;CW;CW-BC1;SE;23;Orthophosphate;winter;4.646281695;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+11711;BAL;CW;CW-BC1;SE;19;Total Inorganic N;winter;0.0420201;0.1260603;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11712;BAL;CW;CW-BC1;SE;20;Total Inorganic N;winter;0.0560268;0.12325896;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11713;BAL;CW;CW-BC1;SE;21;Total Inorganic N;winter;0.0560268;0.12325896;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11714;BAL;CW;CW-BC1;SE;22;Total Inorganic N;winter;0.07283484;0.13166298;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11715;BAL;CW;CW-BC1;SE;23;Total Inorganic N;winter;0.07283484;0.13166298;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11783;BAL;CW;CW-BC1;SE;16;Orthophosphate;winter;5.885290147;9.29256339;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11784;BAL;CW;CW-BC1;SE;17;Orthophosphate;winter;5.885290147;9.29256339;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11758;BAL;CW;CW-BC1;SE;16;TP;summer;10.84081635;16.72583094;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11759;BAL;CW;CW-BC1;SE;17;TP;summer;10.84081635;16.72583094;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11760;BAL;CW;CW-BC1;SE;18;TP;summer;10.22134113;11.15055396;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11761;BAL;CW;CW-BC1;SE;19;TP;summer;10.22134113;11.15055396;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11762;BAL;CW;CW-BC1;SE;20;TP;summer;8.98239069;12.07976679;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11763;BAL;CW;CW-BC1;SE;21;TP;summer;8.98239069;12.07976679;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11683;BAL;CW;CW-BC1;SE;16;TN;summer;0.29554137;0.37537956;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11684;BAL;CW;CW-BC1;SE;17;TN;summer;0.29554137;0.37537956;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+5012;BAL;CW;CW-BC1-A;FI;FIVHA3;TP;summer;20;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+5013;BAL;CW;CW-BC1-A;FI;FIVHA3;TP;summer;14;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4909;BAL;CW;CW-BC1-A;FI;FIVHA3;Secchi disk depth;summer;4.1;NA;m;FALSE;NA;Surf;Rver2;seasonal
+4908;BAL;CW;CW-BC1-A;FI;FIVHA3;Secchi disk depth;summer;3.3;NA;m;FALSE;NA;Surf;Rver2;seasonal
+4962;BAL;CW;CW-BC1-A;FI;FIVHA3;TN;summer;0.315;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+4905;BAL;CW;CW-BC1-A;FI;FIVHA3;Secchi disk depth;summer;3.7;NA;m;FALSE;NA;Surf;Rver2;seasonal
+4963;BAL;CW;CW-BC1-A;FI;FIVHA3;TN;summer;0.275;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+4958;BAL;CW;CW-BC1-A;FI;FIVHA3;TN;summer;0.325;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+5009;BAL;CW;CW-BC1-A;FI;FIVHA3;TP;summer;13;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4904;BAL;CW;CW-BC1-A;FI;FIVHA3;Secchi disk depth;summer;2.3;NA;m;FALSE;NA;Surf;Rver2;seasonal
+5008;BAL;CW;CW-BC1-A;FI;FIVHA3;TP;summer;17;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4710;BAL;CW;CW-BC1-B;FI;FIVHA4;Secchi disk depth;summer;2.4;NA;m;FALSE;NA;Surf;Rver2;seasonal
+4711;BAL;CW;CW-BC1-B;FI;FIVHA4;Secchi disk depth;summer;3.3;NA;m;FALSE;NA;Surf;Rver2;seasonal
+4760;BAL;CW;CW-BC1-B;FI;FIVHA4;TN;summer;0.34;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+4761;BAL;CW;CW-BC1-B;FI;FIVHA4;TN;summer;0.315;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+4802;BAL;CW;CW-BC1-B;FI;FIVHA4;TP;summer;14;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4803;BAL;CW;CW-BC1-B;FI;FIVHA4;TP;summer;11;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+5350;BAL;CW;CW-BC1-B;FI;FIVHA5;Secchi disk depth;summer;3.3;NA;m;FALSE;NA;Surf;Rver2;seasonal
+5399;BAL;CW;CW-BC1-B;FI;FIVHA5;TN;summer;0.34;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+5400;BAL;CW;CW-BC1-B;FI;FIVHA5;TN;summer;0.315;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+5439;BAL;CW;CW-BC1-B;FI;FIVHA5;TP;summer;14;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+5440;BAL;CW;CW-BC1-B;FI;FIVHA5;TP;summer;11;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+5441;BAL;CW;CW-BC1-B;FI;FIVHA6;Secchi disk depth;summer;2.4;NA;m;FALSE;NA;Surf;Rver2;seasonal
+5442;BAL;CW;CW-BC1-B;FI;FIVHA6;Secchi disk depth;summer;3.3;NA;m;FALSE;NA;Surf;Rver2;seasonal
+5491;BAL;CW;CW-BC1-B;FI;FIVHA6;TN;summer;0.34;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+5492;BAL;CW;CW-BC1-B;FI;FIVHA6;TN;summer;0.315;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+5530;BAL;CW;CW-BC1-B;FI;FIVHA6;TP;summer;14;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+5531;BAL;CW;CW-BC1-B;FI;FIVHA6;TP;summer;11;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4959;BAL;CW;CW-BC1-B;FI;FIVHA3;TN;summer;0.28;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+4960;BAL;CW;CW-BC1-B;FI;FIVHA3;TN;summer;0.34;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+4961;BAL;CW;CW-BC1-B;FI;FIVHA3;TN;summer;0.315;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+5011;BAL;CW;CW-BC1-B;FI;FIVHA3;TP;summer;11;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4906;BAL;CW;CW-BC1-B;FI;FIVHA3;Secchi disk depth;summer;2.4;NA;m;FALSE;NA;Surf;Rver2;seasonal
+4907;BAL;CW;CW-BC1-B;FI;FIVHA3;Secchi disk depth;summer;3.3;NA;m;FALSE;NA;Surf;Rver2;seasonal
+5349;BAL;CW;CW-BC1-B;FI;FIVHA5;Secchi disk depth;summer;2.4;NA;m;FALSE;NA;Surf;Rver2;seasonal
+5010;BAL;CW;CW-BC1-B;FI;FIVHA3;TP;summer;14;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4855;BAL;CW;CW-BC3;FI;FIVHA2;TN;summer;0.35;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+11238;BAL;CW;CW-BC3;EE;EE1;Orthophosphate;AA-EQS;NA;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+4901;BAL;CW;CW-BC3;FI;FIVHA2;TP;summer;20;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4900;BAL;CW;CW-BC3;FI;FIVHA2;TP;summer;24;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+4806;BAL;CW;CW-BC3;FI;FIVHA2;Secchi disk depth;summer;3.5;NA;m;FALSE;NA;Surf;Rver2;seasonal
+11240;BAL;CW;CW-BC3;EE;EE2;Secchi disk depth;summer;4.2;NA;m;FALSE;NA;NA;Rver2;seasonal
+11248;BAL;CW;CW-BC3;EE;EE2;TP;summer;21;NA;µgP/L;FALSE;NA;nutrients usually from 1, 5 and 10 m depth;Rver2;seasonal
+11236;BAL;CW;CW-BC3;EE;EE2;Orthophosphate;AA-EQS;NA;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11234;BAL;CW;CW-BC3;EE;EE1;Nitrate as N;AA-EQS;NA;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11232;BAL;CW;CW-BC3;EE;EE2;Nitrate as N;AA-EQS;NA;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+4807;BAL;CW;CW-BC3;FI;FIVHA2;Secchi disk depth;summer;4.4;NA;m;FALSE;NA;Surf;Rver2;seasonal
+11228;BAL;CW;CW-BC3;EE;EE2;Dissolved oxygen;Median;NA;NA;mg/L;FALSE;NA;NA;Rver2;annual
+11242;BAL;CW;CW-BC3;EE;EE1;Secchi disk depth;summer;5.3;NA;m;FALSE;NA;NA;Rver2;seasonal
+4856;BAL;CW;CW-BC3;FI;FIVHA2;TN;summer;0.325;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+11250;BAL;CW;CW-BC3;EE;EE1;TP;summer;17;NA;µgP/L;FALSE;NA;nutrients usually from 1, 5 and 10 m depth;Rver2;seasonal
+11246;BAL;CW;CW-BC3;EE;EE1;TN;AA-EQS;0.25;NA;mgN/L;FALSE;NA;nutrients usually from 1, 5 and 10 m depth;Rver2;annual
+11230;BAL;CW;CW-BC3;EE;EE1;Dissolved oxygen;Median;NA;NA;mg/L;FALSE;NA;NA;Rver2;annual
+11244;BAL;CW;CW-BC3;EE;EE2;TN;AA-EQS;0.3;NA;mgN/L;FALSE;NA;nutrients usually from 1, 5 and 10 m depth;Rver2;annual
+6541;BAL;CW;CW-BC4;EE;EE1;Dissolved oxygen;Median;NA;NA;mg/L;FALSE;NA;NA;Rver2;annual
+6551;BAL;CW;CW-BC4;EE;EE1;Orthophosphate;AA-EQS;NA;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+9011;BAL;CW;CW-BC4;LV;LVVUBA;Secchi disk depth;summer;4;NA;m;FALSE;NA;NA;Rver2;seasonal
+6538;BAL;CW;CW-BC4;EE;EE1;Secchi disk depth;summer;4.9;6.5;m;FALSE;NA;NA;Rver2;seasonal
+8949;BAL;CW;CW-BC4;LV;LVGUBA;Orthophosphate;winter;23.231;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+9037;BAL;CW;CW-BC4;LV;LVLUBA;Secchi disk depth;summer;4;NA;m;FALSE;NA;NA;Rver2;seasonal
+6550;BAL;CW;CW-BC4;EE;EE1;TN;summer;0.27;6;mgN/L;FALSE;NA;Other;Rver2;seasonal
+9014;BAL;CW;CW-BC4;LV;LVVUBA;Nitrate as N;winter;0.154;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+6546;BAL;CW;CW-BC4;EE;EE1;Nitrate as N;AA-EQS;NA;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+9039;BAL;CW;CW-BC4;LV;LVLUBA;Nitrate as N;winter;0.154;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8945;BAL;CW;CW-BC4;LV;LVGUBA;Secchi disk depth;summer;4;NA;m;FALSE;NA;NA;Rver2;seasonal
+9017;BAL;CW;CW-BC4;LV;LVVUBA;Orthophosphate;winter;23.231;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8947;BAL;CW;CW-BC4;LV;LVGUBA;Nitrate as N;winter;0.154;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+6552;BAL;CW;CW-BC4;EE;EE1;TP;summer;12;100;µgP/L;FALSE;NA;Other;Rver2;seasonal
+9041;BAL;CW;CW-BC4;LV;LVLUBA;Orthophosphate;winter;23.231;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11405;BAL;CW;CW-BC5;PL;PL2000;% oxygen saturation;AA-EQS;80;120;PC02;TRUE;High low;Surf;Rver2;annual
+9016;BAL;CW;CW-BC5;LV;LVVUBA;Orthophosphate;winter;18.585;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11420;BAL;CW;CW-BC5;PL;PL2000;Total Inorganic N;winter;0.1;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+9013;BAL;CW;CW-BC5;LV;LVVUBA;Nitrate as N;winter;0.112;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+9015;BAL;CW;CW-BC5;LV;LVVUBA;Orthophosphate;winter;18.585;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11407;BAL;CW;CW-BC5;PL;PL2000;Nitrate as N;winter;0.12;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+9012;BAL;CW;CW-BC5;LV;LVVUBA;Nitrate as N;winter;0.112;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11422;BAL;CW;CW-BC5;PL;PL2000;TP;summer;30;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11424;BAL;CW;CW-BC5;PL;PL2000;TP;summer;30;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11408;BAL;CW;CW-BC5;PL;PL2000;Nitrate as N;winter;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11411;BAL;CW;CW-BC5;PL;PL2000;Orthophosphate;winter;24;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11400;BAL;CW;CW-BC5;PL;PL2000;Dissolved oxygen;AA-EQS;4.2;NA;mg/L;FALSE;NA;Bottom;Rver2;annual
+11402;BAL;CW;CW-BC5;PL;PL2000;% oxygen saturation;AA-EQS;80;120;PC02;TRUE;High low;Surf;Rver2;annual
+11403;BAL;CW;CW-BC5;PL;PL2000;% oxygen saturation;AA-EQS;80;120;PC02;TRUE;High low;Surf;Rver2;annual
+11412;BAL;CW;CW-BC5;PL;PL2000;Orthophosphate;winter;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11415;BAL;CW;CW-BC5;PL;PL2000;Secchi disk depth;summer;3.5;NA;m;FALSE;NA;NA;Rver2;seasonal
+11406;BAL;CW;CW-BC5;PL;PL2000;Nitrate as N;winter;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11419;BAL;CW;CW-BC5;PL;PL2000;Total Inorganic N;winter;0.15;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11418;BAL;CW;CW-BC5;PL;PL2000;Total Inorganic N;winter;0.1;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11391;BAL;CW;CW-BC5;LT;LT1100;Secchi disk depth;summer;5;5.9;m;TRUE;subType;NA;Rver2;seasonal
+11399;BAL;CW;CW-BC5;PL;PL2000;Dissolved oxygen;AA-EQS;4.2;NA;mg/L;FALSE;NA;Bottom;Rver2;annual
+11394;BAL;CW;CW-BC5;LT;LT1100;Secchi disk depth;summer;5;5.9;m;TRUE;subType;NA;Rver2;seasonal
+11410;BAL;CW;CW-BC5;PL;PL2000;Orthophosphate;winter;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11393;BAL;CW;CW-BC5;LT;LT1100;TP;summer;15;26;µgP/L;TRUE;subType;Surf;Rver2;seasonal
+11392;BAL;CW;CW-BC5;LT;LT1100;TN;summer;0.13;0.25;mgN/L;TRUE;subType;Surf;Rver2;seasonal
+9009;BAL;CW;CW-BC5;LV;LVVUBA;Secchi disk depth;summer;4.5;NA;m;FALSE;NA;NA;Rver2;seasonal
+9010;BAL;CW;CW-BC5;LV;LVVUBA;Secchi disk depth;summer;4.5;NA;m;FALSE;NA;NA;Rver2;seasonal
+11389;BAL;CW;CW-BC5;LT;LT1100;TN;summer;0.13;0.25;mgN/L;TRUE;subType;Surf;Rver2;seasonal
+11414;BAL;CW;CW-BC5;PL;PL2000;Secchi disk depth;summer;5.6;NA;m;FALSE;NA;NA;Rver2;seasonal
+11390;BAL;CW;CW-BC5;LT;LT1100;TP;summer;15;26;µgP/L;TRUE;subType;Surf;Rver2;seasonal
+11423;BAL;CW;CW-BC5;PL;PL2000;TP;summer;33;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11398;BAL;CW;CW-BC5;PL;PL2000;Dissolved oxygen;AA-EQS;4.2;NA;mg/L;FALSE;NA;Bottom;Rver2;annual
+11416;BAL;CW;CW-BC5;PL;PL2000;Secchi disk depth;summer;5.6;NA;m;FALSE;NA;NA;Rver2;seasonal
+11699;BAL;CW;CW-BC6;SE;8;Total Inorganic N;winter;0.04061943;0.58267872;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11749;BAL;CW;CW-BC6;SE;8;TP;summer;12.69924201;15.17714289;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11648;BAL;CW;CW-BC6;SE;7;TN;winter;0.28293534;1.04349915;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11700;BAL;CW;CW-BC6;SE;9;Total Inorganic N;winter;0.04061943;0.58267872;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11725;BAL;CW;CW-BC6;SE;9;TP;winter;22.30110792;35.00034993;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11724;BAL;CW;CW-BC6;SE;8;TP;winter;22.30110792;35.00034993;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11698;BAL;CW;CW-BC6;SE;7;Total Inorganic N;winter;0.04762278;0.980469;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11649;BAL;CW;CW-BC6;SE;8;TN;winter;0.28293534;0.90623349;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11775;BAL;CW;CW-BC6;SE;9;Orthophosphate;winter;8.673059164;11.46082818;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11750;BAL;CW;CW-BC6;SE;9;TP;summer;12.69924201;15.17714289;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11674;BAL;CW;CW-BC6;SE;8;TN;summer;0.27172998;0.61349346;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11748;BAL;CW;CW-BC6;SE;7;TP;summer;12.69924201;26.01795924;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11774;BAL;CW;CW-BC6;SE;8;Orthophosphate;winter;8.673059164;11.46082818;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11675;BAL;CW;CW-BC6;SE;9;TN;summer;0.27172998;0.61349346;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11723;BAL;CW;CW-BC6;SE;7;TP;winter;22.30110792;46.15090389;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11650;BAL;CW;CW-BC6;SE;9;TN;winter;0.28293534;0.90623349;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11773;BAL;CW;CW-BC6;SE;7;Orthophosphate;winter;12.39008452;14.86810142;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11673;BAL;CW;CW-BC6;SE;7;TN;summer;0.20169648;0.27172998;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11413;BAL;CW;CW-BC7;PL;PL6000;Orthophosphate;winter;24;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11404;BAL;CW;CW-BC7;PL;PL6000;% oxygen saturation;AA-EQS;80;120;PC02;TRUE;High low;Surf;Rver2;annual
+11425;BAL;CW;CW-BC7;PL;PL6000;TP;summer;38;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11421;BAL;CW;CW-BC7;PL;PL6000;Total Inorganic N;winter;0.23;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11409;BAL;CW;CW-BC7;PL;PL6000;Nitrate as N;winter;0.15;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11401;BAL;CW;CW-BC7;PL;PL6000;Dissolved oxygen;AA-EQS;4.2;NA;mg/L;FALSE;NA;Bottom;Rver2;annual
+11417;BAL;CW;CW-BC7;PL;PL6000;Secchi disk depth;summer;3.8;NA;m;FALSE;NA;NA;Rver2;seasonal
+5014;BAL;CW;CW-BC9;FI;FIVHA3;TP;summer;20;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+5655;BAL;CW;CW-BC9;FI;FIWDA;TN;summer;0.333;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+11781;BAL;CW;CW-BC9;SE;14;Orthophosphate;winter;11.77058029;15.79735776;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+4903;BAL;CW;CW-BC9;FI;FIVHA3;Secchi disk depth;summer;5.8;NA;m;FALSE;NA;Surf;Rver2;seasonal
+11706;BAL;CW;CW-BC9;SE;14;Total Inorganic N;winter;0.0420201;0.35296884;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+4854;BAL;CW;CW-BC9;FI;FIVHA2;TN;summer;0.29;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+4805;BAL;CW;CW-BC9;FI;FIVHA2;Secchi disk depth;summer;5.8;NA;m;FALSE;NA;Surf;Rver2;seasonal
+11681;BAL;CW;CW-BC9;SE;14;TN;summer;0.27032931;0.56867202;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+4910;BAL;CW;CW-BC9;FI;FIVHA3;Secchi disk depth;summer;4.6;NA;m;FALSE;NA;Surf;Rver2;seasonal
+5007;BAL;CW;CW-BC9;FI;FIVHA3;TP;summer;18;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+5659;BAL;CW;CW-BC9;FI;FIWDA;TP;summer;18;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+4957;BAL;CW;CW-BC9;FI;FIVHA3;TN;summer;0.29;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+11731;BAL;CW;CW-BC9;SE;14;TP;winter;18.89399421;48.93854238;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+4964;BAL;CW;CW-BC9;FI;FIVHA3;TN;summer;0.31;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+5654;BAL;CW;CW-BC9;FI;FIWDA;Secchi disk depth;summer;6.3;NA;m;FALSE;NA;NA;Rver2;seasonal
+11656;BAL;CW;CW-BC9;SE;14;TN;winter;0.28713735;0.74795778;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+4899;BAL;CW;CW-BC9;FI;FIVHA2;TP;summer;18;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+11756;BAL;CW;CW-BC9;SE;14;TP;summer;12.3895044;31.28349861;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+5656;BAL;CW;CW-BC9;FI;FIWDA;TN;summer;0.319;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+5660;BAL;CW;CW-BC9;FI;FIWDA;TP;summer;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+5653;BAL;CW;CW-BC9;FI;FIWDA;Secchi disk depth;summer;5.3;NA;m;FALSE;NA;NA;Rver2;seasonal
+8137;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+7862;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+7948;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+7864;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+8107;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+7863;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+8105;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8138;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+7950;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+8018;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8135;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+7861;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+8106;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+7947;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+7949;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+11439;BLA;CW;CW-BL1;RO;RO1000;TP;AA-EQS;21.682;30.974;µgP/L;TRUE;subType;NA;Rver2;annual
+8030;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7865;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+8104;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8133;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8139;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8020;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8031;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8019;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7945;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+8017;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7866;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+8116;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8006;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8004;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7942;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+11437;BLA;CW;CW-BL1;RO;RO1000;Total Inorganic N;AA-EQS;0.126;0.189;mgN/L;TRUE;subType;NA;Rver2;annual
+8136;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8005;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8131;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8108;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8027;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8001;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8015;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7998;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8111;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8002;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7943;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+8028;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8029;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8134;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8128;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8021;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8117;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8115;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+7868;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+8000;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8022;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7867;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+7946;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+11435;BLA;CW;CW-BL1;RO;RO1000;% oxygen saturation;AA-EQS;60;80;PC02;TRUE;High low;Bottom;Rver2;annual
+8114;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8003;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8016;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7996;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8110;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+7997;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7869;BLA;CW;CW-BL1;BG;BG2000;Secchi disk depth;AA-EQS;2.6;3.7;m;FALSE;NA;NA;Rver2;annual
+7944;BLA;CW;CW-BL1;BG;BG2000;Dissolved oxygen;summer;8.9;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+8129;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8132;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;autumn;13;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8130;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8127;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8109;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8010;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8122;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8112;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;winter;20;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8023;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8024;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8026;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+5826;BLA;CW;CW-BL1;RO;RO1000;Nitrate as N;AA-EQS;0.339;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+5821;BLA;CW;CW-BL1;RO;RO1000;Secchi disk depth;AA-EQS;5.6;7.5;m;TRUE;subType;NA;Rver2;annual
+5824;BLA;CW;CW-BL1;RO;RO1000;Dissolved oxygen;AA-EQS;6.2;9;mg/L;TRUE;High low;NA;Rver2;annual
+8008;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8120;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8009;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8118;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8113;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+7999;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;winter;0.135;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8025;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;autumn;0.08;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8014;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;summer;0.04;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8123;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8126;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8007;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8013;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8124;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8121;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+5825;BLA;CW;CW-BL1;RO;RO1000;Orthophosphate;AA-EQS;6.195;9.293;µgP/L;TRUE;subType;NA;Rver2;annual
+8119;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;spring;15;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8125;BLA;CW;CW-BL1;BG;BG2000;Orthophosphate;summer;10;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+8011;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+8012;BLA;CW;CW-BL1;BG;BG2000;Nitrate as N;spring;0.075;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+7356;NEA;CW;CW-NEA1/26;PT;PTRH7;Nitrate as N;90th percentile;0.13;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+7337;NEA;CW;CW-NEA1/26;PT;PTRH8;Nitrate as N;90th percentile;0.13;0.7;mgN/L;TRUE;subType;NA;Rver2;quantile
+11116;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11099;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6609;NEA;CW;CW-NEA1/26;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11114;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11375;NEA;CW;CW-NEA1/26;FR;FRA;Total Inorganic N;AA-EQS;0.462;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+6621;NEA;CW;CW-NEA1/26;UK;ALL;Total Inorganic N;winter;0.21;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11141;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11153;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+7342;NEA;CW;CW-NEA1/26;PT;PTRH8;Orthophosphate;90th percentile;20;500;µgP/L;TRUE;subType;NA;Rver2;quantile
+7361;NEA;CW;CW-NEA1/26;PT;PTRH7;Orthophosphate;90th percentile;20;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11098;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11104;NEA;CW;CW-NEA1/26;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+7323;NEA;CW;CW-NEA1/26;PT;PTRH1;Orthophosphate;90th percentile;20;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+7456;NEA;CW;CW-NEA1/26;PT;PTRH2;Orthophosphate;90th percentile;20;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11113;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11097;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7318;NEA;CW;CW-NEA1/26;PT;PTRH1;Nitrate as N;90th percentile;0.13;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11115;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11117;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11142;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11118;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11374;NEA;CW;CW-NEA1/26;FR;FRA;Total Inorganic N;AA-EQS;0.406;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11096;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11111;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11112;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11157;NEA;CW;CW-NEA1/26;UK;TURC;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11140;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+7162;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11155;NEA;CW;CW-NEA1/26;UK;ITURC;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11152;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11127;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6669;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11108;NEA;CW;CW-NEA1/26;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11376;NEA;CW;CW-NEA1/26;FR;FRF;Total Inorganic N;AA-EQS;0.462;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+6794;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+6594;NEA;CW;CW-NEA1/26;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+6845;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11095;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11427;NEA;CW;CW-NEA1/26;PT;PTRH5A;Nitrate as N;90th percentile;0.13;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11093;NEA;CW;CW-NEA1/26;UK;ALL;Dissolved oxygen;5th percentile;4.13;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+6745;NEA;CW;CW-NEA1/26;UK;ALL;Total Inorganic N;Regression;0.252;NA;mgN/L;NA;NA;NA;Rver2;other
+7049;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11154;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11156;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11106;NEA;CW;CW-NEA1/26;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11119;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11120;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11426;NEA;CW;CW-NEA1/26;PT;PTRH5A;Nitrate as N;90th percentile;0.13;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+6589;NEA;CW;CW-NEA1/26;UK;ALL;Total Inorganic N;winter;0.21;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11123;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11151;NEA;CW;CW-NEA1/26;UK;VTURC;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11091;NEA;CW;CW-NEA1/26;UK;ALL;Dissolved oxygen;5th percentile;4.13;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+7432;NEA;CW;CW-NEA1/26;PT;PTRH3;Nitrate as N;90th percentile;0.13;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+7437;NEA;CW;CW-NEA1/26;PT;PTRH3;Orthophosphate;90th percentile;20;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+7451;NEA;CW;CW-NEA1/26;PT;PTRH2;Nitrate as N;90th percentile;0.13;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11138;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+8765;NEA;CW;CW-NEA1/26;BE;Type 2;Orthophosphate;MAC-EQS;24.78;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11378;NEA;CW;CW-NEA1/26;FR;FRH;Total Inorganic N;AA-EQS;0.462;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11144;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7375;NEA;CW;CW-NEA1/26;PT;PTRH6;Nitrate as N;90th percentile;0.13;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11122;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11161;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+7413;NEA;CW;CW-NEA1/26;PT;PTRH4A;Nitrate as N;90th percentile;0.13;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11124;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+9410;NEA;CW;CW-NEA1/26;FR;FRH;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11164;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+9435;NEA;CW;CW-NEA1/26;FR;FRG;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11129;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11126;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+6947;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11143;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11130;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+6896;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+7380;NEA;CW;CW-NEA1/26;PT;PTRH6;Orthophosphate;90th percentile;20;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11110;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11160;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7418;NEA;CW;CW-NEA1/26;PT;PTRH4A;Orthophosphate;90th percentile;20;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11134;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6733;NEA;CW;CW-NEA1/26;UK;ALL;Total Inorganic N;Regression;0.252;NA;mgN/L;NA;NA;NA;Rver2;other
+11137;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11139;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11165;NEA;CW;CW-NEA1/26;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11159;NEA;CW;CW-NEA1/26;UK;VTURC;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11377;NEA;CW;CW-NEA1/26;FR;FRG;Total Inorganic N;AA-EQS;0.462;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11128;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11131;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11150;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11121;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11147;NEA;CW;CW-NEA1/26;UK;ITURC;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+9387;NEA;CW;CW-NEA1/26;FR;FRA;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+9457;NEA;CW;CW-NEA1/26;FR;FRF;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11162;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+7227;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11125;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11148;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11145;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+8763;NEA;CW;CW-NEA1/26;BE;Type 2;Dissolved oxygen;minimum;6;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+6998;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11163;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7100;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11146;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11136;NEA;CW;CW-NEA1/26;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11431;NEA;CW;CW-NEA1/26;PT;PTRH5A;Orthophosphate;90th percentile;20;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11133;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11149;NEA;CW;CW-NEA1/26;UK;TURC;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11158;NEA;CW;CW-NEA1/26;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11132;NEA;CW;CW-NEA1/26;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11135;NEA;CW;CW-NEA1/26;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11430;NEA;CW;CW-NEA1/26;PT;PTRH5A;Orthophosphate;90th percentile;20;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+6721;NEA;CW;CW-NEA1/26;UK;ALL;Total Inorganic N;Regression;0.252;NA;mgN/L;NA;NA;NA;Rver2;other
+8764;NEA;CW;CW-NEA1/26;BE;Type 2;Total Inorganic N;MAC-EQS;0.21;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+7281;NEA;CW;CW-NEA1/26;UK;CLEC;Total Inorganic N;winter;0.252;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11769;NEA;CW;CW-NEA10;SE;3;Orthophosphate;winter;8.673059164;22.92165636;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11744;NEA;CW;CW-NEA10;SE;3;TP;summer;12.07976679;17.03556855;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11719;NEA;CW;CW-NEA10;SE;3;TP;winter;16.72583094;29.42507295;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11669;NEA;CW;CW-NEA10;SE;3;TN;summer;0.17788509;0.25352127;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11644;NEA;CW;CW-NEA10;SE;3;TN;winter;0.33756147;0.40899564;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11694;NEA;CW;CW-NEA10;SE;3;Total Inorganic N;winter;0.12465963;0.17928576;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11101;NEA;CW;CW-NEA7;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11103;NEA;CW;CW-NEA7;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+6707;NEA;CW;CW-NEA7;UK;ALL;Total Inorganic N;winter;0.21;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+6686;NEA;CW;CW-NEA7;UK;ALL;Dissolved oxygen;5th percentile;4.13;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+6684;NEA;CW;CW-NEA7;UK;ALL;Total Inorganic N;winter;0.21;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+6709;NEA;CW;CW-NEA7;UK;ALL;Dissolved oxygen;5th percentile;4.13;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11691;NEA;CW;CW-NEA8a;SE;1n;Total Inorganic N;winter;0.12465963;0.17928576;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11641;NEA;CW;CW-NEA8a;SE;1n;TN;winter;0.33756147;0.40899564;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11766;NEA;CW;CW-NEA8a;SE;1n;Orthophosphate;winter;8.673059164;22.92165636;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11741;NEA;CW;CW-NEA8a;SE;1n;TP;summer;12.07976679;17.03556855;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11716;NEA;CW;CW-NEA8a;SE;1n;TP;winter;16.72583094;29.42507295;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11666;NEA;CW;CW-NEA8a;SE;1n;TN;summer;0.17788509;0.25352127;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11695;NEA;CW;CW-NEA8b;SE;4;Total Inorganic N;winter;0.07703685;0.26332596;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11646;NEA;CW;CW-NEA8b;SE;5;TN;winter;0.30954807;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11647;NEA;CW;CW-NEA8b;SE;6;TN;winter;0.30954807;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11771;NEA;CW;CW-NEA8b;SE;5;Orthophosphate;winter;11.77058029;18.27537467;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11747;NEA;CW;CW-NEA8b;SE;6;TP;summer;12.69924201;17.65504377;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11696;NEA;CW;CW-NEA8b;SE;5;Total Inorganic N;winter;0.04762278;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11667;NEA;CW;CW-NEA8b;SE;1s;TN;summer;0.21850452;0.39078693;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11746;NEA;CW;CW-NEA8b;SE;5;TP;summer;12.69924201;17.65504377;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11670;NEA;CW;CW-NEA8b;SE;4;TN;summer;0.21850452;0.39078693;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11642;NEA;CW;CW-NEA8b;SE;1s;TN;winter;0.30114405;0.53505594;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11722;NEA;CW;CW-NEA8b;SE;6;TP;winter;19.20373182;27.56664729;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11697;NEA;CW;CW-NEA8b;SE;6;Total Inorganic N;winter;0.04762278;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11772;NEA;CW;CW-NEA8b;SE;6;Orthophosphate;winter;11.77058029;18.27537467;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11645;NEA;CW;CW-NEA8b;SE;4;TN;winter;0.30114405;0.53505594;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11767;NEA;CW;CW-NEA8b;SE;1s;Orthophosphate;winter;9.29256339;18.58512678;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11770;NEA;CW;CW-NEA8b;SE;4;Orthophosphate;winter;9.29256339;18.58512678;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11742;NEA;CW;CW-NEA8b;SE;1s;TP;summer;13.93819245;17.65504377;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11720;NEA;CW;CW-NEA8b;SE;4;TP;winter;19.20373182;27.8763849;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11721;NEA;CW;CW-NEA8b;SE;5;TP;winter;19.20373182;27.56664729;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11692;NEA;CW;CW-NEA8b;SE;1s;Total Inorganic N;winter;0.07703685;0.26332596;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11717;NEA;CW;CW-NEA8b;SE;1s;TP;winter;19.20373182;27.8763849;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11671;NEA;CW;CW-NEA8b;SE;5;TN;summer;0.21850452;0.27733266;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11672;NEA;CW;CW-NEA8b;SE;6;TN;summer;0.21850452;0.27733266;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11745;NEA;CW;CW-NEA8b;SE;4;TP;summer;13.93819245;17.65504377;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11668;NEA;CW;CW-NEA9;SE;2;TN;summer;0.17788509;0.25352127;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11693;NEA;CW;CW-NEA9;SE;2;Total Inorganic N;winter;0.12465963;0.17928576;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11718;NEA;CW;CW-NEA9;SE;2;TP;winter;16.72583094;29.42507295;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11643;NEA;CW;CW-NEA9;SE;2;TN;winter;0.33756147;0.40899564;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11743;NEA;CW;CW-NEA9;SE;2;TP;summer;12.07976679;17.03556855;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11768;NEA;CW;CW-NEA9;SE;2;Orthophosphate;winter;8.673059164;22.92165636;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11090;MED;CW;CW-Type_IIA;FR;FRD;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+8660;MED;CW;CW-Type_IIA_Adriatic;HR;HRJ;Total Inorganic N;Median;0.21;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+8652;MED;CW;CW-Type_IIA_Adriatic;HR;HRJ;% oxygen saturation;Median;150;NA;PC02;FALSE;NA;Surf;Rver2;annual
+9305;MED;CW;CW-Type_IIA_Adriatic;SI;SIRBD2;TP;AGM_int_c;13;NA;µgP/L;FALSE;NA;Other;Rver2;annual
+8645;MED;CW;CW-Type_IIA_Adriatic;HR;HRJ;Orthophosphate;Median;7.744;7.74380283;µgP/L;FALSE;NA;NA;Rver2;annual
+8633;MED;CW;CW-Type_IIA_Adriatic;HR;HRJ;Secchi disk depth;Median;5;NA;m;FALSE;NA;NA;Rver2;annual
+8649;MED;CW;CW-Type_IIA_Adriatic;HR;HRJ;TP;Median;18.584;18.5842566;µgP/L;FALSE;NA;NA;Rver2;annual
+8661;MED;CW;CW-Type_IIA_Adriatic;HR;HRJ;Total Inorganic N;Median;0.14;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+9304;MED;CW;CW-Type_IIA_Adriatic;SI;SIRBD2;Orthophosphate;AGM_int_c;4.6;NA;µgP/L;FALSE;NA;Other;Rver2;annual
+11088;MED;CW;CW-Type_IIA_Adriatic;HR;HRJ;% oxygen saturation;Median;40;NA;PC02;FALSE;NA;Bottom;Rver2;annual
+9303;MED;CW;CW-Type_IIA_Adriatic;SI;SIRBD2;Nitrate as N;AGM_int_c;0.035;NA;mgN/L;FALSE;NA;Other;Rver2;annual
+11382;MED;CW;CW-Type_IIIE;GR;Greek nat type;TP;AA-EQS;9.292;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11379;MED;CW;CW-Type_IIIE;GR;Greek nat type;Nitrate as N;AA-EQS;0.014;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+8728;MED;CW;CW-Type_IIIE;CY;CY001;Nitrate as N;AA-EQS;0.05;0.294;mgN/L;TRUE;subType;NA;Rver2;annual
+8725;MED;CW;CW-Type_IIIE;CY;CY001;Dissolved oxygen;AA-EQS;4;9;mg/L;TRUE;High low;NA;Rver2;annual
+11381;MED;CW;CW-Type_IIIE;GR;Greek nat type;Orthophosphate;AA-EQS;3.098;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+8731;MED;CW;CW-Type_IIIE;CY;CY001;Orthophosphate;AA-EQS;30;165;µgP/L;TRUE;subType;NA;Rver2;annual
+11380;MED;CW;CW-Type_IIIE;GR;Greek nat type;TN;AA-EQS;0.112;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+9355;MED;CW;CW-Type_IIIW;FR;FRD;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+9481;MED;CW;CW-Type_Island-W;FR;FRE;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11454;NEA;CW;inapplicable;NO;ALL;TP;winter;24;NA;µgP/L;FALSE;salinity range;Surf;Rver2;seasonal
+9372;MED;TW;inapplicable;FR;FRD;TP;90th percentile;92.921;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11459;NEA;CW;inapplicable;NO;ALL;Secchi disk depth;summer;6;NA;m;FALSE;salinity range;Surf;Rver2;seasonal
+11453;NEA;CW;inapplicable;NO;ALL;TP;summer;15.5;NA;µgP/L;FALSE;salinity range;Surf;Rver2;seasonal
+9376;MED;TW;inapplicable;FR;FRD;Orthophosphate;90th percentile;30.975;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+9040;BAL;TW;inapplicable;LV;LVLUBA;Orthophosphate;winter;27.878;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+4902;BAL;CW;inapplicable;FI;FIVHA3;Secchi disk depth;summer;3.6;NA;m;FALSE;NA;Surf;Rver2;seasonal
+11457;NEA;CW;inapplicable;NO;ALL;Orthophosphate;summer;6.5;NA;µgP/L;FALSE;salinity range;Surf;Rver2;seasonal
+11587;NEA;TW;inapplicable;PT;PTRH4A;Nitrate as N;90th percentile;0.3;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+9411;NEA;TW;inapplicable;FR;FRH;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11468;NEA;TW;inapplicable;DE;T2;TN;AA-EQS;1;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+5006;BAL;CW;inapplicable;FI;FIVHA3;TP;summer;23;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+11470;NEA;TW;inapplicable;DE;T3;Total Inorganic N;winter;0.8;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+9470;NEA;TW;inapplicable;FR;FRF;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11472;NEA;TW;inapplicable;DE;T4;TP;AA-EQS;45;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+4956;BAL;CW;inapplicable;FI;FIVHA3;TN;summer;0.325;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+9496;MED;TW;inapplicable;FR;FRE;TP;90th percentile;92.921;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11476;NEA;TW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;0.036;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+9498;MED;TW;inapplicable;FR;FRE;Total Inorganic N;90th percentile;0.084;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11452;NEA;CW;inapplicable;NO;ALL;TP;winter;25;NA;µgP/L;FALSE;salinity range;Surf;Rver2;seasonal
+4804;BAL;CW;inapplicable;FI;FIVHA2;Secchi disk depth;summer;3.6;NA;m;FALSE;NA;Surf;Rver2;seasonal
+11440;NEA;CW;inapplicable;NO;ALL;TN;winter;0.38;NA;mgN/L;FALSE;salinity range;Surf;Rver2;seasonal
+11441;NEA;CW;inapplicable;NO;ALL;TN;summer;0.337;NA;mgN/L;FALSE;salinity range;Surf;Rver2;seasonal
+11442;NEA;CW;inapplicable;NO;ALL;TN;winter;0.398;NA;mgN/L;FALSE;salinity range;Surf;Rver2;seasonal
+4853;BAL;CW;inapplicable;FI;FIVHA2;TN;summer;0.325;NA;mgN/L;FALSE;NA;Surf;Rver2;seasonal
+11444;NEA;CW;inapplicable;NO;ALL;% oxygen saturation;AA-EQS;50;NA;PC02;FALSE;salinity range;Bottom;Rver2;annual
+11445;NEA;CW;inapplicable;NO;ALL;Nitrate as N;summer;0.023;NA;mgN/L;FALSE;salinity range;Surf;Rver2;seasonal
+9036;BAL;TW;inapplicable;LV;LVLUBA;Secchi disk depth;summer;3;NA;m;FALSE;NA;NA;Rver2;seasonal
+4898;BAL;CW;inapplicable;FI;FIVHA2;TP;summer;23;NA;µgP/L;FALSE;NA;Surf;Rver2;seasonal
+9038;BAL;TW;inapplicable;LV;LVLUBA;Nitrate as N;winter;0.196;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+10584;BAL;CW;inapplicable;DE;B3;TN;AA-EQS;0.2;0.27;mgN/L;TRUE;subType;NA;Rver2;annual
+10585;BAL;CW;inapplicable;DE;B4;TN;AA-EQS;0.21;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+10586;BAL;CW;inapplicable;DE;B2;TP;AA-EQS;16;34;µgP/L;TRUE;subType;NA;Rver2;annual
+10587;BAL;CW;inapplicable;DE;B3;TP;AA-EQS;13.6;20;µgP/L;TRUE;subType;NA;Rver2;annual
+10589;BAL;CW;inapplicable;DE;B4;TP;AA-EQS;15.5;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+5652;BAL;CW;inapplicable;FI;FIWDA;Secchi disk depth;summer;3.7;NA;m;FALSE;NA;NA;Rver2;seasonal
+10598;NEA;CW;inapplicable;DE;N4;TN;AA-EQS;0.56;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+10599;NEA;CW;inapplicable;DE;N2;TP;AA-EQS;31;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+10600;NEA;CW;inapplicable;DE;N4;TP;AA-EQS;36;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+10601;NEA;CW;inapplicable;DE;N2;Total Inorganic N;winter;0.26;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+5657;BAL;CW;inapplicable;FI;FIWDA;TN;summer;0.312;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+5658;BAL;CW;inapplicable;FI;FIWDA;TP;summer;22;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+10613;NEA;CW;inapplicable;DE;N5;TP;AA-EQS;30;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+10615;NEA;CW;inapplicable;DE;N5;Total Inorganic N;winter;0.19;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+5797;BLA;TW;inapplicable;RO;RO1000;Secchi disk depth;AA-EQS;0.5;1;m;TRUE;subType;NA;Rver2;annual
+5800;BLA;TW;inapplicable;RO;RO1000;Dissolved oxygen;AA-EQS;6.2;9;mg/L;TRUE;High low;NA;Rver2;annual
+5801;BLA;TW;inapplicable;RO;RO1000;Orthophosphate;AA-EQS;30;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+5802;BLA;TW;inapplicable;RO;RO1000;Nitrate as N;AA-EQS;0.339;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+5805;BLA;TW;inapplicable;RO;RO1000;Secchi disk depth;AA-EQS;2.3;3;m;TRUE;subType;NA;Rver2;annual
+5808;BLA;TW;inapplicable;RO;RO1000;Dissolved oxygen;AA-EQS;6.2;9;mg/L;TRUE;High low;NA;Rver2;annual
+5809;BLA;TW;inapplicable;RO;RO1000;Orthophosphate;AA-EQS;9.293;13.939;µgP/L;TRUE;subType;NA;Rver2;annual
+5810;BLA;TW;inapplicable;RO;RO1000;Nitrate as N;AA-EQS;0.339;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+5813;BLA;CW;inapplicable;RO;RO1000;Secchi disk depth;AA-EQS;5.6;7.5;m;TRUE;subType;NA;Rver2;annual
+5816;BLA;CW;inapplicable;RO;RO1000;Dissolved oxygen;AA-EQS;6.2;9;mg/L;TRUE;High low;NA;Rver2;annual
+5817;BLA;CW;inapplicable;RO;RO1000;Orthophosphate;AA-EQS;6.195;9.293;µgP/L;TRUE;subType;NA;Rver2;annual
+5818;BLA;CW;inapplicable;RO;RO1000;Nitrate as N;AA-EQS;0.339;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11006;NEA;CW;inapplicable;NO;ALL;TN;summer;0.33;NA;mgN/L;FALSE;salinity range;Surf;Rver2;seasonal
+11517;BAL;TW;inapplicable;LT;LT1100;TP;summer;60;80;µgP/L;TRUE;salinity range;Surf;Rver2;seasonal
+11518;BAL;TW;inapplicable;LT;LT1100;TP;summer;37;53;µgP/L;TRUE;salinity range;Surf;Rver2;seasonal
+11519;BAL;TW;inapplicable;LT;LT1100;TP;summer;15;26;µgP/L;TRUE;salinity range;Surf;Rver2;seasonal
+6011;BLA;TW;inapplicable;RO;RO1000;% oxygen saturation;AA-EQS;80;100;PC02;TRUE;High low;NA;Rver2;annual
+6012;BLA;TW;inapplicable;RO;RO1000;% oxygen saturation;AA-EQS;60;80;PC02;TRUE;High low;Bottom;Rver2;annual
+7303;NEA;TW;inapplicable;PT;PTRH9;Nitrate as N;95th percentile;0.452;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+7304;NEA;TW;inapplicable;PT;PTRH9;TP;95th percentile;70;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11281;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.051;NA;mgN/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11282;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;23.547;NA;µgP/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11283;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;11.774;NA;µgP/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+6554;BAL;CW;inapplicable;EE;EE1;Secchi disk depth;summer;5.7;6.5;m;FALSE;NA;NA;Rver2;seasonal
+6558;BAL;CW;inapplicable;EE;EE1;Dissolved oxygen;Median;NA;NA;mg/L;FALSE;NA;NA;Rver2;annual
+6564;BAL;CW;inapplicable;EE;EE1;Nitrate as N;AA-EQS;NA;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+6569;BAL;CW;inapplicable;EE;EE1;TN;summer;0.24;6;mgN/L;FALSE;NA;Other;Rver2;seasonal
+6570;BAL;CW;inapplicable;EE;EE1;Orthophosphate;AA-EQS;NA;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+6571;BAL;CW;inapplicable;EE;EE1;TP;summer;7;100;µgP/L;FALSE;NA;Other;Rver2;seasonal
+11534;BAL;TW;inapplicable;PL;PL6000;Secchi disk depth;AA-EQS;1.1;NA;m;FALSE;NA;NA;Rver2;annual
+11535;BAL;TW;inapplicable;PL;PL6000;Dissolved oxygen;summer minimum;4.2;NA;mg/L;FALSE;NA;NA;Rver2;seasonal
+11537;BAL;TW;inapplicable;PL;PL6000;% oxygen saturation;maximum;80;120;PC02;TRUE;High low;surf;Rver2;quantile
+11540;BAL;TW;inapplicable;PL;PL6000;Nitrate as N;AA-EQS;0.9;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11541;BAL;TW;inapplicable;PL;PL6000;TN;AA-EQS;1.9;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11542;BAL;TW;inapplicable;PL;PL6000;Orthophosphate;AA-EQS;90;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11543;BAL;TW;inapplicable;PL;PL6000;TP;AA-EQS;150;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11544;BAL;TW;inapplicable;PL;PL6000;Total Inorganic N;AA-EQS;1.05;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11545;BAL;TW;inapplicable;PL;PL2000;Secchi disk depth;AA-EQS;1.5;NA;m;FALSE;NA;NA;Rver2;annual
+11546;BAL;TW;inapplicable;PL;PL2000;Dissolved oxygen;summer minimum;4.2;NA;mg/L;FALSE;NA;Bottom;Rver2;seasonal
+11548;BAL;TW;inapplicable;PL;PL2000;% oxygen saturation;maximum;80;120;PC02;TRUE;High low;surf;Rver2;quantile
+11550;BAL;TW;inapplicable;PL;PL2000;Nitrate as N;AA-EQS;0.011;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11551;BAL;TW;inapplicable;PL;PL2000;TN;AA-EQS;0.3;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11552;BAL;TW;inapplicable;PL;PL2000;Orthophosphate;AA-EQS;3;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11553;BAL;TW;inapplicable;PL;PL2000;TP;AA-EQS;30;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11554;BAL;TW;inapplicable;PL;PL2000;Total Inorganic N;AA-EQS;0.026;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11555;BAL;TW;inapplicable;PL;PL2000;Secchi disk depth;AA-EQS;3.6;NA;m;FALSE;NA;NA;Rver2;annual
+11556;BAL;TW;inapplicable;PL;PL2000;Dissolved oxygen;summer minimum;4.2;NA;mg/L;FALSE;NA;Bottom;Rver2;seasonal
+11558;BAL;TW;inapplicable;PL;PL2000;% oxygen saturation;maximum;80;120;PC02;TRUE;High low;surf;Rver2;quantile
+11560;BAL;TW;inapplicable;PL;PL2000;Nitrate as N;AA-EQS;0.12;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11561;BAL;TW;inapplicable;PL;PL2000;TN;AA-EQS;0.4;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11562;BAL;TW;inapplicable;PL;PL2000;Orthophosphate;AA-EQS;18;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11563;BAL;TW;inapplicable;PL;PL2000;TP;AA-EQS;35;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11564;BAL;TW;inapplicable;PL;PL2000;Total Inorganic N;AA-EQS;0.15;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11565;BAL;TW;inapplicable;PL;PL2000;Secchi disk depth;AA-EQS;2.8;NA;m;FALSE;NA;NA;Rver2;annual
+11566;BAL;TW;inapplicable;PL;PL2000;Dissolved oxygen;summer minimum;4.2;NA;mg/L;FALSE;NA;Bottom;Rver2;seasonal
+11568;BAL;TW;inapplicable;PL;PL2000;% oxygen saturation;maximum;80;120;PC02;TRUE;High low;surf;Rver2;quantile
+11570;BAL;TW;inapplicable;PL;PL2000;Nitrate as N;AA-EQS;0.17;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11571;BAL;TW;inapplicable;PL;PL2000;TN;AA-EQS;0.4;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11572;BAL;TW;inapplicable;PL;PL2000;Orthophosphate;AA-EQS;35;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11573;BAL;TW;inapplicable;PL;PL2000;TP;AA-EQS;45;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11574;BAL;TW;inapplicable;PL;PL2000;Total Inorganic N;AA-EQS;0.225;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11335;NEA;CW;inapplicable;ES;ALL;TP;AA-EQS;800;NA;mg/Kg (sed.);FALSE;NA;NA;Rver2;annual
+11338;NEA;CW;inapplicable;ES;ALL;% oxygen saturation;AA-EQS;40;NA;PC02;FALSE;NA;NA;Rver2;annual
+9374;MED;TW;inapplicable;FR;FRD;Total Inorganic N;90th percentile;0.084;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11342;NEA;CW;inapplicable;ES;ALL;TP;AA-EQS;800;NA;mg/Kg (sed.);FALSE;NA;NA;Rver2;annual
+11588;NEA;TW;inapplicable;PT;PTRH4A;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11166;NEA;CW;inapplicable;PT;PTRH9;Secchi disk depth;95th percentile;4;35;m;TRUE;subType;NA;Rver2;quantile
+11169;NEA;CW;inapplicable;PT;PTRH9;Nitrate as N;95th percentile;0.452;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11170;NEA;CW;inapplicable;PT;PTRH9;TP;95th percentile;70;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11592;NEA;TW;inapplicable;PT;PTRH5A;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11229;BAL;CW;inapplicable;EE;EE1;Dissolved oxygen;Median;NA;NA;mg/L;FALSE;NA;NA;Rver2;annual
+11594;NEA;TW;inapplicable;PT;PTRH5A;Nitrate as N;90th percentile;1;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11231;BAL;CW;inapplicable;EE;EE1;Dissolved oxygen;Median;NA;NA;mg/L;FALSE;NA;NA;Rver2;annual
+11596;NEA;TW;inapplicable;PT;PTRH6;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11233;BAL;CW;inapplicable;EE;EE1;Nitrate as N;AA-EQS;NA;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11598;NEA;TW;inapplicable;PT;PTRH6;Nitrate as N;90th percentile;1;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11235;BAL;CW;inapplicable;EE;EE1;Nitrate as N;AA-EQS;NA;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11600;NEA;TW;inapplicable;PT;PTRH7;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11237;BAL;CW;inapplicable;EE;EE1;Orthophosphate;AA-EQS;NA;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11602;NEA;TW;inapplicable;PT;PTRH7;Nitrate as N;90th percentile;1;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11239;BAL;CW;inapplicable;EE;EE1;Orthophosphate;AA-EQS;NA;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11604;NEA;TW;inapplicable;PT;PTRH8;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11241;BAL;CW;inapplicable;EE;EE1;Secchi disk depth;summer;3.7;NA;m;FALSE;NA;NA;Rver2;seasonal
+11606;NEA;TW;inapplicable;PT;PTRH8;Nitrate as N;90th percentile;1;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11243;BAL;CW;inapplicable;EE;EE1;Secchi disk depth;summer;7.4;NA;m;FALSE;NA;NA;Rver2;seasonal
+11245;BAL;CW;inapplicable;EE;EE1;TN;AA-EQS;0.33;NA;mgN/L;FALSE;NA;nutrients usually from 1, 5 and 10 m depth;Rver2;annual
+11247;BAL;CW;inapplicable;EE;EE1;TN;AA-EQS;0.24;NA;mgN/L;FALSE;NA;nutrients usually from 1, 5 and 10 m depth;Rver2;annual
+11249;BAL;CW;inapplicable;EE;EE1;TP;summer;17;NA;µgP/L;FALSE;NA;nutrients usually from 1, 5 and 10 m depth;Rver2;seasonal
+11251;BAL;CW;inapplicable;EE;EE1;TP;summer;12;NA;µgP/L;FALSE;NA;nutrients usually from 1, 5 and 10 m depth;Rver2;seasonal
+11256;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.49;NA;mgN/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11257;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.196;NA;mgN/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11258;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;23.547;NA;µgP/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11259;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;11.774;NA;µgP/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11264;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.49;NA;mgN/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11265;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.196;NA;mgN/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11266;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;23.547;NA;µgP/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11267;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;11.774;NA;µgP/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11272;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.102;NA;mgN/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11273;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.051;NA;mgN/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11274;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;23.547;NA;µgP/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11275;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;11.774;NA;µgP/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+7300;NEA;TW;inapplicable;PT;PTRH9;Secchi disk depth;95th percentile;0.8;6;m;TRUE;subType;NA;Rver2;quantile
+11280;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.102;NA;mgN/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11324;NEA;CW;inapplicable;ES;ALL;TP;AA-EQS;800;NA;mg/Kg (sed.);FALSE;NA;NA;Rver2;annual
+11287;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;16.421;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11292;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.181;NA;mgN/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11293;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.09;NA;mgN/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11294;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;23.547;NA;µgP/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+7667;BLA;TW;inapplicable;BG;BG2000;Secchi disk depth;AA-EQS;2;NA;m;FALSE;NA;NA;Rver2;annual
+7668;BLA;TW;inapplicable;BG;BG2000;Secchi disk depth;AA-EQS;2;NA;m;FALSE;NA;NA;Rver2;annual
+7669;BLA;TW;inapplicable;BG;BG2000;Secchi disk depth;AA-EQS;2;NA;m;FALSE;NA;NA;Rver2;annual
+7670;BLA;TW;inapplicable;BG;BG2000;Secchi disk depth;AA-EQS;2;NA;m;FALSE;NA;NA;Rver2;annual
+7683;BLA;TW;inapplicable;BG;BG2000;Dissolved oxygen;AA-EQS;6;NA;mg/L;FALSE;NA;NA;Rver2;annual
+7684;BLA;TW;inapplicable;BG;BG2000;Dissolved oxygen;AA-EQS;6;NA;mg/L;FALSE;NA;NA;Rver2;annual
+7685;BLA;TW;inapplicable;BG;BG2000;Dissolved oxygen;AA-EQS;6;NA;mg/L;FALSE;NA;NA;Rver2;annual
+7686;BLA;TW;inapplicable;BG;BG2000;Dissolved oxygen;AA-EQS;6;NA;mg/L;FALSE;NA;NA;Rver2;annual
+7748;BLA;TW;inapplicable;BG;BG2000;TN;AA-EQS;2.5;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7749;BLA;TW;inapplicable;BG;BG2000;TN;AA-EQS;2.5;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7750;BLA;TW;inapplicable;BG;BG2000;TN;AA-EQS;2.5;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7751;BLA;TW;inapplicable;BG;BG2000;TN;AA-EQS;2.5;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7772;BLA;TW;inapplicable;BG;BG2000;TP;AA-EQS;75;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+7773;BLA;TW;inapplicable;BG;BG2000;TP;AA-EQS;75;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+7774;BLA;TW;inapplicable;BG;BG2000;TP;AA-EQS;75;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+7775;BLA;TW;inapplicable;BG;BG2000;TP;AA-EQS;75;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+7796;BLA;TW;inapplicable;BG;BG2000;Nitrate as N;AA-EQS;2;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7797;BLA;TW;inapplicable;BG;BG2000;Nitrate as N;AA-EQS;2;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7798;BLA;TW;inapplicable;BG;BG2000;Nitrate as N;AA-EQS;2;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7799;BLA;TW;inapplicable;BG;BG2000;Nitrate as N;AA-EQS;2;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7856;BLA;TW;inapplicable;BG;BG2000;Orthophosphate;AA-EQS;60;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+7857;BLA;TW;inapplicable;BG;BG2000;Orthophosphate;AA-EQS;60;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+7858;BLA;TW;inapplicable;BG;BG2000;Orthophosphate;AA-EQS;60;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+7859;BLA;TW;inapplicable;BG;BG2000;Orthophosphate;AA-EQS;60;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11319;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;12.393;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11320;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.014;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11321;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;12.393;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11328;NEA;CW;inapplicable;ES;ALL;TP;AA-EQS;800;NA;mg/Kg (sed.);FALSE;NA;NA;Rver2;annual
+11331;NEA;CW;inapplicable;ES;ALL;% oxygen saturation;AA-EQS;30;NA;PC02;FALSE;NA;NA;Rver2;annual
+11455;NEA;CW;inapplicable;NO;ALL;Orthophosphate;summer;7;NA;µgP/L;FALSE;salinity range;Surf;Rver2;seasonal
+9367;MED;TW;inapplicable;FR;FRD;TN;90th percentile;1.051;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11456;NEA;CW;inapplicable;NO;ALL;Orthophosphate;winter;21;NA;µgP/L;FALSE;salinity range;Surf;Rver2;seasonal
+11458;NEA;CW;inapplicable;NO;ALL;Orthophosphate;winter;19;NA;µgP/L;FALSE;salinity range;Surf;Rver2;seasonal
+11701;BAL;CW;inapplicable;SE;10;Total Inorganic N;winter;0.0420201;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11702;BAL;CW;inapplicable;SE;11;Total Inorganic N;winter;0.03921876;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11703;BAL;CW;inapplicable;SE;12s;Total Inorganic N;winter;0.0420201;0.35296884;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11704;BAL;CW;inapplicable;SE;12n;Total Inorganic N;winter;0.0420201;0.34036281;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11705;BAL;CW;inapplicable;SE;13;Total Inorganic N;winter;0.0420201;0.35296884;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11383;NEA;CW;inapplicable;IE;IEGBNIIENB;% oxygen saturation;95th percentile;80;130;PC02;TRUE;High low;samples are a mix of surface and bottom samples;Rver2;quantile
+9388;NEA;TW;inapplicable;FR;FRA;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11346;MED;CW;inapplicable;ES;ALL;TP;AA-EQS;800;NA;mg/Kg (sed.);FALSE;NA;NA;Rver2;annual
+11348;MED;CW;inapplicable;ES;ALL;% oxygen saturation;AA-EQS;30;NA;PC02;FALSE;NA;NA;Rver2;annual
+11353;MED;CW;inapplicable;ES;ALL;TP;AA-EQS;800;NA;mg/Kg (sed.);FALSE;NA;NA;Rver2;annual
+11355;MED;CW;inapplicable;ES;ALL;% oxygen saturation;AA-EQS;40;NA;PC02;FALSE;NA;NA;Rver2;annual
+10545;NEA;CW;inapplicable;DE;N3;TN;AA-EQS;0.56;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11443;NEA;CW;inapplicable;NO;ALL;Dissolved oxygen;AA-EQS;3.5;NA;mg/L;FALSE;salinity range;Bottom;Rver2;annual
+10547;NEA;CW;inapplicable;DE;N3;TP;AA-EQS;36;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+10549;NEA;CW;inapplicable;DE;N3;Total Inorganic N;winter;0.44;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+10562;BAL;CW;inapplicable;DE;B1;TP;AA-EQS;44;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11732;BAL;CW;inapplicable;SE;15;TP;winter;18.5842566;30.35428578;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11653;BAL;CW;inapplicable;SE;12s;TN;winter;0.28713735;0.74795778;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11776;BAL;CW;inapplicable;SE;10;Orthophosphate;winter;11.46082818;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+11777;BAL;CW;inapplicable;SE;11;Orthophosphate;winter;9.29256339;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+10597;NEA;CW;inapplicable;DE;N2;TN;AA-EQS;0.32;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11779;BAL;CW;inapplicable;SE;12n;Orthophosphate;winter;10.53157184;11.46082818;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11780;BAL;CW;inapplicable;SE;13;Orthophosphate;winter;11.77058029;15.79735776;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11619;NEA;TW;inapplicable;PT;PTRH4A;Orthophosphate;90th percentile;50;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11620;NEA;TW;inapplicable;PT;PTRH4A;Orthophosphate;90th percentile;100;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+10602;NEA;CW;inapplicable;DE;N4;Total Inorganic N;winter;0.44;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+10611;NEA;CW;inapplicable;DE;N5;TN;AA-EQS;0.24;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11502;MED;TW;inapplicable;IT;ALL;Total Inorganic N;AA-EQS;0.25;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11503;MED;TW;inapplicable;IT;ALL;Total Inorganic N;AA-EQS;0.42;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+8721;BAL;TW;inapplicable;LV;LVDUBA;Nitrate as N;winter;0.196;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11384;NEA;CW;inapplicable;IE;IEGBNIIENW;% oxygen saturation;95th percentile;80;130;PC02;TRUE;High low;samples are a mix of surface and bottom samples;Rver2;quantile
+11385;NEA;CW;inapplicable;IE;IEROI;% oxygen saturation;95th percentile;80;130;PC02;TRUE;High low;samples are a mix of surface and bottom samples;Rver2;quantile
+11386;NEA;CW;inapplicable;IE;IEGBNIIENB;Total Inorganic N;Median;0.25;2.6;mgN/L;TRUE;salinity range;samples are a mix of surface and bottom samples;Rver2;annual
+11387;NEA;CW;inapplicable;IE;IEGBNIIENW;Total Inorganic N;Median;0.25;2.6;mgN/L;TRUE;salinity range;samples are a mix of surface and bottom samples;Rver2;annual
+11388;NEA;CW;inapplicable;IE;IEROI;Total Inorganic N;Median;0.25;2.6;mgN/L;TRUE;salinity range;samples are a mix of surface and bottom samples;Rver2;annual
+11753;BAL;CW;inapplicable;SE;12s;TP;summer;12.3895044;31.28349861;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11754;BAL;CW;inapplicable;SE;12n;TP;summer;12.69924201;21.06215748;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11755;BAL;CW;inapplicable;SE;13;TP;summer;12.3895044;31.28349861;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+10701;NEA;CW;inapplicable;IE;IEROI;% oxygen saturation;95th percentile;70;120;PC02;TRUE;High low;samples are a mix of surface and bottom samples;Rver2;quantile
+11757;BAL;CW;inapplicable;SE;15;TP;summer;12.69924201;21.06215748;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11515;BAL;TW;inapplicable;LT;LT1100;TP;summer;37;53;µgP/L;TRUE;salinity range;Surf;Rver2;seasonal
+11396;NEA;CW;inapplicable;NL;ALL;% oxygen saturation;winter;60;NA;PC02;FALSE;NA;NA;Rver2;seasonal
+11397;NEA;CW;inapplicable;NL;ALL;Total Inorganic N;winter;0.462;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11640;BLA;TW;inapplicable;RO;RO1000;TP;90th percentile;30.974;46.461;µgP/L;TRUE;subType;NA;Rver2;quantile
+11317;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;12.393;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11318;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.014;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11682;BAL;CW;inapplicable;SE;15;TN;summer;0.26892864;0.42860502;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11479;NEA;TW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;1.676;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+10546;NEA;CW;inapplicable;DE;N1;TP;AA-EQS;31;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11482;MED;TW;inapplicable;ES;ALL;TP;AA-EQS;2000;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+10548;NEA;CW;inapplicable;DE;N1;Total Inorganic N;winter;0.26;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11446;NEA;CW;inapplicable;NO;ALL;Nitrate as N;winter;0.125;NA;mgN/L;FALSE;salinity range;Surf;Rver2;seasonal
+11447;NEA;CW;inapplicable;NO;ALL;Nitrate as N;summer;0.041;NA;mgN/L;FALSE;salinity range;Surf;Rver2;seasonal
+11448;NEA;CW;inapplicable;NO;ALL;Nitrate as N;winter;0.139;NA;mgN/L;FALSE;salinity range;Surf;Rver2;seasonal
+11651;BAL;CW;inapplicable;SE;10;TN;winter;0.280134;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11652;BAL;CW;inapplicable;SE;11;TN;winter;0.280134;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11451;NEA;CW;inapplicable;NO;ALL;TP;summer;16;NA;µgP/L;FALSE;salinity range;Surf;Rver2;seasonal
+11303;NEA;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;5.577;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11654;BAL;CW;inapplicable;SE;12n;TN;winter;0.280134;0.57147336;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11778;BAL;CW;inapplicable;SE;12s;Orthophosphate;winter;11.77058029;15.79735776;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11428;NEA;CW;inapplicable;PT;PTRH5A;Nitrate as N;90th percentile;0.7;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11657;BAL;CW;inapplicable;SE;15;TN;winter;0.280134;0.57147336;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11295;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;11.774;NA;µgP/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11782;BAL;CW;inapplicable;SE;15;Orthophosphate;winter;10.53157184;11.46082818;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11298;NEA;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.086;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11299;NEA;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;20.139;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+8720;BAL;TW;inapplicable;LV;LVDUBA;Secchi disk depth;summer;3;NA;m;FALSE;NA;NA;Rver2;seasonal
+11624;NEA;TW;inapplicable;PT;PTRH5A;Orthophosphate;90th percentile;100;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+8722;BAL;TW;inapplicable;LV;LVDUBA;Orthophosphate;winter;27.878;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11438;BLA;CW;inapplicable;RO;RO1000;TP;AA-EQS;21.682;30.974;µgP/L;TRUE;subType;NA;Rver2;annual
+11791;NEA;TW;inapplicable;SE;25;TN;winter;0.30114405;0.53505594;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+10544;NEA;CW;inapplicable;DE;N1;TN;AA-EQS;0.32;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11429;NEA;CW;inapplicable;PT;PTRH5A;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11794;NEA;TW;inapplicable;SE;25;TP;winter;19.20373182;27.8763849;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11795;NEA;TW;inapplicable;SE;25;TP;summer;13.93819245;17.65504377;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+8946;BAL;TW;inapplicable;LV;LVGUBA;Secchi disk depth;summer;3;NA;m;FALSE;NA;NA;Rver2;seasonal
+11433;NEA;CW;inapplicable;PT;PTRH5A;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+8948;BAL;TW;inapplicable;LV;LVGUBA;Nitrate as N;winter;0.196;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11799;BAL;TW;inapplicable;SE;24;Total Inorganic N;winter;0.0420201;0.34036281;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+8950;BAL;TW;inapplicable;LV;LVGUBA;Orthophosphate;winter;27.878;NA;µgP/L;FALSE;NA;NA;Rver2;seasonal
+11801;BAL;TW;inapplicable;SE;24;TP;summer;12.69924201;21.06215748;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11625;NEA;TW;inapplicable;PT;PTRH5A;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+9500;MED;TW;inapplicable;FR;FRE;Orthophosphate;90th percentile;30.975;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11480;NEA;TW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;0.088;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11655;BAL;CW;inapplicable;SE;13;TN;winter;0.28713735;0.74795778;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11589;NEA;TW;inapplicable;PT;PTRH4A;Nitrate as N;90th percentile;0.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11603;NEA;TW;inapplicable;PT;PTRH8;Nitrate as N;90th percentile;0.3;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11481;MED;TW;inapplicable;ES;ALL;TN;AA-EQS;7;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11605;NEA;TW;inapplicable;PT;PTRH8;Nitrate as N;90th percentile;0.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11728;BAL;CW;inapplicable;SE;12s;TP;winter;18.89399421;48.93854238;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+10561;BAL;CW;inapplicable;DE;B1;TN;AA-EQS;0.53;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11730;BAL;CW;inapplicable;SE;13;TP;winter;18.89399421;48.93854238;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+10582;BAL;CW;inapplicable;DE;B2;TN;AA-EQS;0.25;0.52;mgN/L;TRUE;subType;NA;Rver2;annual
+11707;BAL;CW;inapplicable;SE;15;Total Inorganic N;winter;0.0420201;0.34036281;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11506;BAL;TW;inapplicable;LT;LT1100;TN;summer;0.94;1.08;mgN/L;TRUE;salinity range;Surf;Rver2;seasonal
+11467;NEA;TW;inapplicable;DE;T1;TN;AA-EQS;1;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11601;NEA;TW;inapplicable;PT;PTRH7;Nitrate as N;90th percentile;0.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+9436;NEA;TW;inapplicable;FR;FRG;Dissolved oxygen;10th percentile;3;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11591;NEA;TW;inapplicable;PT;PTRH5A;Nitrate as N;90th percentile;0.3;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11471;NEA;TW;inapplicable;DE;T1;TP;AA-EQS;45;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11621;NEA;TW;inapplicable;PT;PTRH4A;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11460;NEA;CW;inapplicable;NO;ALL;Secchi disk depth;summer;6;NA;m;FALSE;salinity range;Surf;Rver2;seasonal
+11623;NEA;TW;inapplicable;PT;PTRH5A;Orthophosphate;90th percentile;50;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11501;MED;TW;inapplicable;IT;ALL;Orthophosphate;AA-EQS;15;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11316;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.014;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11802;BAL;TW;inapplicable;SE;24;Orthophosphate;winter;10.53157184;11.46082818;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11507;BAL;TW;inapplicable;LT;LT1100;TN;summer;0.43;0.67;mgN/L;TRUE;salinity range;Surf;Rver2;seasonal
+11508;BAL;TW;inapplicable;LT;LT1100;TN;summer;0.13;0.25;mgN/L;TRUE;salinity range;Surf;Rver2;seasonal
+10685;NEA;CW;inapplicable;IE;IEGBNIIENW;% oxygen saturation;95th percentile;70;120;PC02;TRUE;High low;samples are a mix of surface and bottom samples;Rver2;quantile
+11510;BAL;TW;inapplicable;LT;LT1100;TN;summer;0.43;0.67;mgN/L;TRUE;salinity range;Surf;Rver2;seasonal
+11593;NEA;TW;inapplicable;PT;PTRH5A;Nitrate as N;90th percentile;0.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+9491;MED;TW;inapplicable;FR;FRE;TN;90th percentile;1.051;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+11475;NEA;TW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;2.485;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11597;NEA;TW;inapplicable;PT;PTRH6;Nitrate as N;90th percentile;0.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11516;BAL;TW;inapplicable;LT;LT1100;TP;summer;15;26;µgP/L;TRUE;salinity range;Surf;Rver2;seasonal
+10669;NEA;CW;inapplicable;IE;IEGBNIIENB;% oxygen saturation;95th percentile;70;120;PC02;TRUE;High low;samples are a mix of surface and bottom samples;Rver2;quantile
+11626;NEA;TW;inapplicable;PT;PTRH5A;Orthophosphate;90th percentile;110;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11679;BAL;CW;inapplicable;SE;12n;TN;summer;0.26892864;0.42860502;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11680;BAL;CW;inapplicable;SE;13;TN;summer;0.27032931;0.56867202;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11306;NEA;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.085;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11511;BAL;TW;inapplicable;LT;LT1100;TN;summer;0.13;0.25;mgN/L;TRUE;salinity range;Surf;Rver2;seasonal
+11727;BAL;CW;inapplicable;SE;11;TP;winter;18.27451899;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+11485;MED;TW;inapplicable;ES;ALL;TN;AA-EQS;10;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11729;BAL;CW;inapplicable;SE;12n;TP;winter;18.5842566;30.35428578;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11486;MED;TW;inapplicable;ES;ALL;TP;AA-EQS;2000;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11312;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.102;NA;mgN/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11638;NEA;TW;inapplicable;PT;PTRH8;Orthophosphate;90th percentile;110;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11639;BLA;TW;inapplicable;RO;RO1000;Total Inorganic N;AA-EQS;0.35;0.525;mgN/L;TRUE;subType;NA;Rver2;annual
+11599;NEA;TW;inapplicable;PT;PTRH7;Nitrate as N;90th percentile;0.3;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11436;BLA;CW;inapplicable;RO;RO1000;Total Inorganic N;AA-EQS;0.126;0.189;mgN/L;TRUE;subType;NA;Rver2;annual
+11627;NEA;TW;inapplicable;PT;PTRH6;Orthophosphate;90th percentile;50;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11800;BAL;TW;inapplicable;SE;24;TP;winter;18.5842566;30.35428578;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11628;NEA;TW;inapplicable;PT;PTRH6;Orthophosphate;90th percentile;100;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11307;NEA;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;6.197;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11633;NEA;TW;inapplicable;PT;PTRH7;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11634;NEA;TW;inapplicable;PT;PTRH7;Orthophosphate;90th percentile;110;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11622;NEA;TW;inapplicable;PT;PTRH4A;Orthophosphate;90th percentile;110;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11636;NEA;TW;inapplicable;PT;PTRH8;Orthophosphate;90th percentile;100;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11752;BAL;CW;inapplicable;SE;11;TP;summer;12.69924201;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+11313;MED;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.051;NA;mgN/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11314;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;23.547;NA;µgP/L;FALSE;NA;Near zone, from 0 to 200 m from the coast;Rver2;annual
+11302;NEA;CW;inapplicable;ES;ALL;Nitrate as N;AA-EQS;0.047;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11677;BAL;CW;inapplicable;SE;11;TN;summer;0.2661273;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11678;BAL;CW;inapplicable;SE;12s;TN;summer;0.27032931;0.56867202;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11726;BAL;CW;inapplicable;SE;10;TP;winter;18.27451899;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+11514;BAL;TW;inapplicable;LT;LT1100;TP;summer;60;80;µgP/L;TRUE;salinity range;Surf;Rver2;seasonal
+11629;NEA;TW;inapplicable;PT;PTRH6;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11595;NEA;TW;inapplicable;PT;PTRH6;Nitrate as N;90th percentile;0.3;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11797;BAL;TW;inapplicable;SE;24;TN;winter;0.280134;0.57147336;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11751;BAL;CW;inapplicable;SE;10;TP;summer;12.69924201;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+11798;BAL;TW;inapplicable;SE;24;TN;summer;0.26892864;0.42860502;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11315;MED;CW;inapplicable;ES;ALL;Orthophosphate;AA-EQS;11.774;NA;µgP/L;FALSE;NA;Medium zone, more than 200 m from the coast;Rver2;annual
+11434;BLA;CW;inapplicable;RO;RO1000;% oxygen saturation;AA-EQS;60;80;PC02;TRUE;High low;Bottom;Rver2;annual
+11590;NEA;TW;inapplicable;PT;PTRH4A;Nitrate as N;90th percentile;1;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11676;BAL;CW;inapplicable;SE;10;TN;summer;0.2661273;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11484;MED;TW;inapplicable;ES;ALL;TP;AA-EQS;1000;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11483;MED;TW;inapplicable;ES;ALL;TN;AA-EQS;10;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11509;BAL;TW;inapplicable;LT;LT1100;TN;summer;0.94;1.08;mgN/L;TRUE;salinity range;Surf;Rver2;seasonal
+11793;NEA;TW;inapplicable;SE;25;Total Inorganic N;winter;0.07703685;0.26332596;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11635;NEA;TW;inapplicable;PT;PTRH8;Orthophosphate;90th percentile;50;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11637;NEA;TW;inapplicable;PT;PTRH8;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11432;NEA;CW;inapplicable;PT;PTRH5A;Orthophosphate;90th percentile;500;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11469;NEA;TW;inapplicable;DE;T1;Total Inorganic N;winter;0.8;NA;mgN/L;FALSE;NA;NA;Rver2;seasonal
+11632;NEA;TW;inapplicable;PT;PTRH7;Orthophosphate;90th percentile;100;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11631;NEA;TW;inapplicable;PT;PTRH7;Orthophosphate;90th percentile;50;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11796;NEA;TW;inapplicable;SE;25;Orthophosphate;winter;9.29256339;18.58512678;µgP/L;TRUE;salinity range;NA;Rver2;seasonal
+11630;NEA;TW;inapplicable;PT;PTRH6;Orthophosphate;90th percentile;110;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11792;NEA;TW;inapplicable;SE;25;TN;summer;0.21850452;0.39078693;mgN/L;TRUE;salinity range;NA;Rver2;seasonal
+11524;BAL;TW;TW-BT1;PL;PL2000;Dissolved oxygen;summer minimum;4.2;NA;mg/L;FALSE;NA;Bottom;Rver2;seasonal
+11529;BAL;TW;TW-BT1;PL;PL2000;Nitrate as N;AA-EQS;0.3;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11532;BAL;TW;TW-BT1;PL;PL2000;TP;AA-EQS;120;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11513;BAL;TW;TW-BT1;LT;LT1100;TP;summer;61;79;µgP/L;TRUE;subType;Surf;Rver2;seasonal
+11526;BAL;TW;TW-BT1;PL;PL2000;% oxygen saturation;maximum;80;120;PC02;TRUE;High low;Surf;Rver2;quantile
+11504;BAL;TW;TW-BT1;LT;LT1100;TN;summer;0.94;1.08;mgN/L;TRUE;subType;Surf;Rver2;seasonal
+11523;BAL;TW;TW-BT1;PL;PL2000;Secchi disk depth;AA-EQS;1;NA;m;FALSE;NA;NA;Rver2;annual
+11533;BAL;TW;TW-BT1;PL;PL2000;Total Inorganic N;AA-EQS;0.38;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11531;BAL;TW;TW-BT1;PL;PL2000;Orthophosphate;AA-EQS;45;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11530;BAL;TW;TW-BT1;PL;PL2000;TN;AA-EQS;0.98;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11512;BAL;TW;TW-BT1;LT;LT1100;TP;summer;60;80;µgP/L;TRUE;subType;Surf;Rver2;seasonal
+11505;BAL;TW;TW-BT1;LT;LT1100;TN;summer;0.95;1.07;mgN/L;TRUE;subType;Surf;Rver2;seasonal
+9492;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRE;TN;90th percentile;1.051;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+9373;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRD;TP;90th percentile;92.921;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11500;MED;TW;TW-CoastalLagoonsPolyeuhaline;IT;ALL;Dissolved oxygen;minimum;1;NA;mg/L;FALSE;NA;NA;Rver2;quantile
+11493;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRE;Total Inorganic N;90th percentile;0.084;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+9375;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRD;Total Inorganic N;90th percentile;0.084;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+9501;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRE;Orthophosphate;90th percentile;30.975;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+11492;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRD;Total Inorganic N;90th percentile;0.084;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+9377;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRD;Orthophosphate;90th percentile;30.975;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+9497;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRE;TP;90th percentile;92.921;NA;µgP/L;FALSE;NA;NA;Rver2;quantile
+9499;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRE;Total Inorganic N;90th percentile;0.084;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+9368;MED;TW;TW-CoastalLagoonsPolyeuhaline;FR;FRD;TN;90th percentile;1.051;NA;mgN/L;FALSE;NA;NA;Rver2;quantile
+8648;MED;TW;TW-Estuaries;HR;HRJ;TP;Median;27.876;27.8763849;µgP/L;FALSE;NA;NA;Rver2;annual
+11496;MED;TW;TW-Estuaries;HR;HRJ;TP;Median;18.584;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+8632;MED;TW;TW-Estuaries;HR;HRJ;Secchi disk depth;Median;3;NA;m;FALSE;NA;NA;Rver2;annual
+8644;MED;TW;TW-Estuaries;HR;HRJ;Orthophosphate;Median;15.488;15.48760566;µgP/L;FALSE;NA;NA;Rver2;annual
+8662;MED;TW;TW-Estuaries;HR;HRJ;Total Inorganic N;Median;1.751;NA;mgN/L;FALSE;NA;Surf;Rver2;annual
+11495;MED;TW;TW-Estuaries;HR;HRJ;% oxygen saturation;Median;150;NA;PC02;FALSE;NA;Surf;Rver2;annual
+8634;MED;TW;TW-Estuaries;HR;HRJ;% oxygen saturation;Median;170;NA;PC02;FALSE;NA;Surf;Rver2;annual
+11085;MED;TW;TW-Estuaries;HR;HRJ;% oxygen saturation;Median;40;NA;PC02;FALSE;NA;Bottom;Rver2;annual
+8664;MED;TW;TW-Estuaries;HR;HRJ;Total Inorganic N;Median;1.751;NA;mgN/L;FALSE;NA;Surf;Rver2;annual
+8663;MED;TW;TW-Estuaries;HR;HRJ;Total Inorganic N;Median;2.101;NA;mgN/L;FALSE;NA;Surf;Rver2;annual
+11494;MED;TW;TW-Estuaries;HR;HRJ;Orthophosphate;Median;9.292;NA;µgP/L;FALSE;NA;NA;Rver2;annual
+11087;MED;TW;TW-Estuaries;HR;HRJ;Total Inorganic N;Median;0.28;NA;mgN/L;FALSE;NA;Bottom;Rver2;annual
+11805;NEA;TW;TW-NEA11;IE;IEROI;Orthophosphate;Median;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;annual
+6744;NEA;TW;TW-NEA11;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+6847;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11577;NEA;TW;TW-NEA11;PT;PTRH1;Nitrate as N;90th percentile;0.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+7009;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+6856;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11804;NEA;TW;TW-NEA11;IE;IEGBNIIENW;Orthophosphate;Median;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;annual
+6848;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11575;NEA;TW;TW-NEA11;PT;PTRH1;Nitrate as N;90th percentile;0.3;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11576;NEA;TW;TW-NEA11;PT;PTRH1;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+6846;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6746;NEA;TW;TW-NEA11;UK;ALL;Total Inorganic N;Regression;0.42;NA;mgN/L;NA;NA;NA;Rver2;other
+7163;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+5641;NEA;TW;TW-NEA11;BE;O1o;TN;growth season mean;2.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11803;NEA;TW;TW-NEA11;IE;IEGBNIIENB;Orthophosphate;Median;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;annual
+5649;NEA;TW;TW-NEA11;BE;O2zout;Total Inorganic N;winter;0.49;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+7116;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+6734;NEA;TW;TW-NEA11;UK;ALL;Total Inorganic N;Regression;0.42;NA;mgN/L;NA;NA;NA;Rver2;other
+6622;NEA;TW;TW-NEA11;UK;ALL;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11616;NEA;TW;TW-NEA11;PT;PTRH3;Orthophosphate;90th percentile;100;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+6849;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+6754;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+5605;NEA;TW;TW-NEA11;BE;O1o;Dissolved oxygen;10th percentile;5;NA;mg/L;FALSE;salinity range;NA;Rver2;quantile
+5648;NEA;TW;TW-NEA11;BE;O1o;TP;growth season mean;140;NA;µgP/L;FALSE;salinity range;NA;Rver2;seasonal
+6805;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+6806;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11617;NEA;TW;TW-NEA11;PT;PTRH3;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+11613;NEA;TW;TW-NEA11;PT;PTRH2;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+7002;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+6593;NEA;TW;TW-NEA11;UK;ALL;Dissolved oxygen;5th percentile;4.13;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11579;NEA;TW;TW-NEA11;PT;PTRH2;Nitrate as N;90th percentile;0.3;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11498;NEA;TW;TW-NEA11;IE;IEGBNIIENW;% oxygen saturation;5th percentile;70;NA;PC02;FALSE;NA;samples are a mix of surface and bottom samples;Rver2;quantile
+6629;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+5606;NEA;TW;TW-NEA11;BE;O2zout;Dissolved oxygen;10th percentile;6;NA;mg/L;FALSE;salinity range;NA;Rver2;quantile
+6797;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6900;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+7102;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6672;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7115;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+6908;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11615;NEA;TW;TW-NEA11;PT;PTRH3;Orthophosphate;90th percentile;50;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+6732;NEA;TW;TW-NEA11;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+7010;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11497;NEA;TW;TW-NEA11;IE;IEGBNIIENB;% oxygen saturation;5th percentile;70;NA;PC02;FALSE;NA;samples are a mix of surface and bottom samples;Rver2;quantile
+11582;NEA;TW;TW-NEA11;PT;PTRH2;Nitrate as N;90th percentile;1;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+6897;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6899;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7061;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+6796;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7101;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7103;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7104;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11521;NEA;TW;TW-NEA11;NL;ALL;% oxygen saturation;winter;60;NA;PC02;FALSE;NA;NA;Rver2;seasonal
+6722;NEA;TW;TW-NEA11;UK;ALL;Total Inorganic N;Regression;0.42;NA;mgN/L;NA;NA;NA;Rver2;other
+6590;NEA;TW;TW-NEA11;UK;ALL;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11614;NEA;TW;TW-NEA11;PT;PTRH2;Orthophosphate;90th percentile;110;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+6677;NEA;TW;TW-NEA11;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+6755;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11499;NEA;TW;TW-NEA11;IE;IEROI;% oxygen saturation;5th percentile;70;NA;PC02;FALSE;NA;samples are a mix of surface and bottom samples;Rver2;quantile
+6795;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6898;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11463;NEA;TW;TW-NEA11;BE;O1b;Total Inorganic N;winter;0.49;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+11464;NEA;TW;TW-NEA11;BE;O1b;Orthophosphate;AA-EQS;70;NA;µgP/L;FALSE;salinity range;NA;Rver2;annual
+6671;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6907;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11491;NEA;TW;TW-NEA11;FR;FRH;Total Inorganic N;AA-EQS;0.462;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+11612;NEA;TW;TW-NEA11;PT;PTRH2;Orthophosphate;90th percentile;100;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+6673;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+7053;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11618;NEA;TW;TW-NEA11;PT;PTRH3;Orthophosphate;90th percentile;110;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+10700;NEA;TW;TW-NEA11;IE;IEROI;% oxygen saturation;95th percentile;130;NA;PC02;FALSE;NA;samples are a mix of surface and bottom samples;Rver2;quantile
+7166;NEA;TW;TW-NEA11;UK;TURC;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6798;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+7060;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11610;NEA;TW;TW-NEA11;PT;PTRH1;Orthophosphate;90th percentile;110;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+7000;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11586;NEA;TW;TW-NEA11;PT;PTRH3;Nitrate as N;90th percentile;1;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11465;NEA;TW;TW-NEA11;BE;O2zout;Orthophosphate;AA-EQS;70;NA;µgP/L;FALSE;salinity range;NA;Rver2;annual
+7181;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+7050;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11581;NEA;TW;TW-NEA11;PT;PTRH2;Nitrate as N;90th percentile;0.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+6608;NEA;TW;TW-NEA11;UK;ALL;Dissolved oxygen;5th percentile;4.13;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11578;NEA;TW;TW-NEA11;PT;PTRH1;Nitrate as N;90th percentile;1;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11488;NEA;TW;TW-NEA11;FR;FRA;Total Inorganic N;AA-EQS;0.462;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+6670;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11461;NEA;TW;TW-NEA11;BE;O1o;Nitrate as N;90th percentile;5.65;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+6630;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+7001;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6857;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11522;NEA;TW;TW-NEA11;NL;ALL;TN;winter;0.46;NA;mgN/L;FALSE;salinity range;NA;Rver2;seasonal
+7284;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7228;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11584;NEA;TW;TW-NEA11;PT;PTRH3;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+7164;NEA;TW;TW-NEA11;UK;ITURC;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+10679;NEA;TW;TW-NEA11;IE;IEGBNIIENB;Orthophosphate;Median;40;60;µgP/L;TRUE;salinity range;samples are a mix of surface and bottom samples;Rver2;annual
+7052;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7169;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7283;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7051;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11611;NEA;TW;TW-NEA11;PT;PTRH2;Orthophosphate;90th percentile;50;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+6949;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11490;NEA;TW;TW-NEA11;FR;FRG;Total Inorganic N;AA-EQS;0.462;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7165;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7180;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+11487;NEA;TW;TW-NEA11;FR;FRA;Total Inorganic N;AA-EQS;0.406;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+6702;NEA;TW;TW-NEA11;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11585;NEA;TW;TW-NEA11;PT;PTRH3;Nitrate as N;90th percentile;0.5;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+6951;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+6720;NEA;TW;TW-NEA11;UK;ALL;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+11608;NEA;TW;TW-NEA11;PT;PTRH1;Orthophosphate;90th percentile;100;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+7282;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11580;NEA;TW;TW-NEA11;PT;PTRH2;Nitrate as N;90th percentile;0.6;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+11583;NEA;TW;TW-NEA11;PT;PTRH3;Nitrate as N;90th percentile;0.3;NA;mgN/L;FALSE;salinity range;NA;Rver2;quantile
+7168;NEA;TW;TW-NEA11;UK;VTURC;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+10684;NEA;TW;TW-NEA11;IE;IEGBNIIENW;% oxygen saturation;95th percentile;130;NA;PC02;FALSE;NA;samples are a mix of surface and bottom samples;Rver2;quantile
+7285;NEA;TW;TW-NEA11;UK;CLET;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+11609;NEA;TW;TW-NEA11;PT;PTRH1;Orthophosphate;90th percentile;60;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+7234;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11607;NEA;TW;TW-NEA11;PT;PTRH1;Orthophosphate;90th percentile;50;NA;µgP/L;FALSE;salinity range;NA;Rver2;quantile
+10695;NEA;TW;TW-NEA11;IE;IEGBNIIENW;Orthophosphate;Median;40;60;µgP/L;TRUE;salinity range;samples are a mix of surface and bottom samples;Rver2;annual
+7233;NEA;TW;TW-NEA11;UK;VTURC;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+11462;NEA;TW;TW-NEA11;BE;O1o;Orthophosphate;AA-EQS;140;NA;µgP/L;FALSE;salinity range;NA;Rver2;annual
+6950;NEA;TW;TW-NEA11;UK;VTURT;Total Inorganic N;99th percentile;3.782;NA;mgN/L;NA;NA;NA;Rver2;quantile
+10711;NEA;TW;TW-NEA11;IE;IEROI;Orthophosphate;Median;40;60;µgP/L;TRUE;salinity range;samples are a mix of surface and bottom samples;Rver2;annual
+11489;NEA;TW;TW-NEA11;FR;FRF;Total Inorganic N;AA-EQS;0.462;NA;mgN/L;FALSE;NA;NA;Rver2;annual
+7231;NEA;TW;TW-NEA11;UK;TURC;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7242;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+7167;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6685;NEA;TW;TW-NEA11;UK;ALL;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+10668;NEA;TW;TW-NEA11;IE;IEGBNIIENB;% oxygen saturation;95th percentile;130;NA;PC02;FALSE;NA;samples are a mix of surface and bottom samples;Rver2;quantile
+6948;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7230;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+7241;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile
+7232;NEA;TW;TW-NEA11;UK;TURT;Total Inorganic N;99th percentile;2.521;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6999;NEA;TW;TW-NEA11;UK;ITURT;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6708;NEA;TW;TW-NEA11;UK;ALL;Total Inorganic N;winter;0.42;NA;mgN/L;NA;NA;NA;Rver2;seasonal
+6959;NEA;TW;TW-NEA11;UK;SAL<35CT;Dissolved oxygen;5th percentile;4.16;4.86;mg/L;TRUE;salinity range;NA;Rver2;quantile
+7229;NEA;TW;TW-NEA11;UK;ITURC;Total Inorganic N;99th percentile;0.98;NA;mgN/L;NA;NA;NA;Rver2;quantile
+6958;NEA;TW;TW-NEA11;UK;SAL=35CT;Dissolved oxygen;5th percentile;4;NA;mg/L;NA;NA;NA;Rver2;quantile

@@ -1,0 +1,252 @@
+---
+title: "TRAC revised data overview"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  html_notebook: default
+  html_document: default
+editor options:
+  chunk_output_type: inline
+---
+Description  
+Heliana Teixeira
+(Revised data ver3 final round - April 2021) 
+File name for script: 2_TRACrevised_Summary.Rmd
+
+SE boundaries revised data, after MS 2020 checking (ver7e_rev) (ver2) and final final checking 2021 (ver7e_revised_April2021) (ver3 final).  
+- **input files:** dat.TRACver3temporary.csv; ICType.csv   
+- **output revised files:** dat.TRACver3final.csv (all TRAC data); dat.TWver3.csv (TW only); dat.CWver3.csv (CW only)
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, comment = NA)
+```
+
+## Summary of WFD Phys Chem QE boundaries in TRAC waters
+
+```{r, message=FALSE, warning=FALSE}
+library(here)
+library(tidyverse)
+library(magrittr)
+library(knitr)
+```
+
+```{r get data}
+FName1 <- here("Data","dat.TRACver3temporary.csv") #TRAC revised data
+dat <- read.csv(file = FName1, header = TRUE, stringsAsFactors = T)
+dat <- mutate_at(dat,c("Note1_PhysChemText","Note2_Season",
+                       "Note3_stdUnits","Comment","cfMS"),
+                 as.character) #return some fct to chr
+dat$Salinity2<-as.numeric(dat$Salinity2) #var to num
+#drop outdated vars to avoid errors
+dat <- select(dat,-"ICcodeTW",-"ICtypeTW",-"ICcodeCW",-"ICtypeCW")
+
+dat_TW <- filter (dat, Cat=="TW")
+dat_CW <- filter (dat, Cat=="CW")
+```
+
+```{r Country obs per Cat}
+#Table of Country records by water category: transitional (TW) and coastal (CW).
+Tabl1 <-table(dat$Cat,dat$Country, useNA='ifany')
+
+knitr::kable(Tabl1,format = "html", caption = "Summary Table 1: Country records by water category: transitional (TW) and coastal (CW).")%>% 
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>% kableExtra::add_header_above(header = c(" " = 1, "Countries" = 21),align = "left")
+```
+
+```{r Chp1 tabl 1.1}
+#Table 1.1 National types correspondence to a common IC type by water category.
+#summary(dat$NatType)
+
+#Table 1.1 for Chapter 1
+dat <- dat%>%
+  mutate(ICtypology = if_else(ICcode.TRAC=="inapplicable", "no match","match IC")) #new var
+
+Tabl1.1 <- dat%>%
+  count(Cat,Country, ICtypology,NatType,  useNA='ifany')%>%
+  count (Cat,Country,ICtypology)
+
+Tabl1.1 <-reshape::cast(Tabl1.1, Country~Cat+ICtypology)
+#Tabl1.1
+
+options(knitr.kable.NA = '')
+
+  Ch1Tabl1.1<-knitr::kable(Tabl1.1,format = "html",align = "ccccc" ,caption = "Table 1.1. Number of national types per country with correspondence to a common intercalibration type (IC) in each water category.",col.names = c("Country","Match IC","No match","Match IC","No match"))%>%
+    kableExtra::kable_styling(full_width = TRUE, position= "center")%>%
+    kableExtra::add_header_above(header = c(" " = 1, "Coastal waters" = 2, "Transitional waters" = 2 ),align = "center")
+   Ch1Tabl1.1
+  readr::write_file(Ch1Tabl1.1, here("Tables","Ch1Tabl1.1.html"))
+```
+
+```{r QE per Cat}
+#Table of quality elements (physChemText) by category
+Tabl2<-table(dat$physChemText,dat$Cat)
+
+knitr::kable(Tabl2,format = "html", caption = "Summary Table 2: Physico-Chemical Quality Elements by water category.")%>% 
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>% kableExtra::add_header_above(header = c("Quality Element" = 1, "Water category" = 2),align = "left")
+```
+
+```{r QE n>4 TW}
+#Table 3a. Physico-Chemical Quality Elements reported by n>4 countries (MS_nr) in TW.
+Tabl3a <-dat_TW %>%
+  group_by(physChemText)%>%
+  summarise(MS_nr=n_distinct(Country),
+            Select_QE=if_else(MS_nr<4,"drop","keep"))
+
+knitr::kable(Tabl3a,format = "html",align = "llll" ,caption = "Summary Table 3a: Physico-Chemical Quality Elements reported by countries in transitional waters, selecting QE reported by more than four countries.", col.names=rep('',times=ncol(Tabl3a)))%>% 
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>% kableExtra::add_header_above(header = c("Physico-Chemical QE" = 1, "No. countries" = 1, "Select QE" = 1 ),align = "left")
+```
+
+```{r QE n>4 CW}
+#Table 3b. Physico-Chemical Quality Elements reported by n>4 countries (MS_nr) in CW.
+Tabl3b <-dat_CW %>%
+  group_by(physChemText)%>%
+  summarise(MS_nr=n_distinct(Country),
+            Select_QE=if_else(MS_nr<4,"drop","keep"))
+
+knitr::kable(Tabl3b,format = "html",align = "llll" ,caption = "Summary Table 3b: Physico-Chemical Quality Elements reported by countries in coastal waters, selecting QE reported by more than four countries.", col.names=rep('',times=ncol(Tabl3b)))%>% 
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>% kableExtra::add_header_above(header = c("Physico-Chemical QE" = 1, "No. countries" = 1, "Select QE" = 1 ),align = "left")
+```
+
+```{r GM bound YN}
+dat <- mutate(dat, physChemGMBoundary = replace(physChemGMBoundary, 
+                                                which(Country=="DE" | Country=="EE" | Country=="IE" | Country=="LV"| Country=="RO"), "Yes"))
+  
+#Table 4. Countries reporting GM boundaries vs. other criteria (e.g. reference values).
+Tabl4<-table(dat$physChemGMBoundary,dat$Country, useNA = "ifany")
+
+options(knitr.kable.NA = 'NA')
+
+knitr::kable(Tabl4,format = "html", caption = "Summary Table 4: Countries reporting GM boundaries vs. other criteria (e.g. reference values). NA: no info, likely GM boundary")%>% 
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>% kableExtra::add_header_above(header = c("GM" = 1, "Countries" = 21),align = "left")
+```
+
+```{r TW QE country}
+#Table of Transitional quality elements (physChemText) by country
+Tabl5<-table(dat_TW$physChemText,dat_TW$Country)
+
+knitr::kable(Tabl5,format = "html", caption = "Summary Table 5: Physico-Chemical Quality Elements reported by country in transitional waters.")%>%
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>%
+  kableExtra::add_header_above(header = c("Quality Element" = 1, "Countries" = 21),align = "left")
+```
+
+```{r CW QE country}
+#Table of Coastal quality elements (physChemText) by country
+Tabl6<-table(dat_CW$physChemText,dat_CW$Country)
+
+knitr::kable(Tabl6, format = "html", caption = "Summary Table 6: Physico-Chemical Quality Elements reported by country in coastal waters.")%>%
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>%
+  kableExtra::add_header_above(header = c("Quality Element" = 1, "Countries" = 21),align = "left")
+```
+
+```{r Chp1 section 1.2.3 NatType ALL}
+#Table of NAT Type ALL data
+dat_ALL <- filter (dat, NatType=="ALL")
+
+tabl.ALL <-dat_ALL %>%
+  count(physChemText,ICcode.TRAC,Country) 
+#tabl.ALL
+newtabl.ALL<-reshape::cast(tabl.ALL, physChemText~Country)
+#newtabl.ALL
+
+knitr::kable(tabl.ALL, format = "html", caption = "Summary Table 7: Standards applying to ALL national types per country.",col.names=rep('',times=ncol(tabl.ALL)))%>%
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>%
+  kableExtra::add_header_above(header = c("Quality Element" = 1, "IC Type" = 1,"Country" = 1,"obs by Country" = 1),align = "left")
+
+tabl.ALLrbd <-dat_ALL %>%
+  count(physChemText,Country,RBD) 
+#tabl.ALLrbd
+
+knitr::kable(tabl.ALLrbd, format = "html", caption = "Summary Table 8: Standards applying to ALL national types per country and RBD.",col.names=rep('',times=ncol(tabl.ALLrbd)))%>%
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>%
+  kableExtra::add_header_above(header = c("Quality Element" = 1, "Country" = 1,"RBD" = 1,"obs by RBD" = 1),align = "left")
+
+newtabl.ALLrbd<-reshape::cast(tabl.ALLrbd, physChemText~Country)
+#newtabl.ALLrbd
+```
+
+```{r Chp2 tabl 2.2}
+#prepare data for Table 2.2 for Chapter 2
+#first reorder levels within factor var physChemText for final table output
+dat$physChemText <- factor(dat$physChemText, levels = c("% oxygen saturation", "Dissolved oxygen", "BOD5", "TOC", "Temperature", "Secchi disk depth","Turbidity","pH",
+                                                        "Nitrate as N","Nitrite as N","TN","Total Inorganic N","Ammonium N","NTK",
+                                                        "Orthophosphate","TP","THC","ICO"))
+
+# dat%>%
+#   count(physChemText, SumMetric,Country)%>%
+#   count(physChemText, SumMetric)
+
+#first correct seasonal annual attributes for both central and quantile measures for chp2 table 2.2
+#annual central tendency: "AA-EQS" "AGM_int_c" "Median"
+#seasonal central tendency: "autumn" "growth season mean" "spring" "spring-summer" "summer" "winter" 
+#annual quantile: "minimum" "5th percentile" "10th percentile" "90th percentile" "95th percentile" "98th percentile" "99th percentile" "maximum" "MAC-EQS"
+#season quantile:  "summer minimum" "5th - 95th percentile"  
+#other: "Percentage of monthly values outside a reference envelope over the 6-year period (data from the last six years)" "Regression"
+
+#then group levels(dat$SumMetric) into type metric according to tendency (new Var)
+dat$SumMetric<-as.character(dat$SumMetric)
+dat<-dat%>%
+  mutate(SumMetric=replace(SumMetric, SumMetric=="Minimum","minimum"))%>%
+  mutate(SumMetric=replace(SumMetric, SumMetric=="spring-summer","growth season mean"))%>%
+  mutate(MetricType = if_else(grepl(c("^AA-EQS$|^AGM_int_c$|^Median$"), SumMetric), "central tendency annual",
+                             if_else(grepl(c("^spring$|^growth season mean$|^summer$|^autumn$|^winter$"),SumMetric), "central tendency seasonal",
+                                     if_else(grepl(c("^minimum$|^5th percentile$|^10th percentile$|^90th percentile$|^95th percentile$|^98th percentile$|^99th percentile$|^MAC-EQS$|^maximum$"),SumMetric), "quantile annual",
+                                             if_else(grepl(c("^summer minimum$|^5th - 95th percentile$"),SumMetric), "quantile seasonal","other")))))
+
+# "10th percentile" which Note2_Season == "Summer-Autumn" is quantile season, else quantile seasonal                                                                                   
+# "90th percentile" which Note2_Season == "monthly summer (June-August) data (over 6 years)" is quantile season, else quantile seasonal
+dat<-dat%>%
+  mutate(MetricType=replace(MetricType, SumMetric=="10th percentile" & Note2_Season=="Summer-Autumn","quantile seasonal"))%>%
+  mutate(MetricType=replace(MetricType, SumMetric=="90th percentile" & Note2_Season=="monthly summer (June-August) data (over 6 years)","quantile seasonal"))
+
+dat$MetricType<-as.factor(dat$MetricType)
+dat$MetricType <- factor(dat$MetricType, levels = c("central tendency annual","central tendency seasonal","quantile annual","quantile seasonal","other"))
+#levels(dat$MetricType)
+dat$SumMetric<-as.factor(dat$SumMetric)
+
+Tabl2.2 <- dat%>%
+  count(Cat,physChemText, SumMetric, MetricType, Country)%>%
+  count(Cat,physChemText, SumMetric, MetricType)
+#Tabl2.2
+
+knitr::kable(Tabl2.2, format = "html", caption = "Summary Table 9: Summary metric and correspondent metric type per SE (physChemText) in each water category (Cat), with number of countries using.",col.names=rep('',times=ncol(Tabl2.2)))%>%
+  kableExtra::kable_styling(full_width = FALSE, position= "left")%>%
+  kableExtra::add_header_above(header = c("Water category" = 1,"Quality Element" = 1, "Summary metric" = 1,"Metric Type" = 1,"No. countries" = 1),align = "left")
+
+newTabl2.2<-reshape::cast(Tabl2.2, physChemText~Cat+MetricType)
+#newTabl2.2
+
+options(knitr.kable.NA = '')
+
+Ch2Tabl2.2<-knitr::kable(newTabl2.2,format = "html",align = "lcccccccc" ,caption = "Table 2.2. Overview of parameters and summary metrics,with the number of countries using, per water category.",col.names = c("PhysChem QE","annual","seasonal","annual","seasonal","other","annual","seasonal","annual","seasonal","other"))%>%
+    kableExtra::kable_styling(full_width = TRUE, position= "center")%>%
+    kableExtra::add_header_above(header = c(" " = 1,"Central tendency" = 2,"Quantile" = 2," " = 1,"Central tendency" = 2,"Quantile" = 2, " " = 1),align = "center")%>%
+    kableExtra::add_header_above(header = c(" " = 1, "Coastal waters" = 5, "Transitional waters" = 5 ),align = "center")
+  Ch2Tabl2.2
+  readr::write_file(Ch2Tabl2.2, here("Tables","Ch2Tabl2.2.html"))
+```
+
+```{r add ICType descritpion var}
+ICType.descr = read.csv(here("Data","ICType.csv"),sep=";")
+dat<- merge(dat,ICType.descr,by="ICcode.TRAC")
+```
+
+
+```{r save TRAC files}
+V <- "ver3"     #EDIT version  number
+#version 2:
+  #added new vars ICType and MetricType (levels: "annual"   "seasonal" "quantile" "other")
+  #dropped comments var
+#version 3:
+  #improves MetricType (levels: "central tendency annual","central tendency seasonal","quantile annual","quantile seasonal","other")
+  #improves SumMetric assignment to MetricType
+  #corrects and improves information in Chapter 2 table2.2
+
+datTRACver3<-select(dat,-one_of(c("Comment","cfMS")))
+datTRACver3$Ver.r <- V # add version flag
+write.csv(datTRACver3, here("Data","dat.TRACver3final.csv"))
+
+#save separate CW & TW files
+dat_TW <- filter (datTRACver3, Cat=="TW")
+dat_CW <- filter (datTRACver3, Cat=="CW")
+
+write.csv(dat_TW, here("Data","dat.TWver3.csv"))
+write.csv(dat_CW, here("Data","dat.CWver3.csv"))
+```

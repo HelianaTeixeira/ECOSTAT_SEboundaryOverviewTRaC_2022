@@ -1,0 +1,260 @@
+---
+editor_options:
+  chunk_output_type: console
+output:
+  word_document:
+    fig_caption: yes
+    reference_docx: draft-styles.docx
+  html_document: default
+---
+
+
+```{r setup, include=FALSE}
+
+rm(list = ls())
+
+library(tidyverse)
+library(ggplot2)
+library(knitr)
+library(here)
+
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dpi=300)
+knitr::opts_chunk$set(cache=FALSE, fig.path="Figures/", cache.path="Cache/")
+options(knitr.kable.NA = "")
+options(digit=3)
+
+source(here("R","MyFunctV2.R")) # Functions used for plotting
+```
+
+```{r select standard, include=FALSE}
+#EDIT this section text for standard and label for plotting
+dec <- 2 # number of decimals to show
+
+# select water category
+category <- "transitional" #"coastal" #"transitional"
+Cat <- "TW" 
+Category.u <- "TW"
+
+physChemText.u <- "TP"
+ylb <- "Total P (μg/L) GM boundary"
+
+# "Nitrate as N" Nitrate N (mg/L)
+# "Total Inorganic N" Total Inorganic N (mg/L)
+# "TN" Total N (mg/L)
+# "Orthophosphate" PO4-P (μg/L)
+# "TP"  Total P (μg/L)
+
+#labels for legends
+#LCap1 <- "Figure 4.1" #plot.NO3N CW
+#LCap1 <- "Figure 4.2" #plot.NO3N TW
+#LCap1 <- "Figure 4.3" #plot.TIN CW
+#LCap1 <- "Figure 4.4" #plot.TIN TW
+#LCap1 <- "Figure 4.5" #plot.TN CW
+#LCap1 <- "Figure 4.6" #plot.TN TW
+#LCap1 <- "Figure 4.7" #plot.PO4P CW
+#LCap1 <- "Figure 4.8" #plot.PO4P TW
+#LCap1 <- "Figure 4.9" #plot.TP CW
+LCap1 <- "Figure 4.10" #plot.TP TW
+
+#Fig legends for report
+# Cap1 <- paste(LCap1,"Comparison of ",category, physChemText.u," standards by country. Green symbols represent values reported in 2014, other colours are WFD boundaries revised in 2020 (single value black, minimum blue, maximum red symbols.)")
+
+#alternative for 2 plots, edit ylim
+Cap1 <- paste(LCap1,"Comparison of ",category, physChemText.u," standards by country. Graphs show all G/M boundaries reported (top) and bottom graph hides values > 150 μg/L for better comparison of remaining standards.  Green symbols represent values reported in 2014, other colours are WFD boundaries revised in 2020 (single value black, minimum blue, maximum red symbols.)")
+
+```
+
+```{r Get data, include=FALSE}
+#revised data
+FName.dat <-here("Data","QE_GMbound_new.csv")
+new <- read.csv(file = FName.dat, header = TRUE, sep = ";")
+
+#2014 data
+FName <- here("Data","QE_GMbound_old.csv")
+old <- read.csv(file = FName, header = TRUE, sep = ";")
+
+str(new)
+names(new)
+str(old)
+names(old)
+
+```
+
+```{r Edit data, include=FALSE}
+#### Edit data before merge
+names(old)[names(old) == "Category"] <- "Cat"
+names(old)[names(old) == "National.type.code"] <- "NatType"
+names(old)[names(old) == "unit_used"] <- "UnitUsed"
+
+old$Measurement.Type<- recode_factor(old$Measurement.Type,`5th percentile`="5th percentile",`10th percentile`="10th percentile",
+                   `10th percentile\n`="10th percentile",`90th percentile`="90th percentile",
+                   `90th Percentile`="90th percentile",`95th pecentile`="95th percentile", 
+                   `95th percentile`="95th percentile",`99th percentile`="99th percentile",
+                   `maximum`="maximum",`Maximum`="maximum",`mean`="AA-EQS",`Mean`="AA-EQS",
+                   `mean `="AA-EQS",`mean+I1109:I1126`="AA-EQS",`median`="Median",`Median`="Median",
+                   `Minimum`="minimum",`Regression`="Regression",
+                   `Concentration standardizing value to the salinity 33`= "other")
+
+levels(old$Measurement.Type)
+names(old)[names(old) == "Measurement.Type"] <- "SumMetric"
+
+``` 
+
+```{r process1, include=FALSE}
+#Select standard
+#Subset of data by selecting water category and Parameter code
+#from revised data (new)
+new.s <- new %>% 
+  filter(Cat == Category.u, UnitUsed=="μgP/L", physChemText==physChemText.u,!is.na(ValueStd)) %>% #UnitUsed=="μgP/L"
+  droplevels() 
+
+dim(new.s)
+#Issue with ranges
+filter(new.s,!is.na(ValueStd),ValueUpStd<ValueStd)
+
+#from 2014 ECOSTAT questionnaires data (old)
+old.s<-old%>%
+  select(Source,Cat,Country,physChemText,SumMetric,NatType,ValueStd.old,ValueUpStd.old,UnitUsed,GIG)%>%
+  filter(Source=="ECOSTAT questionnaries", Cat==Category.u, physChemText==physChemText.u,!is.na(ValueStd.old))%>%
+           droplevels()
+
+dim(old.s)
+#Issue with ranges
+filter(old.s,!is.na(ValueStd.old),ValueUpStd.old<ValueStd.old)
+
+```
+
+```{r CheckDataPlot, include=FALSE}
+# Check data, modify units if plot suggests issues
+df<-(new.s)
+plot1.n<-BPChk(df) 
+names(old.s)[names(old.s) == "ValueUpStd.old"] <- "ValueUpStd"
+names(old.s)[names(old.s) == "ValueStd.old"] <- "ValueStd"
+
+df<-(old.s) 
+plot1.o<- BPChk(df)
+
+gridExtra::grid.arrange(plot1.n, plot1.o) #compare values old vs new
+```
+
+```{r Edit data if needed, include=FALSE,eval=TRUE}
+#corrected:
+ 
+  #NO NO3 CW old values  very high likely not reported in ug/l but mg/L instead, converted:
+# old.s%>%filter(ValueStd>10) #check and run lines below if needed
+# old.s<- old.s%>%
+#   mutate(ValueStd=ifelse(ValueStd>10,ValueStd/1000,ValueStd))%>%
+#   mutate(ValueUpStd=ifelse(ValueUpStd>10,ValueUpStd/1000,ValueUpStd))
+
+ #TN (NO old in CW, very high values assumed as ug/l in report and changed to mg/l); 
+# old.s<- old.s%>%
+#   mutate(ValueStd=ifelse(ValueStd>10,ValueStd/1000,ValueStd))%>%
+#   mutate(ValueUpStd=ifelse(ValueUpStd>10,ValueUpStd/1000,ValueUpStd))
+
+#PO4-P (HR new CW, assumed ValueUpStd in report was just roundings of ValueStd and as <: dropped)
+# new.s<- new.s%>%
+#   mutate(ValueUpStd=ifelse(ValueUpStd<ValueStd,NA_real_,ValueUpStd))
+# filter(new.s,!is.na(ValueStd),ValueUpStd<ValueStd) #check
+
+#PO4-P (HR new TW, assumed ValueUpStd in report was just roundings of ValueStd and as <: dropped)
+# new.s<- new.s%>%
+#   mutate(ValueUpStd=ifelse(ValueUpStd<ValueStd,NA_real_,ValueUpStd))
+# filter(new.s,!is.na(ValueStd),ValueUpStd<ValueStd) #check
+
+#TP (SE CW old: change order of range where ValueUpStd<ValueStd)
+# old.s<- old.s%>%
+#    mutate(ValueStd=ifelse(Country== "SE" & ValueUpStd<ValueStd,ValueUpStd,ValueStd))%>%
+#   mutate(ValueUpStd=ifelse(Country== "SE" & ValueUpStd<ValueStd,ValueStd,ValueUpStd))
+# filter(old.s,!is.na(ValueStd),ValueUpStd<ValueStd)#check
+ 
+
+df<-(old.s) 
+plot1.o<- BPChk(df)
+gridExtra::grid.arrange(plot1.n, plot1.o) #compare values old vs new
+
+```
+
+```{r combinedata, include=FALSE}
+#return to old names
+names(old.s)[names(old.s) == "ValueUpStd"] <- "ValueUpStd.old"
+names(old.s)[names(old.s) == "ValueStd"] <- "ValueStd.old" 
+
+#Combine the 2014 and 2019 data sets
+dat.Comb <- full_join(new.s,old.s)
+
+dat.Comb <- dat.Comb%>% mutate_at(c("Country", "NatType","SumMetric"), as.factor)
+```  
+
+
+```{r fig1, include = FALSE}
+#Create plot of standards v country including original 2014 data
+count(old.s,SumMetric)
+count(new.s,SumMetric)
+
+#Set up the plot symbols to match those in data set, use 
+      #8 for 95th PC, 4 90th PC, 6 max
+      #19 AA-EQS, 17 median, 7 summer, 12 spring, 10 winter, 13 autumn, 14 growth
+      #5 5th PC, 9 10th PC, 2 min
+symb1 <- c(8,4,19,14,17,7,10)#c(8,19,17,7) 
+
+#Create plot of standards v country including old and new data
+plotGMoldnew <- ggplot(data=dat.Comb, aes( x = Country, y = ValueStd.old, shape = SumMetric))+
+  geom_point(colour = "green",position = position_nudge(x=-0.2 ,y = 0))+
+  geom_point(data=dat.Comb, aes( x = Country, y = ValueUpStd.old, shape = SumMetric),colour = "green",position = position_nudge(x=-0.2 ,y = 0))+
+    geom_point(data = subset(dat.Comb,!is.na(ValueUpStd)), mapping = 
+               aes(x = Country, y = ValueStd, shape = SumMetric),color="blue",position = position_nudge(x=0.05 ,y = 0))+ 
+  geom_point(data = dat.Comb, mapping = aes(x=Country, y=ValueUpStd,shape=SumMetric),color="red",position = position_nudge(x= 0.05 ,y = 0))+
+  
+  geom_point(data=subset(dat.Comb,is.na(ValueUpStd)),aes(x = Country, y = ValueStd, shape = SumMetric),position = position_nudge(x=+0.20 ,y = 0))+
+  labs(y = ylb)+
+  scale_shape_manual(values=symb1,name  ="")+
+  theme_bw()+
+  theme(legend.position = "bottom")+
+    theme(legend.title = element_blank())
+
+#guides(shape=guide_legend(nrow=2,byrow=TRUE))
+
+
+#Check plot
+plotGMoldnew 
+
+plotGMoldnew.ylim <- plotGMoldnew + ylim(NA,150)#edit ylim as needed
+plotGMoldnew.ylim
+
+```
+
+
+```{r summarise data, include=FALSE}
+#Identify countries reporting  in 2014 who did not report values in 2019 and vice-versa
+levels(factor(old.s$Country))
+levels(new.s$Country)
+Sum14 <- filter(old.s,!is.na(ValueStd.old)) %>% select(Country,ValueStd.old) %>% group_by(Country) %>% summarise(Mn = mean(ValueStd.old))
+Sum21 <- filter(new.s,!is.na(ValueStd)) %>% select(Country,ValueStd) %>% group_by(Country) %>% summarise(Mn = mean(ValueStd))
+Sum <- full_join(Sum21,Sum14, by="Country")
+CntryMiss <-filter(Sum,is.na(Mn.x)) %>% select(Country)
+Cntrynew <- filter(Sum,is.na(Mn.y)) %>% select(Country)
+
+# check output
+dim(Cntrynew)
+dim(CntryMiss)
+
+as.list(Cntrynew)
+as.list(CntryMiss)
+
+```
+
+
+## 4.5 Total Phosphorus   
+
+
+### Transitional waters  
+
+Below we compare the Good/Moderate boundary values for `r physChemText.u` standards in `r category ` waters (`r LCap1 `). There are `r NROW(Cntrynew)` new countries (`r print(as.list(Cntrynew)) `) reporting G/M boundary values for this QE, while `r NROW(CntryMiss) ` countries (`r print(as.list(CntryMiss)) `) no longer report on this parameter.
+
+
+```{r, fig.width = 5, fig.height =3.5, fig.cap=Cap1, warning = FALSE}
+#Dot plots comparison of GM boundaries by "Country" for old and new data # plotGMoldnew.ylim  
+plotGMoldnew  
+plotGMoldnew.ylim  
+```  
+`r Cap1`

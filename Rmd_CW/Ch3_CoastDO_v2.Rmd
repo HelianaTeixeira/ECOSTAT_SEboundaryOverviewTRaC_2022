@@ -1,0 +1,148 @@
+---
+output:
+  word_document:
+    fig_caption: yes
+    reference_docx: draft-styles.docx
+editor_options: 
+  chunk_output_type: console
+---
+ 
+<!-- Date: 21 December 2020 
+Script used to produce text for chapter 3. Requires that the script to generate the appendix has already been run as this produces the Rdata file loaded by this script -->
+
+<!-- The ##### is Markdown command for level 5 title which in the reference document style has a new line paragraph format and thus forces a page throw. It must be preceded by at least 2 blank lines -->
+  
+```{r, include=FALSE}
+rm(list = ls())
+
+library(dplyr )
+library(ggplot2)
+library(tidyr)
+library(knitr)
+library(readxl)
+library(stringr)# needed for mutate of EEA data set
+library(gridExtra)
+library(car) # for anova
+library(sjstats) # for effect sizes
+library(here)
+library(kableExtra)
+
+source(here("R","MyFunctV2.R"))
+
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dpi=300)
+knitr::opts_chunk$set(cache=FALSE, fig.path=here("Figures"), cache.path=here("Cache"))
+options(knitr.kable.NA = "")
+options(digit=3)
+
+```
+
+
+```{r}
+#load data needed
+load(here("Data","CoastalDissolved Oxygen.RData"))
+
+SectNum <- "3.1.1.1"
+
+#add legends
+#labels for legends
+fig_ref1 <- "Figure 3.1"
+fig_ref2 <- "Figure 3.2"
+fig_ref3 <- "Figure 3.3"
+tab_ref1 <- "Table 3.1"
+tab_ref2 <- "Table 3.2"
+
+#---------------------------------------------------------------------------------------------------------
+
+#Legends for report
+FCap1 <- paste(fig_ref1,"Comparison of coastal",physChemText.u,"standards by country. (single value black, minimum blue, maximum red symbols, dotted lines show interquartile range of mean or median values, (10th quantile=red, 25th quantile=orange, 50th quantile = blue.)")
+FCap2 <- paste(fig_ref2,"Coastal",physChemText.u,"standards  by IC type (single value black, minimum blue, maximum red. Horizontal lines mark the 25th (green) and 75th (red) quantiles, (excluding standards based on quantiles).")
+FCap3 <- paste(fig_ref3,"Coastal",physChemText.u,"standards' coplots showing the range of ",physChemText.u," concentration along the salinity gradient in each Geographical Intercalibration Group (GIG), standards colored by common Intercalibration Type (IC).")
+TCap1 <- paste(tab_ref1,"Analysis of variance for factorial model relating country and IC type to member state boundary values for",physChemText.u,". (Including main and partial effect sizes,Omega squared).", physChemText.u)
+TCap2 <- paste(tab_ref2,"Overview of common types showing the number of MS/national types/distinct standards for coastal waters", physChemText.u,".")
+
+
+```
+
+
+```{r, include=FALSE, warning=FALSE}
+#Chunk to test differences between types and country
+
+# test homogeneity of variance, select appropriate model
+leveneTest(Value ~ ICcode.TRAC, data=SumDat.l,subset = n>2 )
+leveneTest(log(Value) ~ ICcode.TRAC, data=SumDat.l,subset = n>2 )
+
+mod <- aov(log(Value) ~ ICcode.TRAC, data=SumDat.l) # create factorial model using only ICcode.TRAC with more than 2 countries in the group
+
+my_anova <- Anova(mod, type="III") # with car package use type III sum squares as unbalanced design
+Om_sq <- omega_sq(my_anova,partial = FALSE) # determine the effect size (proportion of variance explained by each factor)
+#pOm_sq <- omega_sq(my_anova,partial = TRUE) # determine the partial effect size (proportion of variance explained by each factor after excluding the variance explained by other predictors)  omega_sq corrects for small sample size
+
+# look at residuals
+r = residuals(mod, type="response")
+Shap.test <- shapiro.test(r) # test for normality of residuals
+Shap.test.W <- Shap.test[[1]]
+Shap.test.P <- Shap.test[[2]]
+#
+# Table <- my_anova %>% mutate(term = c("Intercept","ICcode.TRAC","Residuals"))
+# Table <- left_join(Table,Om_sq,  by.y="2")
+# Table <- left_join(Table,pOm_sq)
+
+```
+
+
+## `r SectNum` `r paste(physChemText.u, " (coastal waters)")`
+
+
+Data for `r physChemText.u` provided `r dim(dat.u)[1]` records from `r dim(count(dat.u,Country))[1]` countries (`r fig_ref1`). 
+Many countries use the annual mean ("AA-EQS") as a summary metric. `r dim(Temp2)[1]` countries (`r levels(ValCntry) `) use a single values for each national type and `r dim(Temp1)[1]` countries (`r levels(RangeCntry) `) present standards as a range.  
+
+The data could be linked to `r dim(NinGroup)[1]-2` IC types (`r fig_ref2 ` & `r tab_ref2`). `r dim(CntryInGroup[CntryInGroup$n>2 & CntryInGroup$ICcode.TRAC !="inapplicable",])[1]` of these (`r GrpGT2$ICcode.TRAC`) had type specific values from more than 2 countries allowing the range of standards in these types to be compared. `r length(levels(TypeAllCntry))` countries (`r levels(TypeAllCntry)`) apply the same standard to all national types found in one or more of their river basin districts.  
+
+The standards ranged from `r round(min(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE),dec)` `r dat.u$UnitUsed[1] ` (`r dat.u[which(c(dat.u$ValueStd,dat.u$ValueUpStd) == min(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE)),"Country"][1]`) to `r round(max(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE),dec)` `r dat.u$UnitUsed[1] ` (`r dat.u[which(c(dat.u$ValueStd,dat.u$ValueUpStd) == max(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE)),"Country"][1]`) with an interquartile range of `r round(qA25,dec)` to `r round(qA75,dec)` (`r fig_ref2`). 
+
+Very few values are available to allow meaningful statistical comparison accross grouping factor(s), so no analysis of variance was applied to test the significance of GIG, IC Type, Country or other grouping factor effect<!-- (`r tab_ref1`) -->.<!-- The importance of the country effect can be judged from the Omega squared values which represent the proportion of variance explained by country (`r round(Om_sq[1,2]*100,1)`%)   -->
+To provide an overview of how natural variation associated with the salinity gradient may contribute to the range of reported standards, we present the distribution of `r physChemText.u` for the salinity ranges (`r fig_ref3`) reported by countries.
+  
+More information in Annex A1.1.  
+    
+```{r, fig.width = 7, fig.height =5, fig.cap=FCap1, warning = FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country"
+P1  
+```  
+`r FCap1`  
+
+\n  
+\n  
+```{r, fig.cap=FCap2, fig.height=5, fig.width=7, warning=FALSE}
+#Dot plot of "ValueStd" & "ValueUpStd" by "ICType" (IC types)
+P2  
+```  
+`r FCap2`   
+
+\n  
+\n  
+<!-- `r TCap1`    -->
+<!-- ```{r} -->
+<!-- kable(Table[c(5,6,1:4)],col.names = c("","Omega sq,","Sum sq","Df","F val","Pr"),digits = c(2,2,1,2,2,5),format = "pandoc")   -->
+<!-- ```   -->
+
+<!-- \n   -->
+<!-- \n    -->
+`r TCap2`  
+```{r}
+OverV4%>% kable(format="pandoc",cap="")
+```  
+
+\n
+\n
+```{r, fig.width = 7, fig.height =5, fig.cap=FCap3, eval=FALSE,message= FALSE}
+Salinity interaction coplots
+ coP4
+```
+
+
+
+
+
+
+

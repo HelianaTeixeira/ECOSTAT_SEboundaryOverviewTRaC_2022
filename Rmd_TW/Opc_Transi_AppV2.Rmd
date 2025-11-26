@@ -1,0 +1,287 @@
+---
+output:
+  word_document:
+    fig_caption: yes
+    reference_docx: draft-styles.docx
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- Date: 15 October 2020 -->
+<!-- Script used to check the data and produce the appendix plots needed. Saves an Rdata file for use by 2nd script which generates the report for chapter 3 -->
+
+<!-- file name: DO_Transi_AppV2.Rmd -->
+```{r, setup, include=FALSE}
+rm(list = ls())
+
+library(dplyr )
+library(ggplot2)
+library(tidyr)
+library(knitr)
+library(here)
+
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dpi=300)
+knitr::opts_chunk$set(cache=FALSE, fig.path="Figures/", cache.path="Cache/")
+options(knitr.kable.NA = "")
+options(digit=3)
+
+source(here("R","MyFunctV2.R"))
+
+```
+
+
+```{r}
+#Get the data
+Cat <- "Transitional" # water category, used in file  name for saving objects for subsequent use
+FName.dat <-here("Data","dat.TWver3.csv")
+dat.TW <- read.csv(file = FName.dat, header = TRUE)
+```
+
+
+```{r, select standard, include=FALSE}
+# enter text for standard,labels for plotting, appendix section number etc
+
+dec <- 2  # number of decimals to show
+physChemText.u <- "% oxygen saturation"
+ylb <- "% saturation GM boundary"
+
+SectNum <- "A1.2.2"
+
+#Legend numbers
+fig_refA1 <- "Figure A1"
+tab_refA1 <- "Table A1"
+tab_refA2 <- "Table A2"
+tab_refA3 <- "Table A3"
+tab_refA4 <- "Table A4"
+fig_refA2 <- "Figure A2"
+fig_refA3 <- "Figure A3"
+fig_refA4 <- "Figure A4"
+fig_refA5 <- "Figure A5"
+
+#Legend text for appendix
+FCapA1 <- paste(fig_refA1,physChemText.u, "standards by country and IC type (single value black, minimum blue, maximum red), horizontal lines mark 25th and 75th quantiles for types with 2 or more countries contributing to the type.")
+TCapA1 <- paste(tab_refA1,physChemText.u,"metrics used by country")
+TCapA2 <- paste(tab_refA2,"records where",physChemText.u, "was reported as a value or a range")
+TCapA3 <- paste(tab_refA3,"Number of different ",physChemText.u," standards by country and IC type")
+TCapA4 <- paste(tab_refA4,"Overview of common types and number of MS/national types/distinct  ",physChemText.u," standards by country and IC type")
+FCapA2 <- paste(fig_refA2,"Transitional",physChemText.u,"standards coplots showing the range of ",physChemText.u," concentration along the salinity gradient for each Intercalibration Common Type (IC), standards colored by Country.")
+FCapA3 <- paste(fig_refA3,"Transitional",physChemText.u,"standards coplots showing the range of ",physChemText.u," concentration along the salinity gradient for each Marine Region, standards colored by IC Type.")
+FCapA4 <- paste(fig_refA4,"Transitional",physChemText.u,"standards coplots showing the range of ",physChemText.u," concentration along the salinity gradient for each Geographical Intercalibration Group (GIG), standards colored by Marine Region.")
+FCapA5 <- paste(fig_refA5,"Transitional",physChemText.u,"standards coplots showing the range of ",physChemText.u," concentration along the salinity gradient for each Geographical Intercalibration Group (GIG), standards colored by Intercalibration Common Type (IC).")
+
+#Select standard
+dat.u <- dat.TW %>% 
+  filter(physChemText==physChemText.u,!is.na(ValueStd)) %>% 
+  select(All.obs,GIG,MarineRegion,ICcode.TRAC,Country,RBD,NatType,physChemQECode,physChemQE,physChemText,physChemGMBoundary,SumMetric,ValueStd,ValueUpStd,UnitUsed,RangeRep,ReasonRange,Salinity1,Salinity2,DepthZone,MetricType,ICType) %>% 
+  droplevels()
+dim(dat.u)
+
+```
+ 
+### `r SectNum` `r paste(physChemText.u, "concentration (transitional)")`
+
+```{r CheckDataPlot, include=FALSE}
+# Check data, modify units if plot suggests issues
+df<-dat.u
+BPChk(df)
+```
+
+```{r,eval=FALSE}
+dat.u.m <- dat.u
+
+dat.u <- dat.u.m 
+```
+
+
+<!-- The following chunk prepares the data.  Need to check the number of symbols is correct -->
+
+```{r, summarise data, include=FALSE}
+source(here("R","Prep_TWv5.R"))  # runs chunk of code to prepare the data
+
+#Set up the plot symbols to match those in data set, use 
+    #8 for 95th PC, 4 90th PC, 6 max
+    #19 AA-EQS, 17 median, 7 summer, 12 spring, 10 winter, 13 autumn, 14 growth
+    #5 5th PC, 9 10th PC, 2 min, 7 summer min
+count(dat.u.d,SumMetric)
+#Edit the next line
+symb <- c(5,19,6,17,10)#5,3,8,19,18,12,17,2
+if(length(symb)!=dim(count(dat.u.d,SumMetric))[1])stop("Edit symb, it is wrong length")
+
+# Chunk to calculate summary statistics
+# Use the  "distinct" boundary values (dat.u.d) to avoid weighting values where countries apply identical type specific values in multiple RBDs (or NatTypes).
+
+# Select data with summary statistics that are a measure of central tendency
+SumDat <- dat.u.d %>% 
+  filter(SumMetric=="AA-EQS"|
+           SumMetric == "Median"|
+           SumMetric == "AGM_int_c"|
+           SumMetric == "winter"|
+           SumMetric == "spring"|
+           SumMetric == "growth season mean"|
+           SumMetric == "summer"|
+           SumMetric == "autumn")
+
+#Create long format to simplify calculating quantiles and for analysis of variance by putting both ValueStd and ValueUpStd into single variable "Value".
+SumDat.l <- pivot_longer(dat.u.d,cols = starts_with("Val"),names_to = "col",values_to = "Value" )
+
+SumDat.l <- left_join(SumDat.l,CntryInGroup) # join the number of countries in the group for subsequent filter
+
+#calculate quantiles for the MS boundary values
+qA10 <- quantile(SumDat.l$Value,0.1,na.rm = TRUE)
+qA25 <- quantile(SumDat.l$Value,0.25,na.rm = TRUE)
+qA50 <- quantile(SumDat.l$Value,0.5,na.rm = TRUE)
+qA75 <- quantile(SumDat.l$Value,0.75,na.rm = TRUE)
+qA90 <- quantile(SumDat.l$Value,0.9,na.rm = TRUE)
+min.x <- min(c(dat.u$ValueStd,dat.u$ValueUpStd), na.rm=TRUE)
+max.x <- max(c(dat.u$ValueStd,dat.u$ValueUpStd), na.rm=TRUE)
+
+SumDat.l <- SumDat.l %>% filter(!is.na(Value))# remove groups not needed, kept: ICcode.TRAC !="inapplicable"
+
+#Calculate the full IC type specific quantiles
+q25 <- aggregate(SumDat.l$Value,0.25, by=list(SumDat.l$ICcode.TRAC), FUN=quantile, p=.25,na.rm = TRUE)
+q75 <- aggregate(SumDat.l$Value, by=list(SumDat.l$ICcode.TRAC), FUN=quantile, p=.75,na.rm = TRUE)
+Q <- data.frame(q25,q75[2])
+Q <- Q %>% rename(ICcode.TRAC = Group.1, q25 = x,q75 = x.1)
+#join quantiles to dataframe containing number of countries in each group
+GrpGT2.Q <- full_join(NinGroup,Q) 
+GrpGT2.Q <- GrpGT2.Q %>% mutate(q25u = ifelse(n>2,q25,NA))%>% mutate(q75u = ifelse(n>2,q75,NA))
+
+#Calculate the GIG specific quantiles
+q25 <- aggregate(SumDat.l$Value, by=list(SumDat.l$GIG), FUN=quantile, p=.25,na.rm = TRUE)
+q75 <- aggregate(SumDat.l$Value, by=list(SumDat.l$GIG), FUN=quantile, p=.75,na.rm = TRUE)
+q50 <- aggregate(SumDat.l$Value, by=list(SumDat.l$GIG), FUN=quantile, p=.5,na.rm = TRUE)
+q90 <- aggregate(SumDat.l$Value, by=list(SumDat.l$GIG), FUN=quantile, p=.9,na.rm = TRUE)
+Q <- data.frame(q25,q75[2],q50[2],q90[2])
+Q <- Q %>% rename(GIG = Group.1, q25 = x,q75 = x.1,q50 = x.2,q90 = x.3)
+#join agg quantiles to dataframe containing number of countries in each group
+AggGrpGT2.Q <- full_join(NinAggGroup,Q) 
+AggGrpGT2.Q <- AggGrpGT2.Q %>% mutate(q25u = ifelse(n>2,q25,NA))%>% mutate(q75u = ifelse(n>2,q75,NA))%>% mutate(q90u = ifelse(n>2,q90,NA))%>% mutate(q50u = ifelse(n>2,q50,NA))
+
+```
+
+
+```{r salinity gradient,include=FALSE}
+#coplots with all QE vs salinity where available
+coP1<-coPIC()
+coP2<- coPMaReg()
+coP3<- coPGIG.MR()
+coP4<- coPGIG.IC()
+```
+
+
+```{r, include=FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country"
+P1 <- DP() + 
+  geom_hline(yintercept = c(qA50,qA25,qA10),linetype="dashed", color=c("blue","orange","red"))
+``` 
+
+
+```{r, include=FALSE}
+#Dot plot of "ValueStd" & "ValueUpStd" by "ICcode.TRAC" (IC types)
+P2 <- DP2()+   theme(axis.text.x = element_text(angle = 90,hjust=0.5,vjust=0.5)) +
+  geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q25u,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q25u),inherit.aes = FALSE,colour = "green",size = 1.5)+
+  geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q75u,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q75u),inherit.aes = FALSE,colour = "red",size = 1.5) 
+```
+
+
+
+```{r, fig.width = 9, fig.height =6, fig.cap=FCapA1, warning = FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country" & "ICcode.TRAC" (IC types)
+
+# start by plotting the value upper in red  
+ggplot(dat.u.d, aes(x=Country, y=ValueUpStd,shape=SumMetric))+
+  geom_point(color="red",position = position_nudge(x= -0.1 ,y = 0))+
+  scale_shape_manual(values=symb,name  ="") +
+# add lower point of range as blue symbol  
+  geom_point(data = subset(dat.u.d,!is.na(ValueUpStd)), mapping = 
+               aes(x = Country, y = ValueStd, shape = SumMetric),color="blue",position = position_nudge(x=0.1 ,y = 0))+
+  ylab(ylb)+xlab("")+
+  facet_wrap(~ ICcode.TRAC,ncol=4,nrow=2,scales = "free_x") +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90,hjust=0.5,vjust=0.5))+  
+  theme(legend.position = "bottom",
+        legend.text = element_text(color = "black")) +
+# Add the values (exclude those which were a range), this needs to  be done last to avoid the legend points being colored
+  geom_point(data = subset(dat.u.d,is.na(ValueUpStd)), mapping = 
+               aes(x = Country, y = ValueStd, shape = SumMetric),color="black")+
+    geom_hline(data=GrpGT2.Q,mapping = aes(yintercept = q25u ),colour = "green",linetype = "dashed")+
+    geom_hline(data=GrpGT2.Q,mapping = aes(yintercept = q75u ),colour = "red",linetype = "dashed")
+
+```
+
+
+\newline \newline
+
+
+\newline
+```{r }
+Metrics%>% kable(format="pandoc",cap=TCapA1) 
+```
+
+
+\newline
+
+
+```{r }
+Metrics.b%>% kable(format="pandoc",cap="Table A1b Summary metric type and no. of unique standards")
+```
+
+
+\newline
+
+
+```{r }
+Temp %>% kable(format="pandoc",cap=TCapA2)  
+```
+
+\newline
+
+
+```{r }
+addmargins(table(dat.u.d$ICcode.TRAC,dat.u.d$Country)) %>% kable(format="pandoc",cap=TCapA3) 
+```
+
+\newline
+
+
+```{r, eval=FALSE }
+OverV4%>% kable(format="pandoc",cap=TCapA4) 
+```
+
+\newline
+
+
+<!-- ```{r, fig.width = 5.25, fig.height =8.3, fig.cap=FCapA2, warning = FALSE} -->
+<!-- coP1 -->
+<!-- ``` -->
+
+<!-- \newline -->
+
+
+<!-- ```{r, fig.width = 5.25, fig.height =8.3, fig.cap=FCapA3, warning = FALSE} -->
+<!-- coP2 -->
+<!-- ``` -->
+
+<!-- \newline -->
+
+
+<!-- ```{r, fig.width = 5.25, fig.height =8.3, fig.cap=FCapA4, warning = FALSE} -->
+<!-- coP3 -->
+<!-- ``` -->
+
+<!-- \newline -->
+
+
+<!-- ```{r, fig.width = 5.25, fig.height =6, fig.cap=FCapA5, warning = FALSE} -->
+<!-- coP4 -->
+<!-- ``` -->
+
+Data set used *`r dat.TW$Ver.r[1]`
+
+```{r}
+#Save the objects needed for tables and figures for subsequent use
+
+OutFile <- here("Data",paste0(Cat,physChemText.u,".RData"))
+
+save(dat.u.d,Metrics,Temp,Temp1,Temp2,OverV4,RangeCntry,ValCntry,TypeAllCntry,NinGroup,CntryInGroup,GrpGT2,symb,ylb,dec,physChemText.u,dat.u.d, dat.u,SumDat.l,qA10,qA25,qA50,qA75,qA90,min.x,max.x,GrpGT2.Q,AggGrpGT2.Q,dat.shrt.l,P1,P2,coP1,coP2,coP3,coP4,file=OutFile)
+```

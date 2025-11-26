@@ -1,0 +1,477 @@
+---
+editor_options:
+  chunk_output_type: console
+output:
+  word_document:
+    fig_caption: yes
+    reference_docx: draft-styles.docx
+  html_document: default
+---
+
+
+```{r setup, include=FALSE}
+
+rm(list = ls())
+
+library(dplyr )
+library(ggplot2)
+library(tidyr)
+library(knitr)
+library(readxl)
+library(stringr)# needed for mutate of EEA data set
+library(car) # for anova
+library(sjstats) # for effect sizes
+library(here)
+
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dpi=300)
+knitr::opts_chunk$set(cache=FALSE, fig.path="Figures/", cache.path="Cache/")
+options(knitr.kable.NA = "")
+options(digit=3)
+
+source(here("R","MyFunctV2.R")) # Functions used for plotting
+```
+
+```{r select standard, include=FALSE}
+#EDIT this section
+
+# enter text for standard and label for plotting
+dec <- 2 # number of decimals to show
+physChemText.u <- "TN"
+ylb <- "TN (mg/L) GM boundary"
+#CV <- "" # critical value to highlight:
+
+#labels for legends
+LCap1 <- "Figure 3.22"
+LCap2 <- "Figure 3.23"
+LCapT1 <- "Table 3.27"
+LCapT2 <- "Table 3.28"
+LCapA1 <- "Figure A3-5"
+LCapA2 <- "Figure A3-6"
+LCapA3 <- "Figure A3-7"
+LCapTA1 <- "Table A3-7"
+LCapTA2 <- "Table A3-8"
+LCapTA3 <- "Table A3-9"
+#LCapTA4 <- "Table A3-11"
+
+#Fig legends for report
+Cap1 <- paste(LCap1,"Comparison of coastal",physChemText.u,"standards by country (single value black, minimum blue, maximum red symbols).")
+Cap2 <- paste(LCap2,"coastal",physChemText.u,"standards  by IC type (single value black, minimum blue, maximum red). Horizontal lines mark 25th (green) and 75th (red) quantiles, (excluding standards based on quantiles).")
+
+#Table legends
+# CapT1 <- paste(LCapT1,"Analysis of variance for factorial model relating country and IC type to country boundary values for",physChemText.u, "(Including main and partial effect sizes,Omega squared.)")
+CapT1 <- paste(LCapT1,"Analysis of variance for factorial model for country boundary values for",physChemText.u, "(including main and partial effect sizes,Omega squared).")
+CapT2 <- paste(LCapT2,"Overview of common types showing the number of country/national types/distinct standards for coastal", physChemText.u)
+
+#Legends for appendix
+CapA1 <- paste(LCapA1,physChemText.u, "standards by country and IC type (single value black, minimum blue, maximum red). Horizontal lines mark 25th (green) and 75th (red) quantiles.") #check if both quantiles are plotted first
+CapA2 <- paste(LCapA2,physChemText.u, "standards by country and GIG (single value black, minimum blue, maximum red), comparing G/M boundaries distribution with (top) and without (bottom) outliers.")
+CapA3 <- paste(LCapA3,physChemText.u, "standards for which a salinity gradient was associated. Comparison of values distribution with (top) and without (bottom) the presence of outliers.") #check if both quantiles are plotted first
+CapTA1 <- paste(LCapTA1,physChemText.u,"metrics used by country")
+CapTA2 <- paste(LCapTA2,physChemText.u,"number of records where standard was reported as a value or a range")
+CapTA3 <- paste(LCapTA3,"Number of different ",physChemText.u," standards by country and IC type")
+# CapTA4 <- paste(LCapTA4,"Overview of common types and number of countries/national types/distinct  ",physChemText.u," standards by country and IC type")
+```
+
+
+```{r Get data}
+#Get the data
+Cat <- "coastal" # water category, used in file  name for saving objects for subsequent use
+FName.dat <-here("Data","dat.CWver3.csv")
+dat.CW <- read.csv(file = FName.dat, header = TRUE, fileEncoding = "latin1")
+
+```
+
+
+```{r process1, include=FALSE}
+#Select standard
+dat.u <- dat.CW %>% 
+  filter(physChemText==physChemText.u,!is.na(ValueStd)) %>% 
+  select(All.obs,GIG,MarineRegion,ICcode.TRAC,Country,RBD,NatType,physChemQECode,physChemQE,physChemText,physChemGMBoundary,SumMetric,ValueStd,ValueUpStd,UnitUsed,RangeRep,ReasonRange,Salinity1,Salinity2,DepthZone,MetricType,ICType) %>%
+  droplevels()
+dim(dat.u)
+#Issue with ranges
+filter(dat.u,!is.na(ValueStd),ValueUpStd<ValueStd)
+
+#Id outliers or critical values
+upper_bound <- quantile(dat.u$ValueUpStd, 0.975,'na.rm' = TRUE)
+CVu <- which(dat.u$ValueUpStd > upper_bound)
+dat.u[CVu, "ValueUpStd"]
+dat.u[CVu, "Country"]
+dat.u[CVu, "All.obs"]
+
+lower_bound <- quantile(dat.u$ValueStd, 0.975,'na.rm' = TRUE)
+CVl <- which(dat.u$ValueStd > lower_bound)
+dat.u[CVl, "ValueStd"]
+dat.u[CVl, "Country"]
+
+# critical values to highlight:
+#ValueUpStd == 6 is an eRROR drop 2 entries from EE: All.obs==6550 & All.obs==6569
+```
+
+
+```{r CheckDataPlot, include=FALSE}
+# Check data, modify units if plot suggests issues
+df<-dat.u
+BPChk(df)
+```
+
+
+```{r Edit data if needed, include=FALSE,eval=TRUE}
+#correct error in data
+dat.u.m <- dat.u %>%
+  mutate(ValueUpStd = case_when(
+    All.obs==6550 ~ NA_real_,
+    All.obs==6569 ~ NA_real_,
+    TRUE ~ ValueUpStd))
+  #check
+dat.u.m%>%
+  filter(!is.na(ValueUpStd), Country=="EE")%>%
+  count(Country, ValueUpStd)
+
+#RangeRep is TRUE for  2 DE entries:
+dat.u.m<- dat.u.m%>%
+  mutate(RangeRep = case_when(
+   Country =="DE" & !is.na(ValueUpStd) ~ TRUE, 
+    TRUE ~ RangeRep))
+summary(dat.u.m$RangeRep)
+
+#Salinities to long format not Range
+#1st id salinities in need of duplication in Vals columns
+dat.u.m%>%
+  filter(ReasonRange == "salinity range", !is.na(Salinity2), is.na(ValueUpStd))%>%
+  count(Country, ValueUpStd)
+    
+    #assign sal values to 6 SE entries non-spread
+    dat.u.m<-dat.u.m%>%
+      mutate(ValueUpStd=case_when(
+        ReasonRange == "salinity range" & !is.na(Salinity2) & is.na(ValueUpStd)
+        ~ ValueStd,
+        TRUE ~ ValueUpStd))
+    # check
+    dat.u.m%>%
+      filter(ReasonRange == "salinity range", !is.na(Salinity2), Country=="SE")%>%
+      count(Country, ValueUpStd)
+
+#2nd transpose salinity and correspondent value ranges not to be assumed as a L-U range
+dat.u.m <- dat.u.m%>%
+  mutate(RangeRep = case_when(
+    ReasonRange == "salinity range" ~ FALSE,
+                              TRUE ~ RangeRep)) #Range is False
+summary(dat.u.m$RangeRep)
+dim(dat.u.m)
+
+##TRANSPOSE SALINITY pivot
+dat.u.m <- pivot_longer(
+  dat.u.m,cols = starts_with("Sal"),
+  names_to = "Sal",
+  values_to = "Salinity") #transpose 
+
+# edit fields
+dat.u.m <- dat.u.m %>%
+  mutate(Sal =ifelse(is.na(Salinity),NA, Sal))# 104 with Salinity vals
+
+#preserve entries of SE (6 records) with salinity not in range: change Sal level
+dat.u.m <- dat.u.m%>%
+    mutate(Sal = case_when(Country == "SE" & Sal=="Salinity2" & is.na (ValueUpStd) ~ "Salinity1", TRUE ~ Sal))
+
+dat.u.m <- dat.u.m%>%
+  mutate(ValueStd = case_when(Sal=="Salinity2" ~ ValueUpStd, TRUE ~ ValueStd))
+
+dat.u.m <- dat.u.m%>%
+  mutate(ValueUpStd = case_when(Sal=="Salinity1" ~ NA_real_ , TRUE ~ ValueUpStd))
+
+dat.u.m <- dat.u.m %>%
+  mutate(ValueUpStd = case_when(Country=="SE" ~ NA_real_, TRUE ~ ValueUpStd))
+
+dat.u.m  <- dat.u.m %>%
+  filter(!((All.obs == 11440 & is.na(Salinity) & is.na(Sal)) |
+             (All.obs == 11441 & is.na(Salinity) & is.na(Sal)) |
+             (All.obs == 11442 & is.na(Salinity) & is.na(Sal)) |
+             (All.obs == 11006 & is.na(Salinity) & is.na(Sal))
+           ))
+
+#eliminate duplicated rows in dataframe
+dat.u.m<- distinct(dat.u.m)
+
+dat.u <- dat.u.m  # ONLY RUN this line when data appear to be correct based on plot above
+dim(dat.u)
+summary(dat.u)
+```
+
+
+```{r fig1, include = FALSE}
+#Create plot of standards v country
+count(dat.u,SumMetric)
+#Set up the plot symbols to match those in data set, use 
+    #8 for 95th PC, 4 90th PC, 6 max
+    #19 AA-EQS, 17 median, 7 summer, 12 spring, 10 winter, 13 autumn, 14 growth
+    #5 5th PC, 9 10th PC, 2 min
+symb1 <- c(19,7,10)
+
+plot1 <- ggplot(data=dat.u, aes( x = Country, y = GM_Value, shape = Measurement_Type))+
+  geom_point(data = subset(dat.u,!is.na(ValueUpStd)), mapping = 
+      aes(x = Country, y = ValueStd, shape = SumMetric),color="blue",position = position_nudge(x=0.05 ,y = 0))+ 
+  geom_point(data = dat.u, mapping = aes(x=Country, y=ValueUpStd,shape=SumMetric),color="red",position = position_nudge(x= 0.05 ,y = 0))+
+  geom_point(data=subset(dat.u,is.na(ValueUpStd)),aes(x = Country, y = ValueStd, shape = SumMetric),position = position_nudge(x=+0.20 ,y = 0))+
+  labs(y = ylb)+
+  scale_shape_manual(values=symb1,name  ="")+
+  theme_bw()+
+  theme(legend.position = "bottom")+
+  theme(legend.title = element_blank())
+```
+
+
+```{r summarise data, include=FALSE}
+source(here("R","Prep_CWv5_nut.R"))  # runs chunk of code to prepare the data
+
+#Set up the plot symbols to match those in data set, use 19 for AA-EQS, 8 for 95th PC, 3 for median
+count(dat.u.d,SumMetric)
+#Edit the next line
+symb <- c(19,7,10) #try symb1 if code failing
+#dim(count(dat.u.d,SumMetric))   #use this line to check the number of symbols required
+if(length(symb)!=dim(count(dat.u.d,SumMetric))[1])stop("Edit Symb, it is wrong length")
+
+```
+
+
+```{r salinity plots,include=FALSE}
+#coplots with all QE vs salinity where available
+coP1<- coPICn()
+coP2<- coPMaRegn()
+coP3<- coPGIG.MRn()
+coP4<- coPGIG.ICn()
+```
+
+
+```{r save data, include=FALSE}
+#Save the objects needed for tables and figures for subsequent use, edit the next line to reflect directory used to store data file generated
+
+OutFile <- here("Data",paste0(Cat,physChemText.u,".RData"))
+
+save(dat.u.d,Metrics,Temp,Temp1,Temp2,OverV4,RangeCntry,ValCntry,TypeAllCntry,NinGroup,CntryInGroup,GrpGT2,symb,ylb,dec,physChemText.u,dat.u.d,dat.u,coP1,coP2,coP3,coP4,file=OutFile) #not yet: datL.u.d,qA25,qA50,qA75,qA90,min.x,max.x,qA10U,qA25U,qA50U,qA75U,qA90U,qA10L,qA25L,qA50L,qA75L,qA90L,GrpGT2.Q,P1,P2,
+
+#V11 Geoff: dat.u.d,Metrics,Temp,Temp1,Temp2,OverV4,RangeCntry,ValCntry,TypeAllCntry,NinGroup,CntryInGroup,GrpGT2,symb,ylb,dec,physChemText.u,dat.u.d, dat.u
+```
+
+
+```{r sum stats, include = FALSE}
+# Chunk to calculate summary statistics
+# Only use  "distinct" boundary values (dat.u.d) to avoid weighting values where countries apply identical type specific values in multiple RBDs.
+
+# Select data with summary statistics that are a measure of central tendency
+SumDat <- dat.u.d %>% 
+  filter(SumMetric=="AA-EQS"|
+           SumMetric == "Median"|
+           SumMetric == "AGM_int_c"|
+           SumMetric == "winter"|
+           SumMetric == "spring"|
+           SumMetric == "growth season mean"|
+           SumMetric == "summer"|
+           SumMetric == "autumn") #replace var name by SumMetric
+
+
+#Create long format to simplify calculating quantiles
+SumDat.l <- pivot_longer(dat.u.d,cols = starts_with("Val"),names_to = "col",values_to = "Value" )
+
+SumDat.l <- left_join(SumDat.l,CntryInGroup) # join the number of countries in the group for subsequent filter
+
+
+q25All <- quantile(SumDat.l$Value,0.25,na.rm = TRUE)
+q50All <- quantile(SumDat.l$Value,0.5,na.rm = TRUE)
+q75All <- quantile(SumDat.l$Value,0.75,na.rm = TRUE)
+q90All <- quantile(SumDat.l$Value,0.90,na.rm = TRUE)
+
+SumDat.l <- SumDat.l %>% filter(!is.na(Value),ICcode.TRAC !="All" & ICcode.TRAC !="RW-00")
+
+#Calculate the type specific quantiles: IC type
+q25 <- aggregate(SumDat.l$Value,0.25, by=list(SumDat.l$ICcode.TRAC), FUN=quantile, p=.25,na.rm = TRUE)
+q75 <- aggregate(SumDat.l$Value, by=list(SumDat.l$ICcode.TRAC), FUN=quantile, p=.75,na.rm = TRUE)
+Q <- data.frame(q25,q75[2])
+Q <- Q %>% rename(ICcode.TRAC = Group.1, q25 = x,q75 = x.1)
+#join quantiles to dataframe containing number of countries in each group
+GrpGT2.Q <- full_join(NinGroup,Q) 
+GrpGT2.Q <- GrpGT2.Q %>% mutate(q25u = ifelse(n>2,q25,NA))%>% mutate(q75u = ifelse(n>2,q75,NA))
+
+#Calculate the aggtype specific quantiles : GIG
+q25 <- aggregate(SumDat.l$Value, by=list(SumDat.l$GIG), FUN=quantile, p=.25,na.rm = TRUE)
+q75 <- aggregate(SumDat.l$Value, by=list(SumDat.l$GIG), FUN=quantile, p=.75,na.rm = TRUE)
+q50 <- aggregate(SumDat.l$Value, by=list(SumDat.l$GIG), FUN=quantile, p=.5,na.rm = TRUE)
+q90 <- aggregate(SumDat.l$Value, by=list(SumDat.l$GIG), FUN=quantile, p=.9,na.rm = TRUE)
+Q <- data.frame(q25,q75[2],q50[2],q90[2])
+Q <- Q %>% rename(GIG = Group.1, q25 = x,q75 = x.1,q50 = x.2,q90 = x.3)
+#join agg quantiles to dataframe containing number of countries in each group
+AggGrpGT2.Q <- full_join(NinAggGroup,Q) 
+AggGrpGT2.Q <- AggGrpGT2.Q %>% mutate(q25u = ifelse(n>2,q25,NA))%>% mutate(q75u = ifelse(n>2,q75,NA))%>% mutate(q90u = ifelse(n>2,q90,NA))%>% mutate(q50u = ifelse(n>2,q50,NA))
+```
+
+```{r stats, include=FALSE, warning=FALSE}
+#Chunk to test differences between types and country
+# test homogeneity of variance, select appropriate model 
+boxplot(Value ~ GIG, data=SumDat.l,subset = n>2 )
+boxplot(Value ~ Country, data=SumDat.l,subset = n>2 )
+
+leveneTest(Value ~ Country, data=SumDat.l,subset = n>2 )
+leveneTest(log(Value) ~ Country, data=SumDat.l,subset = n>2 )
+
+leveneTest(Value ~ GIG, data=SumDat.l,subset = n>2 )
+leveneTest(log(Value) ~ GIG, data=SumDat.l,subset = n>2 )
+#p-value <0.05 assumption of homegeneity of variance accross groups violated
+
+# mod <- aov(Value ~ Country, data=SumDat.l,subset = n>2) # create factorial model 
+# # for one-way between subjects designs, partial omega squared is equvilant to omega squared
+# # look at residuals
+# r = residuals(mod, type="response")
+# Shap.test <- shapiro.test(r) # test for normality of residuals
+# #low p-value (<0.001) non normality of residuals: watch out!
+# 
+# my_anova <- Anova(mod, type="III") # with car package use type III sum squares as unbalanced design
+# Om_sq <- omega_sq(my_anova,partial = FALSE) # determine the effect size (proportion of variance explained by each factor)
+# pOm_sq <- omega_sq(my_anova,partial = TRUE) # determine the partial effect size (proportion of variance explained by each factor after excluding the variance explained by other predictors)  omega_sq corrects for small sample size
+# 
+# Table <- my_anova %>% mutate(term = c("Intercept","Country","Residuals"))
+# Table <- left_join(Table,Om_sq)
+# Table <- left_join(Table,pOm_sq)  
+# 
+# 
+# mod2 <- aov(Value ~ GIG, data=SumDat.l,subset = n>2) # create factorial model 
+# # for one-way between subjects designs, partial omega squared is equvilant to omega squared
+# # look at residuals
+# r2 = residuals(mod2, type="response")
+# Shap.test2 <- shapiro.test(r2) # test for normality of residuals
+# #low p-value (<0.001) non mormality of residuals: watch out!
+# my_anova2 <- Anova(mod2, type="III") # with car package use type III sum squares as unbalanced design
+# Om_sq2 <- omega_sq(my_anova2,partial = FALSE) # determine the effect size (proportion of variance explained by each factor)
+# pOm_sq2 <- omega_sq(my_anova2,partial = TRUE) # determine the partial effect size (proportion of variance explained by each factor after excluding the variance explained by other predictors)  omega_sq corrects for small sample size
+# 
+# Table2 <- my_anova2 %>% mutate(term = c("Intercept","GIG","Residuals"))
+# Table2 <- left_join(Table2,Om_sq2)
+# Table2 <- left_join(Table2,pOm_sq2) 
+```
+
+
+## 3.3.3.1 Total N (coastal waters) 
+
+
+There were `r dim(dat.u)[1]` records from `r dim(count(dat.u,Country))[1]` countries (`r LCap1`). 
+The majority of countries use the summer mean ("summer") as a summary metric. `r dim(Temp2)[1]` countries (`r levels(ValCntry) `) use a single value for each national type and `r dim(Temp1)[1]` countries (`r levels(RangeCntry) `) present standards as a range, which refer to `r levels(RangeReas) ` specific boundaries. Other countries () present G/M boundary or set of boundaries which refer salinity or reflect an adjustment to the salinity gradient (see Annex).  
+
+The data could be linked to `r dim(NinGroup)[1]-2` IC types (`r LCap2 ` & `r LCapT2`). `r dim(CntryInGroup[CntryInGroup$n>2 & CntryInGroup$ICcode.TRAC !="All",])[1]` of these (`r GrpGT2$ICcode.TRAC `) had type specific values from more than 2 countries allowing the range of standards in these types to be compared. `r length(levels(TypeAllCntry))` countries (`r levels(TypeAllCntry)`) apply the same standard to all national types found in one or more of their river basin districts.  
+
+The standards ranged from `r round(min(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE),dec)` `r dat.u$UnitUsed[1] ` (`r dat.u[which(c(dat.u$ValueStd,dat.u$ValueUpStd) == min(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE)),"Country"][1]`) to `r round(max(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE),dec)` `r dat.u$UnitUsed[1] ` (`r dat.u[which(c(dat.u$ValueStd,dat.u$ValueUpStd) == max(c(dat.u$ValueStd,dat.u$ValueUpStd),na.rm=TRUE)),"Country"][1]`), 
+with an interquartile range of `r round(q25All,dec)` to `r round(q75All,dec)` (`r LCap2`). 
+
+Few values are available to allow meaningful statistical comparisons across grouping factor(s), so no analysis of variance was applied to test the significance of GIG, IC Type, Country or other grouping factor effect.
+
+
+More information in Annex A5.1  
+
+
+```{r fig.width = 7, fig.height =5, fig.cap=Cap1, warning = FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country"
+plot1+ 
+  geom_hline(yintercept = c(q50All,q75All,q90All),linetype="dashed", color=c("blue","orange","red"))
+```
+
+
+
+```{r fig.width = 7, fig.height =5, fig.cap=Cap2, warning = FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Type" overlay of quantiles
+DP2()+
+ geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q25u,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q25u),inherit.aes = FALSE,colour = "green",size = 1.5)+
+ geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q75u,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q75u),inherit.aes = FALSE,colour = "red",size = 1.5)+
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1)) 
+```
+
+
+<!-- `r CapT1`    -->
+<!-- ```{r} -->
+<!-- #Anova table -->
+<!-- kable(Table[c(5,6,7,1:4)],col.names = c("","Omega sq,","p Omega sq","Sum sq","Df","F val","Pr"),digits = c(2,2,2,1,2,3,3),format = "pandoc")  -->
+<!-- ``` -->
+
+
+`r CapT2`  
+```{r}
+#Table showing Country Type Number standards
+OverV4%>% kable(format="pandoc") 
+```
+
+
+## A5.1 Appendix Total Nitrogen (coastal waters)
+
+
+
+```{r fig.width = 9, fig.height =7, fig.cap=CapA1}
+bk <- c(0.1,0.3,1.2)
+ymin <-0.1
+ymax <- 1.2
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country" & "ICcode.TRAC" (broad types)
+#DPType.lg(bk,ymin,ymax)
+
+# DPType doesn't work on this dataset as it can only cope with 14 broad types
+
+# start by plotting the value upper in red  
+  ggplot(dat.u.d, aes(x=Country, y=ValueUpStd,shape=SumMetric))+
+    geom_point(color="red",position = position_nudge(x= -0.1 ,y = 0))+
+    scale_shape_manual(values=symb,name  ="") +
+    scale_y_continuous(trans='log10',breaks = bk,limits=c(ymin,ymax)) +
+# add lower point of range as blue symbol  
+    geom_point(data = subset(dat.u.d,!is.na(ValueUpStd)), mapping = 
+                 aes(x = Country, y = ValueStd, shape = SumMetric),color="blue",position = position_nudge(x=0.1 ,y = 0))+
+    ylab(ylb)+xlab("")+
+    facet_wrap(~ ICcode.TRAC,ncol=4,nrow=6, scales="free_x") +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 90,hjust=0.5,vjust=0.5))+  
+    theme(legend.position = "bottom",
+          legend.text = element_text(color = "black")) +
+# Add the values (exclude those which were a range), this needs to  be done last to avoid the legend points being colored
+    geom_point(data = subset(dat.u.d,is.na(ValueUpStd)), mapping = 
+                 aes(x = Country, y = ValueStd, shape = SumMetric),colour="black")+
+    geom_hline(data=GrpGT2.Q,mapping = aes(yintercept = q25u ),colour = "green",linetype = "dashed")+
+    geom_hline(data=GrpGT2.Q,mapping = aes(yintercept = q75u ),colour = "red",linetype = "dashed")
+
+```
+
+#####  
+
+```{r }
+Metrics%>% kable(format="pandoc",cap=CapTA1) 
+```
+
+\newline
+\newline
+
+```{r }
+Metrics.b%>% kable(format="pandoc",cap="Table A1b Summary metric type and no. of unique standards")
+```
+
+\newline
+\newline
+
+```{r }
+Temp %>% kable(format="pandoc",cap=CapTA2)  
+```
+
+\newline
+\newline
+
+```{r }
+addmargins(table(dat.u.d$ICcode.TRAC,dat.u.d$Country)) %>% kable(format="pandoc",cap=CapTA3) 
+```
+
+
+```{r fig.width = 5, fig.height =7, fig.cap=CapA3}
+#scatterplot all vals
+salP1<- ggplot(dat.u,aes(x=Salinity,y=ValueStd))+
+  geom_point()+theme_bw()+
+  ylab("TN (mg/L) GM boundary")
+```
+
+
+
+
+
+
+
+
+

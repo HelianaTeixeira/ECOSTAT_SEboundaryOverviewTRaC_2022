@@ -1,0 +1,350 @@
+---
+output:
+  word_document:
+    fig_caption: yes
+    reference_docx: draft-styles.docx
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- Date: 20 December 2020 -->
+<!-- Script used to check the data and produce the appendix plots needed. Saves an Rdata file for use by 2nd script which generates the report for chapter 3 -->
+<!-- file name: pH_Lakes_AppV3.Rmd  version: splits data into upper and lower ranges -->
+
+```{r, setup, include=FALSE}
+rm(list = ls())
+
+library(dplyr )
+library(ggplot2)
+library(tidyr)
+library(knitr)
+library(here)
+
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, dpi=300)
+knitr::opts_chunk$set(cache=FALSE, fig.path="Figures/", cache.path="Cache/")
+options(knitr.kable.NA = "")
+options(digit=3)
+
+source(here("R","MyFunctV2.R"))
+
+```
+
+
+```{r}
+#Get the data
+Cat <- "Coastal" # water category, used in file  name for saving objects for subsequent use
+FName.dat <-here("Data","dat.CWver3.csv")
+dat.CW <- read.csv(file = FName.dat, header = TRUE, fileEncoding="latin1")
+```
+
+
+
+```{r, select standard, include=FALSE}
+# enter text for standard,labels for plotting, appendix section number etc
+dec <- 1  # number of decimals to show
+physChemText.u <- "% oxygen saturation"
+ylb <- "% saturation GM boundary"
+
+SectNum <- "A1.1.2"
+
+#Legend labels
+fig_refA1 <- "Figure A6"
+fig_refA2 <- "Figure A7"
+tab_refA1 <- "Table A5"
+tab_refA2 <- "Table A6"
+tab_refA3 <- "Table A7"
+tab_refA4 <- "Table A8"
+fig_refA2 <- "Figure A8"
+fig_refA3 <- "Figure A9"
+fig_refA4 <- "Figure A10"
+fig_refA5 <- "Figure A11"
+fig_refA6 <- "Figure A12"
+
+#Legend text for appendix
+FCapA1 <- paste(fig_refA1,physChemText.u, "standards by country and IC type (single value black, minimum blue, maximum red). Horizontal dotted lines show the median values for the uppder (red) and lower (blue) groups of standards")
+FCapA2 <- paste(fig_refA2,physChemText.u, "standards by country and GIG (single value black, minimum blue, maximum red). Horizontal dotted lines show the median values for the uppder (red) and lower (blue) groups of standards")
+TCapA1 <- paste(tab_refA1,physChemText.u,"metrics used by country")
+TCapA2 <- paste(tab_refA2,"records where",physChemText.u, "was reported as a value or a range")
+TCapA3 <- paste(tab_refA3,"Number of different ",physChemText.u," standards by country and IC type")
+TCapA4 <- paste(tab_refA4,"Overview of common types and number of MS/national types/distinct  ",physChemText.u," standards by country and IC type")
+FCapA3 <- paste(fig_refA3,"Coastal",physChemText.u,"standards coplots showing the range of ",physChemText.u," concentration along the salinity gradient for each Intercalibration Common Type (IC), standards colored by Country.")
+FCapA4 <- paste(fig_refA4,"Coastal",physChemText.u,"standards coplots showing the range of ",physChemText.u," concentration along the salinity gradient for each Marine Region, standards colored by IC Type.")
+FCapA5 <- paste(fig_refA5,"Coastal",physChemText.u,"standards coplots showing the range of ",physChemText.u," concentration along the salinity gradient for each Geographical Intercalibration Group (GIG), standards colored by Marine Region.")
+FCapA6 <- paste(fig_refA6,"Coastal",physChemText.u,"standards coplots showing the range of ",physChemText.u," concentration along the salinity gradient for each Geographical Intercalibration Group (GIG), standards colored by Intercalibration Common Type (IC).")
+
+
+#Select standard
+dat.u <- dat.CW %>% 
+  filter(physChemText==physChemText.u,!is.na(ValueStd)) %>% 
+  select(All.obs,GIG,MarineRegion,ICcode.TRAC,Country,RBD,NatType,physChemQECode,physChemQE,physChemText,physChemGMBoundary,SumMetric,ValueStd,ValueUpStd,UnitUsed,RangeRep,ReasonRange,Salinity1,Salinity2,DepthZone,MetricType,ICType) %>% 
+  droplevels()
+dim(dat.u)
+
+```
+ 
+ 
+### `r SectNum` `r paste(physChemText.u, "concentration (coastal)")`
+ 
+
+```{r CheckDataPlot, include=FALSE}
+# Check data, modify units if plot suggests issues
+df<-dat.u
+BPChk(df)
+```
+
+
+```{r,eval=TRUE}
+dat.u.m <- dat.u%>%
+  mutate (ValueUpStd=case_when(
+    Country=="HR" & ValueStd==40 ~ 150,
+    TRUE ~ as.numeric(ValueUpStd)))%>%
+  mutate(RangeRep=case_when(
+    Country=="HR" & ValueUpStd==150 ~ "TRUE",
+    TRUE ~ as.character(RangeRep))) %>%
+   mutate(ReasonRange=case_when(
+     Country=="HR" & ValueUpStd==150 ~ "High low",
+   TRUE ~ as.character(ReasonRange))) #Croatia is range: associate upper & lower range in one row, set range to TRUE and reason range to High-low
+
+#drop unused row All.obs!=458
+dat.u <- filter(dat.u.m, All.obs!=8652)   
+```
+
+<!-- The following chunk prepares the data.  Need to check the number of symbols is correct -->
+
+```{r, summarise data, include=FALSE}
+source(here("R","Prep_CWv5.R"))  # runs chunk of code to prepare the data
+
+```
+
+
+```{r, include=FALSE}
+datL.u.d <- pivot_longer(dat.u.d,cols = starts_with("Val"),names_to = "col",values_to = "Value" )
+
+datL.u.d <- datL.u.d %>% filter(!is.na(Value)) %>% 
+  mutate(Range = ifelse(col=="ValueStd","L","U")) %>% 
+  mutate(physChemStandard2.u=SumMetric)
+
+#Set up the plot symbols to match those in data set, use 
+    #8 for 95th PC, 4 90th PC, 6 max
+    #19 AA-EQS, 17 median, 7 summer, 12 spring, 10 winter, 13 autumn, 14 growth
+    #5 5th PC, 9 10th PC, 2 min
+count(datL.u.d,physChemStandard2.u)
+#Edit the next line
+symb <- c(8,19,17,10)
+if(length(symb)!=dim(count(datL.u.d,physChemStandard2.u))[1])stop("Edit symb, it is wrong length")
+```
+
+
+```{r, include=FALSE}
+qA25 <- quantile(datL.u.d$Value,0.25,na.rm=T)
+qA50 <- quantile(datL.u.d$Value,0.5,na.rm=T)
+qA75 <- quantile(datL.u.d$Value,0.75,na.rm=T)
+qA90 <- quantile(datL.u.d$Value,0.90,na.rm=T)
+min.x <- min(datL.u.d$Value, na.rm=TRUE)
+max.x <- max(datL.u.d$Value, na.rm=TRUE)
+
+
+qA10U <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile"),0.1,na.rm = TRUE)
+qA25U <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile"),0.25,na.rm = TRUE)
+qA50U <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile"),0.5,na.rm = TRUE)
+qA75U <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile"),0.75,na.rm = TRUE)
+qA90U <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile"),0.90,na.rm = TRUE)
+qA10L <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile"),0.1,na.rm = TRUE)
+qA25L <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile"),0.25,na.rm = TRUE)
+qA50L <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile"),0.5,na.rm = TRUE)
+qA75L <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile"),0.75,na.rm = TRUE)
+qA90L <- quantile(subset(datL.u.d$Value,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile"),0.90,na.rm = TRUE)
+
+#Calculate the full IC type specific quantiles
+q25U <- aggregate(subset(datL.u.d$Value,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile"), by=list(subset(datL.u.d$ICcode.TRAC,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile")), FUN=quantile, p=.25,na.rm = TRUE)
+q50U <- aggregate(subset(datL.u.d$Value,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile"), by=list(subset(datL.u.d$ICcode.TRAC,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile")), FUN=quantile, p=.5,na.rm = TRUE)
+q75U <- aggregate(subset(datL.u.d$Value,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile"), by=list(subset(datL.u.d$ICcode.TRAC,datL.u.d$Range=="U" & datL.u.d$physChemStandard2.u != "10th percentile")), FUN=quantile, p=.75,na.rm = TRUE)
+
+q25L <- aggregate(subset(datL.u.d$Value,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile"), by=list(subset(datL.u.d$ICcode.TRAC,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile")), FUN=quantile, p=.25,na.rm = TRUE)
+q50L <- aggregate(subset(datL.u.d$Value,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile"), by=list(subset(datL.u.d$ICcode.TRAC,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile")), FUN=quantile, p=.5,na.rm = TRUE)
+q75L <- aggregate(subset(datL.u.d$Value,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile"), by=list(subset(datL.u.d$ICcode.TRAC,datL.u.d$Range=="L" & datL.u.d$physChemStandard2.u != "90th percentile")), FUN=quantile, p=.75,na.rm = TRUE)
+
+GrpGT2.Q <- datL.u.d %>% select(ICcode.TRAC) %>% distinct() %>% arrange(ICcode.TRAC)
+GrpGT2.Q <- left_join(GrpGT2.Q,NinGroup)
+GrpGT2.Q <- left_join(GrpGT2.Q,q25L, by= c("ICcode.TRAC"="Group.1")) %>% rename(q25L=x)
+GrpGT2.Q <- left_join(GrpGT2.Q,q50L, by= c("ICcode.TRAC"="Group.1")) %>% rename(q50L=x)
+GrpGT2.Q <- left_join(GrpGT2.Q,q75L, by= c("ICcode.TRAC"="Group.1")) %>% rename(q75L=x)
+GrpGT2.Q <- left_join(GrpGT2.Q,q25U, by= c("ICcode.TRAC"="Group.1")) %>% rename(q25U=x)
+GrpGT2.Q <- left_join(GrpGT2.Q,q50U, by= c("ICcode.TRAC"="Group.1")) %>% rename(q50U=x)
+GrpGT2.Q <- left_join(GrpGT2.Q,q75U, by= c("ICcode.TRAC"="Group.1")) %>% rename(q75U=x)
+GrpGT2.Q <- GrpGT2.Q %>% 
+  mutate(q25Lu = ifelse(n>2,q25L,NA)) %>%
+  mutate(q50Lu = ifelse(n>2,q50L,NA)) %>%
+  mutate(q75Lu = ifelse(n>2,q75L,NA)) %>%
+  mutate(q25Uu = ifelse(n>2,q25U,NA)) %>% 
+  mutate(q50Uu = ifelse(n>2,q50U,NA)) %>%
+  mutate(q75Uu = ifelse(n>2,q75U,NA)) 
+
+```
+
+
+```{r salinity gradient,include=FALSE}
+#coplots with all QE vs salinity where available
+coP1<- coPIC()
+coP2<- coPMaReg()
+coP3<- coPGIG.MR()
+coP4<- coPGIG.IC()
+```
+
+
+```{r, include=FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country"
+
+P1 <- ggplot(subset(datL.u.d,RangeRep==TRUE), aes(x=Country, y=Value,color=Range,shape=physChemStandard2.u))+
+  geom_point(position = position_nudge(x= +0.1 ,y = 0))+
+  scale_shape_manual(values = symb, name ="")+
+  scale_color_manual(values = c("blue","red"))+
+      ylab(ylb)+xlab("")+
+    theme_bw() +
+    geom_point(data = subset(datL.u.d,RangeRep==FALSE), mapping = 
+                 aes(x = Country, y = Value, shape = physChemStandard2.u),color="black",position = position_nudge(x= -0.1 ,y = 0))+
+    theme(legend.position = "bottom",
+          legend.text = element_text(color = "black"))+
+     geom_hline(yintercept = qA50U ,colour = "red",linetype = "dashed")+
+     geom_hline(yintercept = qA50L ,colour = "blue",linetype = "dashed")
+``` 
+
+
+
+
+```{r, include=FALSE}
+#Dot plot of "ValueStd" & "ValueUpStd" by "ICcode.TRAC" (IC types)
+P2 <- ggplot(datL.u.d, aes(x=ICcode.TRAC, y=Value,color=Range,shape=physChemStandard2.u))+
+  geom_point(data = subset(datL.u.d, !is.na(ReasonRange)))+
+  scale_shape_manual(values = symb, name ="")+
+  scale_color_manual(values = c("blue","red"))+
+  theme(axis.text.x = element_text(angle = 90,hjust=0.5,vjust=0.5))+
+      ylab(ylb)+xlab("")+
+    theme_bw() +
+  geom_point(data = subset(datL.u.d,RangeRep==FALSE), mapping = 
+                 aes(x = ICcode.TRAC, y = Value, shape = physChemStandard2.u),color="black",position = position_nudge(x= -0.1 ,y = 0))+
+    theme(legend.position = "bottom",
+          legend.text = element_text(color = "black"))+
+  scale_x_discrete(labels = c("BC5","BC7","BL1","NEA1/26","Type-IIA\nAdriatic","inapplicable"))+
+ geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q25Uu,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q25Uu),inherit.aes = FALSE,colour = "green",size = 1.0)+
+ geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q75Uu,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q75Uu),inherit.aes = FALSE,colour = "red",size = 1.0)+
+ geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q25Lu,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q25Lu),inherit.aes = FALSE,colour = "green",size = 1.0)+
+ geom_segment(data=GrpGT2.Q,mapping=aes(x=seq(0.75,dim(GrpGT2.Q)[1]-0.25,1.0),y=q75Lu,xend=seq(1.25,dim(GrpGT2.Q)[1]+0.25,1.0),yend=q75Lu),inherit.aes = FALSE,colour = "red",size = 1.0)
+```
+
+
+
+```{r, fig.width = 5.25, fig.height =8.3, fig.cap=FCapA1, warning = FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country" & "ICcode.TRAC" (IC types)
+ggplot(subset(datL.u.d,RangeRep==TRUE), aes(x=Country, y=Value,color=Range,shape=physChemStandard2.u))+
+  geom_point(position = position_nudge(x= +0.1 ,y = 0))+
+  scale_shape_manual(values = symb, name ="")+
+  scale_color_manual(values = c("blue","red"))+
+      ylab(ylb)+xlab("")+
+    theme_bw() +
+    geom_point(data = subset(datL.u.d,RangeRep==FALSE), mapping = 
+                 aes(x = Country, y = Value, shape = physChemStandard2.u),color="black",position = position_nudge(x= -0.1 ,y = 0))+
+    theme(legend.position = "bottom",
+          legend.text = element_text(color = "black")) +
+  facet_wrap(~ ICcode.TRAC,ncol=3,nrow=8)+
+  theme(axis.text.x = element_text(angle = 90,hjust=0.5,vjust=0.5))+
+  geom_hline(data=GrpGT2.Q,mapping = aes(yintercept = q50Lu ),colour = "blue",linetype = "dashed")+
+  geom_hline(data=GrpGT2.Q,mapping = aes(yintercept = q50Uu ),colour = "red",linetype = "dashed")
+
+```
+
+
+```{r, fig.width = 5.25, fig.height =8.3, fig.cap=FCapA2, warning = FALSE}
+#Dot plots of "ValueStd" & "ValueUpStd" by "Country" & "GIG"
+ggplot(subset(datL.u.d,RangeRep==TRUE), aes(x=Country, y=Value,color=Range,shape=physChemStandard2.u))+
+  geom_point(position = position_nudge(x= +0.1 ,y = 0))+
+  scale_shape_manual(values = symb, name ="")+
+  scale_color_manual(values = c("blue","red"))+
+      ylab(ylb)+xlab("")+
+    theme_bw() +
+    geom_point(data = subset(datL.u.d,RangeRep==FALSE), mapping = 
+                 aes(x = Country, y = Value, shape = physChemStandard2.u),color="black",position = position_nudge(x= -0.1 ,y = 0))+
+    theme(legend.position = "bottom",
+          legend.text = element_text(color = "black")) +
+  facet_wrap(~ GIG,scale="free_x",ncol=4,nrow=1)+
+  theme(axis.text.x = element_text(angle = 90,hjust=0.5,vjust=0.5))+
+   geom_hline(yintercept = qA50U ,colour = "red",linetype = "dashed")+
+     geom_hline(yintercept = qA50L ,colour = "blue",linetype = "dashed")
+
+```
+
+
+#####  
+
+
+```{r }
+Metrics%>% kable(format="pandoc",cap=TCapA1) 
+```
+
+
+```{r }
+Metrics.b%>% kable(format="pandoc",cap="Table A1b Summary metric type and no. of unique standards")
+```
+
+
+```{r }
+Temp %>% kable(format="pandoc",cap=TCapA2)  
+```
+
+
+#####  
+
+
+```{r }
+addmargins(table(dat.u.d$ICcode.TRAC,dat.u.d$Country)) %>% kable(format="pandoc",cap=TCapA3) 
+```
+
+
+
+```{r, eval=FALSE }
+OverV4%>% kable(format="pandoc",cap=TCapA4) 
+```
+
+
+
+\newline
+
+
+```{r, fig.width = 5.25, fig.height =8.3, fig.cap=FCapA2, warning = FALSE}
+coP1
+```
+
+\newline
+
+
+```{r, fig.width = 5.25, fig.height =8.3, fig.cap=FCapA3, warning = FALSE}
+coP2
+```
+
+\newline
+
+
+```{r, fig.width = 5.25, fig.height =8.3, fig.cap=FCapA4, warning = FALSE}
+coP3
+```
+
+\newline
+
+
+```{r, fig.width = 5.25, fig.height =6, fig.cap=FCapA5, warning = FALSE}
+coP4
+```
+
+
+Data set used *`r dat.CW$Ver[1]`
+
+```{r}
+
+#Save the objects needed for tables and figures for subsequent use
+
+OutFile <- here("Data",paste0(Cat,physChemText.u,".RData"))
+save(dat.u.d,Metrics,Temp,Temp1,Temp2,OverV4,RangeCntry,ValCntry,TypeAllCntry,NinGroup,CntryInGroup,GrpGT2,symb,ylb,dec,physChemText.u,dat.u.d,dat.u,datL.u.d,qA25,qA50,qA75,qA90,min.x,max.x,qA10U,qA25U,qA50U,qA75U,qA90U,qA10L,qA25L,qA50L,qA75L,qA90L,GrpGT2.Q,P1,P2,coP1,coP2,coP3,coP4,file=OutFile)
+
+#not saved here (GrpGT2.Q,AggGrpGT2.Q,dat.shrt.l)
+
+```
